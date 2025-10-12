@@ -3,11 +3,15 @@ package Coursework;
 
 import java.sql.*;
 
+/**
+ * Main class for the Coursework application.
+ * Connects to MySQL database and prints country population info.
+ */
 public class App {
     private Connection con = null;
 
     /**
-     * Connect to the MySQL database.
+     * Method to connect java program to database
      */
     public void connect() {
         try {
@@ -42,7 +46,7 @@ public class App {
     }
 
     /**
-     * Disconnect from the MySQL database.
+     * Disconnects server after query execution
      */
     public void disconnect() {
         if (con != null) {
@@ -56,7 +60,7 @@ public class App {
     }
 
     /**
-     * Query: Show the first 10 cities.
+     * Query: show
      */
     public void showCountriesByPopulation() {
         try {
@@ -89,6 +93,7 @@ public class App {
 
     /**
      * Main entry point.
+     * @param args command line arguments (not used).
      */
     public static void main(String[] args) {
         App a = new App();
