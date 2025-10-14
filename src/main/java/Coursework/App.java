@@ -60,7 +60,8 @@ public class App {
     }
 
     /**
-     * Query: show
+     * Query: show all the countries in the world ordered by population
+     * (largest to smallest).
      */
     public void showCountriesByPopulation() {
         try {
