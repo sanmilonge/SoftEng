@@ -30,7 +30,7 @@ public class App {
                 Thread.sleep(5000); // shorter wait
                 // Connect to the world database
                 con = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/world?allowPublicKeyRetrieval=true&useSSL=false",
+                        "jdbc:mysql://db:3306/world?allowPublicKeyRetrieval=true&useSSL=false", //Changed localhost to db and to correct world database
                         "root",
                         "example"
                 );
