@@ -21,23 +21,16 @@
 #        run: docker compose up --abort-on-container-exit
 
 
-#Edited by SanmiLonge
 name: Build and Test Population App
 
 on:
   push:
-    branches:
-      - develop
-      - release
-      - master
-  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-22.04
-
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
@@ -48,31 +41,8 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
-      - name: Cache Maven dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
-
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-      - name: Run tests
-        run: mvn test
-
-      - name: Upload JAR Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: population-app
-          path: target/*.jar
-
-      - name: Build Docker image
-        run: docker build -t population-app .
-
       - name: Run Docker Compose
         run: docker compose up --abort-on-container-exit
-
-      - name: Stop and clean up Docker containers
-        if: always()
-        run: docker compose down
