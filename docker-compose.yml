@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  db:
+    build: ./db  # ✅ Build from your db folder where the Dockerfile & world.sql are
+    container_name: imran-db-1
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: world
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql  # optional: to persist data after rebuilds
+
+  app:
+    build: .
+    container_name: cw-app
+    depends_on:
+      - db
+    command: ["java", "-jar", "target/seMethods-0.1.0.2-jar-with-dependencies.jar"]
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=example
+      - DB_NAME=world
+
+volumes:
+  db_data:
