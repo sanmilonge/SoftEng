@@ -9,7 +9,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the packaged JAR (includes dependencies)
-COPY target/*-jar-with-dependencies.jar app.jar
+COPY target/Coursework-2.0-SNAPSHOT-jar-with-dependencies.jar app.jar
 
 # Run the JAR
 ENTRYPOINT ["java", "-jar", "app.jar"]
