@@ -2,7 +2,7 @@
 
 ## Our Conduct
 
-We as contributers and developers pledge to participate equally and fairly to this project.
+We as contributors and developers pledge to participate equally and fairly to this project.
 
 We pledge to act and interact in ways that are open welcoming and healthy.
 
