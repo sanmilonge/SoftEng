@@ -68,8 +68,7 @@ public class App {
         FirstReport fr = new FirstReport();
         SecondReport sr = new SecondReport();
         a.connect();
-//        fr.showCountriesByPopulation();
-        sr.showCitiesByPopulation();
+        fr.showCountriesByPopulation();
         a.disconnect();
     }
 }
