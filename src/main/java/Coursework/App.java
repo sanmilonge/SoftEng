@@ -7,9 +7,9 @@ public class App
         Connection con = new Connection();
         FirstReport fr = new FirstReport(con);
         SecondReport sr = new SecondReport(con);
-        con.connect();
-        fr.showCountriesByPopulation();
-        con.disconnect();
+//        con.connect();
+//        fr.showCountriesByPopulation();
+//        con.disconnect();
         con.connect();
         sr.showCitiesByPopulation();
         con.disconnect();
