@@ -6,8 +6,10 @@ public class App
     {
         Connection con = new Connection();
         FirstReport fr = new FirstReport(con);
+        SecondReport sr = new SecondReport(con);
         con.connect();
         fr.showCountriesByPopulation();
+        sr.showCountriesByPopulation();
         con.disconnect();
     }
 }
