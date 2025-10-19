@@ -15,14 +15,14 @@ public class FirstReport{
     public void showCountriesByPopulation() {
         try {
             ResultSet rset;
-            try (Statement stmt = c.getConnection().createStatement()) {
+            Statement stmt = c.getConnection().createStatement();
                 String sql =
                         "SELECT Code, Name, Continent, Region, Population " +
                                 "FROM country " +
                                 "ORDER BY Population DESC;";
 
                 rset = stmt.executeQuery(sql);
-            }
+
 
             System.out.println("\nAll countries in the world (largest to smallest population):\n");
             System.out.printf("%-5s %-45s %-20s %-25s %-15s%n",
