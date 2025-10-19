@@ -10,7 +10,9 @@ public class Connection {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             System.out.println("Could not load SQL driver");
-            System.exit(-1);
+            // ❌ Removed System.exit(-1)
+            e.printStackTrace(); // Just log instead of killing the process
+            return;
         }
 
         int retries = 10;
@@ -32,6 +34,10 @@ public class Connection {
                 System.out.println("Thread interrupted? Should not happen.");
             }
         }
+
+        if (con == null) {
+            System.out.println("Could not establish a database connection after retries.");
+        }
     }
 
     public java.sql.Connection getConnection() {
@@ -45,6 +51,8 @@ public class Connection {
                 System.out.println("Disconnected from database.");
             } catch (Exception e) {
                 System.out.println("Error closing connection to database");
+            } finally {
+                con = null;
             }
         }
     }
