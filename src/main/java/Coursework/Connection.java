@@ -1,20 +1,12 @@
 package Coursework;
 
-
 import java.sql.*;
 
-/**
- * Connects to MySQL database and prints country population info.
- */
 public class Connection {
-    public java.sql.Connection con = null;
+    private java.sql.Connection con = null;
 
-    /**
-     * Method to connect java program to database
-     */
     public void connect() {
         try {
-            // Load Database driver
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             System.out.println("Could not load SQL driver");
@@ -25,18 +17,16 @@ public class Connection {
         for (int i = 0; i < retries; ++i) {
             System.out.println("Connecting to database...");
             try {
-                // Wait a bit for db to start
-                Thread.sleep(5000); // shorter wait
-                // Connect to the world database
+                Thread.sleep(5000);
                 con = DriverManager.getConnection(
-                        "jdbc:mysql://db:3306/world?allowPublicKeyRetrieval=true&useSSL=false", //Changed localhost to db and to correct world database
+                        "jdbc:mysql://db:3306/world?allowPublicKeyRetrieval=true&useSSL=false",
                         "root",
                         "example"
                 );
                 System.out.println("Successfully connected");
                 break;
             } catch (SQLException sqle) {
-                System.out.println(" Failed to connect to database attempt " + i);
+                System.out.println("Failed to connect to database attempt " + i);
                 System.out.println(sqle.getMessage());
             } catch (InterruptedException ie) {
                 System.out.println("Thread interrupted? Should not happen.");
@@ -44,9 +34,10 @@ public class Connection {
         }
     }
 
-    /**
-     * Disconnects server after query execution
-     */
+    public java.sql.Connection getConnection() {
+        return con;
+    }
+
     public void disconnect() {
         if (con != null) {
             try {
@@ -57,5 +48,4 @@ public class Connection {
             }
         }
     }
-
-  }
+}

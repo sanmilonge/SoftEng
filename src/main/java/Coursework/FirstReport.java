@@ -3,20 +3,26 @@ package Coursework;
 import java.sql.*;
 
 public class FirstReport{
-    Connection c = new Connection();
+    private final Connection c;
+
+    public FirstReport (Connection c){
+        this.c = c;
+    }
   /**
      * Query: show all the countries in the world ordered by population
      * (largest to smallest).
      */
     public void showCountriesByPopulation() {
         try {
-            Statement stmt = c.con.createStatement();
-            String sql =
-                    "SELECT Code, Name, Continent, Region, Population " +
-                            "FROM country " +
-                            "ORDER BY Population DESC;";
+            ResultSet rset;
+            try (Statement stmt = c.getConnection().createStatement()) {
+                String sql =
+                        "SELECT Code, Name, Continent, Region, Population " +
+                                "FROM country " +
+                                "ORDER BY Population DESC;";
 
-            ResultSet rset = stmt.executeQuery(sql);
+                rset = stmt.executeQuery(sql);
+            }
 
             System.out.println("\nAll countries in the world (largest to smallest population):\n");
             System.out.printf("%-5s %-45s %-20s %-25s %-15s%n",
