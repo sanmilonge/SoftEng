@@ -9,7 +9,9 @@ public class App
         SecondReport sr = new SecondReport(con);
         con.connect();
         fr.showCountriesByPopulation();
-        sr.showCountriesByPopulation();
+        con.disconnect();
+        con.connect();
+        sr.showCitiesByPopulation();
         con.disconnect();
     }
 }

@@ -18,7 +18,7 @@ public class SecondReport{
      * Query: show all the cities in the world ordered by population
      * (largest to smallest).
      */
-    public void showCountriesByPopulation() {
+    public void showCitiesByPopulation() {
         try {
             ResultSet rset;
             Statement stmt = c.getConnection().createStatement();
