@@ -38,12 +38,12 @@ public class SecondReport{
 
             System.out.println("\nAll cities in the world (largest to smallest population):\n");
             System.out.printf("%-45s %-40s %-40s %-15s%n",
-                    "Name", "Country", "District", "Population");
-            System.out.println("=".repeat(115));
+                    "City", "Country", "District", "Population");
+            System.out.println("=".repeat(150));
 
             while (rset.next()) {
                 System.out.printf("%-45s %-40s %-25s %-15d%n",
-                        rset.getString("Name"),
+                        rset.getString("City"),
                         rset.getString("Country"),
                         rset.getString("District"),
                         rset.getInt("Population"));
