@@ -91,6 +91,34 @@ public class App {
             System.out.println("Failed to retrieve countries: " + e.getMessage());
         }
     }
+    /**
+     * Displays all cities in the database with their details.
+     */
+    public void showAllCities() {
+        try {
+            Statement stmt = con.createStatement();
+            String sql = "SELECT ID, Name, CountryCode, District, Population FROM city;";
+            ResultSet rset = stmt.executeQuery(sql);
+
+            System.out.println("\nAll cities in the world:\n");
+            System.out.printf("%-5s %-35s %-15s %-25s %-15s%n",
+                    "ID", "Name", "CountryCode", "District", "Population");
+            System.out.println("=".repeat(100));
+
+            while (rset.next()) {
+                System.out.printf("%-5d %-35s %-15s %-25s %-15d%n",
+                        rset.getInt("ID"),
+                        rset.getString("Name"),
+                        rset.getString("CountryCode"),
+                        rset.getString("District"),
+                        rset.getInt("Population"));
+            }
+
+        } catch (Exception e) {
+            System.out.println("Failed to retrieve cities: " + e.getMessage());
+        }
+    }
+
 
     /**
      * Displays all tables available in the connected database.
@@ -99,11 +127,8 @@ public class App {
         try {
             Statement stmt = con.createStatement();
             // Query to show all tables in the current database
-            String sql = "SHOW TABLES;";
+            String sql = "SELECT * FROM city;";
             ResultSet rset = stmt.executeQuery(sql);
-
-            System.out.println("\nTables in the current database:\n");
-            System.out.println("==============================");
 
             while (rset.next()) {
                 System.out.println(rset.getString(1));
@@ -122,7 +147,7 @@ public class App {
     public static void main(String[] args) {
         App a = new App();
         a.connect();
-        a.showAllTables();
+        a.showAllCities();
         a.disconnect();
     }
 }
