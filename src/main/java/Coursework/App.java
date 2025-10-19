@@ -93,13 +93,36 @@ public class App {
     }
 
     /**
+     * Displays all tables available in the connected database.
+     */
+    public void showAllTables() {
+        try {
+            Statement stmt = con.createStatement();
+            // Query to show all tables in the current database
+            String sql = "SHOW TABLES;";
+            ResultSet rset = stmt.executeQuery(sql);
+
+            System.out.println("\nTables in the current database:\n");
+            System.out.println("==============================");
+
+            while (rset.next()) {
+                System.out.println(rset.getString(1));
+            }
+
+        } catch (Exception e) {
+            System.out.println("Failed to retrieve table list: " + e.getMessage());
+        }
+    }
+
+
+    /**
      * Main entry point.
      * @param args command line arguments (not used).
      */
     public static void main(String[] args) {
         App a = new App();
         a.connect();
-        a.showCountriesByPopulation();
+        a.showAllTables();
         a.disconnect();
     }
 }
