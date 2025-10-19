@@ -22,15 +22,16 @@ public class SecondReport{
         try {
             ResultSet rset;
             Statement stmt = c.getConnection().createStatement();
-            String sql =
-                    "SELECT" +
-                            "    city.Name AS City," +
-                            "    country.Name AS Country," +
-                            "    city.District," +
-                            "    city.Population " +
-                            "FROM city" +
-                            "JOIN country ON city.CountryCode = country.Code" +
-                            "ORDER BY city.Population DESC;";
+            String sql = """
+            SELECT city.Name AS City,
+                   country.Name AS Country,
+                   city.District,
+                   city.Population
+            FROM city
+            JOIN country ON city.CountryCode = country.Code
+            ORDER BY city.Population DESC;
+        """;
+
 
             rset = stmt.executeQuery(sql);
 
