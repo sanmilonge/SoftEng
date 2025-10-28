@@ -19,7 +19,7 @@ public class Connection {
             try {
                 Thread.sleep(5000);
                 con = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/world?allowPublicKeyRetrieval=true&useSSL=false",
+                        "jdbc:mysql://db:3306/world?allowPublicKeyRetrieval=true&useSSL=false",
                         "root",
                         "example"
                 );
