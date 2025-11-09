@@ -5,7 +5,6 @@ jobs:
   build:
     name: Hello world action
     runs-on: ubuntu-22.04
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -19,9 +18,8 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-     
       - name: Unit Tests
-        run: mvn -B -Dtest=Coursework.*Test test
+        run: mvn -B test   # <-- no -Dtest filter; picks up *Test by default
 
       - name: Package and Run docker compose
         run: |
