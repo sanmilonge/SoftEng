@@ -19,8 +19,9 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
+     
       - name: Unit Tests
-        run: mvn -B -Dtest=*Test test
+        run: mvn -B -Dtest=Coursework.*Test test
 
       - name: Package and Run docker compose
         run: |
