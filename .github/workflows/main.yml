@@ -9,11 +9,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
-          java-version: '17'          # matches your local run in screenshot
+          java-version: '17'
           distribution: 'temurin'
       - name: Run unit tests
         run: mvn -Dtest=Coursework.AppTest test
-        # or run them all: mvn test
 
   IntegrationTests:
     name: Integration Tests (world-db)
@@ -34,12 +33,24 @@ jobs:
       - name: Run integration tests
         run: mvn -Dtest=Coursework.AppIntegrationTest test
 
+     
+      - name: Upload Code Coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          directory: ./target/site/jacoco
+          verbose: true
+        env:
+          # For private repos, add a repo secret named CODECOV_TOKEN and keep the line below.
+          # For public repos, Codecov usually works without a token—leaving this set is harmless.
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Stop & clean DB container
         if: always()
         run: |
           docker stop world-db
           docker rm world-db
           docker image rm worlddb
+
   BuildCompose:
     name: Build app with docker-compose
     runs-on: ubuntu-22.04
