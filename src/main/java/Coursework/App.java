@@ -16,7 +16,7 @@ public class App {
         }
 
         fr.showCountriesByPopulation();
-        // sr.showCitiesByPopulation();
+        sr.showCitiesByPopulation();
 
         db.disconnect();
     }

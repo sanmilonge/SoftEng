@@ -15,7 +15,7 @@ public class ReportGenerationTest {
     @BeforeAll
     static void setup() {
         con = new Connection();
-        // ✅ supply location + delay (DB must be running on localhost:33060)
+        //  supply location + delay (DB must be running on localhost:33060)
         con.connect("localhost:33060", 1000);
 
         // Ensure reports folder exists (and is clean for a stable test)
