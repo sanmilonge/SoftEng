@@ -52,4 +52,4 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
       - name: Compose up (exit when app exits)
-        run: docker compose up --abort-on-container-e
+        run: docker compose up --abort-on-container-exit
