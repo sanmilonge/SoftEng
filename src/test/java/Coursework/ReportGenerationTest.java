@@ -2,79 +2,65 @@ package Coursework;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
 import java.io.IOException;
 import java.nio.file.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * ReportGenerationTest
- * --------------------
- * This class tests the report generation part of the project.
- *
- * It checks that:
- * 1. The FirstReport and SeventhReport classes both run successfully.
- * 2. Each one produces a Markdown (.md) file inside the reports folder.
- *
- * Basically, it makes sure that when the program runs a report,
- * it actually creates the output files that should be generated.
- */
+public class ReportGenerationTest {
 
-
-public class ReportGenerationTest
-{
     static Connection con;
 
     @BeforeAll
-    static void setup()
-    {
+    static void setup() {
         con = new Connection();
-        con.connect();
+        // ✅ supply location + delay (DB must be running on localhost:33060)
+        con.connect("localhost:33060", 1000);
+
+        // Ensure reports folder exists (and is clean for a stable test)
         ReportManager.prepareReportFolder();
+        cleanOldReports();
     }
 
-    /**
-     * Test 1 - Check that FirstReport creates a Markdown file.
-     *
-     * What it does:
-     * - Runs the FirstReport (countries by population).
-     * - Checks if a file starting with “FirstReport” exists in the reports folder.
-     *
-     * Why it matters:
-     * - Proves that the report method not only runs but also
-     *   saves a file successfully.
-     */
-
     @Test
-    void testFirstReportGeneratesFile()
-    {
+    void testFirstReportGeneratesFile() {
         FirstReport report = new FirstReport(con);
         report.showCountriesByPopulation();
 
-        boolean fileExists = checkForFile("FirstReport");
-        assertTrue(fileExists, "FirstReport.md file should exist after running report");
+        assertTrue(checkForFile("FirstReport"),
+                "FirstReport.md file should exist after running report");
     }
-    /**
-     * Test 2 - Check that SeventhReport creates a Markdown file.
-     *
-     * What it does:
-     * - Runs the SeventhReport (cities by population).
-     * - Checks if a file starting with “SeventhReport” exists in the reports folder.
-     *
-     * Why it matters:
-     * - Makes sure other reports work too — not just the first one.
-     */
+
     @Test
-    void testSeventhReportGeneratesFile()
-    {
+    void testSeventhReportGeneratesFile() {
         SeventhReport report = new SeventhReport(con);
         report.showCitiesByPopulation();
 
-        boolean fileExists = checkForFile("SeventhReport");
-        assertTrue(fileExists, "SeventhReport.md file should exist after running report");
+        assertTrue(checkForFile("SeventhReport"),
+                "SeventhReport.md file should exist after running report");
     }
 
-    private boolean checkForFile(String baseName)
-    {
+    // --- helpers ---
+
+    private static void cleanOldReports() {
+        Path dir = Paths.get("src/main/resources/reports");
+        try {
+            if (Files.exists(dir)) {
+                Files.walk(dir)
+                        .filter(Files::isRegularFile)
+                        .forEach(p -> {
+                            try { Files.deleteIfExists(p); } catch (IOException ignored) {}
+                        });
+            } else {
+                Files.createDirectories(dir);
+            }
+        } catch (IOException e) {
+            fail("Failed to prepare reports folder: " + e.getMessage());
+        }
+    }
+
+    private boolean checkForFile(String baseName) {
         try {
             return Files.walk(Paths.get("src/main/resources/reports"))
                     .anyMatch(p -> p.getFileName().toString().startsWith(baseName));

@@ -30,13 +30,22 @@ public class ConnectionTest
      *   the program, even if the database isn’t available.
      */
 
-
     @Test
     void testConnectAndDisconnect()
     {
         Connection con = new Connection();
-        assertDoesNotThrow(con::connect, "Connection.connect() should not throw an exception");
-        con.disconnect();
+
+        // 👇 fixed line — we wrap the connect() call with its arguments inside a lambda
+        assertDoesNotThrow(
+                () -> con.connect("localhost:33060", 1000),
+                "Connection.connect() should not throw an exception"
+        );
+
+        // Ensure that a real connection object exists after connecting
+        assertNotNull(con.getConnection(), "Connection should not be null after connecting");
+
+        // Disconnect safely
+        assertDoesNotThrow(con::disconnect, "disconnect() should not throw an exception");
     }
 
     /**

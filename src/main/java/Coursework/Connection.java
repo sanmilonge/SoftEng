@@ -5,13 +5,12 @@ import java.sql.*;
 public class Connection {
     private java.sql.Connection con = null;
 
-    public void connect() {
+    public void connect(String location, int delay) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             System.out.println("Could not load SQL driver");
-            // ❌ Removed System.exit(-1)
-            e.printStackTrace(); // Just log instead of killing the process
+            e.printStackTrace();
             return;
         }
 
@@ -19,9 +18,10 @@ public class Connection {
         for (int i = 0; i < retries; ++i) {
             System.out.println("Connecting to database...");
             try {
-                Thread.sleep(5000);
+                Thread.sleep(delay);
+                // Use the supplied host:port and your 'world' schema
                 con = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/world?allowPublicKeyRetrieval=true&useSSL=false",
+                        "jdbc:mysql://" + location + "/world?allowPublicKeyRetrieval=true&useSSL=false",
                         "root",
                         "example"
                 );
@@ -40,9 +40,7 @@ public class Connection {
         }
     }
 
-    public java.sql.Connection getConnection() {
-        return con;
-    }
+    public java.sql.Connection getConnection() { return con; }
 
     public void disconnect() {
         if (con != null) {
