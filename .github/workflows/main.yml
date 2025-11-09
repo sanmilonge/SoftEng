@@ -1,11 +1,11 @@
-name: Build and Test Population App
-
-on:
-  push:
+name: A workflow for my Hello World App
+on: push
 
 jobs:
   build:
+    name: Hello world action
     runs-on: ubuntu-22.04
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -16,10 +16,17 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'adopt'
+          distribution: 'temurin'
+          cache: 'maven'
 
-      - name: Build with Maven
-        run: mvn clean package -DskipTests
+      - name: Unit Tests
+        run: mvn -B -Dtest=*Test test
 
-      - name: Run Docker Compose
-        run: docker compose up --abort-on-container-exit
+      - name: Package and Run docker compose
+        run: |
+          mvn -B package -DskipTests
+          docker compose up --abort-on-container-exit
+
+      - name: Docker compose down
+        if: always()
+        run: docker compose down --volumes --remove-orphans
