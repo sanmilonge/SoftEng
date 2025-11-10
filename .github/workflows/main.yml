@@ -12,7 +12,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Run unit tests
-        run: mvn -Dtest=Coursework.AppTest,Coursework.ReportManagerTest test
+        run: mvn -Dtest=Coursework.AppTest,Coursework.ReportManagerTest,Coursework.ReportGenerationTest test
 
   IntegrationTests:
     name: Integration Tests (world-db)
