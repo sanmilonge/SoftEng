@@ -41,7 +41,7 @@ jobs:
           verbose: true
         env:
           # For private repos, add a repo secret named CODECOV_TOKEN and keep the line below.
-          # For public repos, Codecov usually works without a token—leaving this set is harmless.
+          # For public repos, Codecov usually works without a token—leaving this set is harmless
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Stop & clean DB container
