@@ -35,7 +35,7 @@ public class ConnectionTest
     {
         Connection con = new Connection();
 
-        // 👇 fixed line — we wrap the connect() call with its arguments inside a lambda
+        //  fixed line — we wrap the connect() call with its arguments inside a lambda
         assertDoesNotThrow(
                 () -> con.connect("localhost:33060", 1000),
                 "Connection.connect() should not throw an exception"
