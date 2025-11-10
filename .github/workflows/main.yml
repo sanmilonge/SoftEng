@@ -31,7 +31,7 @@ jobs:
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
       - name: Run integration tests
-        run: mvn -Dtest=Coursework.AppIntegrationTest test
+        run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
 
      
       - name: Upload Code Coverage to Codecov
