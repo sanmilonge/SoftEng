@@ -19,7 +19,7 @@ public class Connection {
         if (host == null || host.isEmpty()) {
             // Detect environment: inside Docker/CI, use container hostname
             if (System.getenv("GITHUB_ACTIONS") != null) {
-                host = "world-db";  // GitHub Actions / Docker container hostname
+                host = "world";  // GitHub Actions / Docker container hostname
                 System.out.println("[Connection] Detected GitHub Actions → Using host: world-db");
             } else {
                 host = "localhost"; // local IntelliJ / laptop run
