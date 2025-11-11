@@ -40,8 +40,6 @@ jobs:
           directory: ./target/site/jacoco
           verbose: true
         env:
-          # For private repos, add a repo secret named CODECOV_TOKEN and keep the line below.
-          # For public repos, Codecov usually works without a token—leaving this set is harmless
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Stop & clean DB container
@@ -64,3 +62,25 @@ jobs:
         run: mvn package -DskipTests
       - name: Compose up (exit when app exits)
         run: docker compose up --abort-on-container-exit
+
+  AutoGenerateReports:
+    name: Generate and Upload Reports
+    runs-on: ubuntu-22.04
+    needs: [BuildCompose]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run app to generate reports
+        run: |
+          mvn package -DskipTests
+          docker compose up --abort-on-container-exit --build
+
+      - name: Upload Generated Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: Generated_Reports
+          path: src/main/resources/reports/

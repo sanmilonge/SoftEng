@@ -7,33 +7,31 @@ import java.time.format.DateTimeFormatter;
 
 public class ReportManager {
 
-    // Folder where reports will be saved
+    // Base folder for all generated reports
     private static final String REPORT_FOLDER = "src/main/resources/reports";
 
     /**
-     * Deletes all files inside the report folder (if it exists)
-     * and recreates it clean.
+     * Prepares the base reports folder by deleting old files/folders
+     * and recreating it cleanly.
      */
     public static void prepareReportFolder() {
         try {
             Path folderPath = Paths.get(REPORT_FOLDER);
 
-            // If folder exists, clear only the files (not the folder itself)
             if (Files.exists(folderPath)) {
                 Files.walk(folderPath)
-                        .filter(Files::isRegularFile) // only delete files
+                        .sorted((a, b) -> b.compareTo(a))
                         .forEach(path -> {
                             try {
-                                Files.delete(path);
+                                Files.deleteIfExists(path);
                             } catch (IOException e) {
-                                System.out.println(" Failed to delete file: " + path + " -> " + e.getMessage());
+                                System.out.println("Failed to delete: " + path + " -> " + e.getMessage());
                             }
                         });
             }
 
-            // Ensure the folder exists
             Files.createDirectories(folderPath);
-            System.out.println(" Report folder ready: " + folderPath.toAbsolutePath());
+            System.out.println("Report folder ready: " + folderPath.toAbsolutePath());
 
         } catch (IOException e) {
             System.out.println("Error preparing report folder: " + e.getMessage());
@@ -41,30 +39,29 @@ public class ReportManager {
     }
 
     /**
-     * Writes markdown content to a file with a timestamp in its name.
-     * Also logs the creation to RunLog.md.
+     * Writes a Markdown file into a specific subfolder, with timestamped filenames.
+     *
+     * @param subfolder Subdirectory (e.g., "1_FirstReport")
+     * @param baseFilename Report filename (e.g., "FirstReport.md")
+     * @param content Markdown content to write
      */
-    public static void writeMarkdown(String baseFilename, String content) {
+    public static void writeMarkdown(String subfolder, String baseFilename, String content) {
         try {
-            // Create a timestamp for filenames and logs
             String timestamp = LocalDateTime.now()
                     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm"));
 
-            // Add timestamp to the filename
             String nameWithoutExt = baseFilename.replace(".md", "");
             String finalName = nameWithoutExt + "_" + timestamp + ".md";
 
-            // Create full file path
-            Path filePath = Paths.get(REPORT_FOLDER, finalName);
+            Path folderPath = Paths.get(REPORT_FOLDER, subfolder);
+            Files.createDirectories(folderPath);
 
-            // Write the markdown report file
-            Files.writeString(filePath, content,
-                    StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+            Path filePath = folderPath.resolve(finalName);
+            Files.writeString(filePath, content, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 
             System.out.println("Report saved: " + filePath.toAbsolutePath());
 
-            // Log entry in RunLog.md
-            logReportGeneration(finalName);
+            logReportGeneration(subfolder, finalName);
 
         } catch (IOException e) {
             System.out.println("Failed to write report: " + e.getMessage());
@@ -72,19 +69,17 @@ public class ReportManager {
     }
 
     /**
-     * Appends an entry to RunLog.md to track report generation history.
+     * Logs report generation info inside its subfolder RunLog.md
      */
-    private static void logReportGeneration(String filename) {
+    private static void logReportGeneration(String subfolder, String filename) {
         try {
-            Path logPath = Paths.get(REPORT_FOLDER, "RunLog.md");
+            Path logPath = Paths.get(REPORT_FOLDER, subfolder, "RunLog.md");
             String timestamp = LocalDateTime.now()
                     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
-            String logEntry = String.format("- %s — generated **%s**%n", timestamp, filename);
+            String logEntry = String.format("- %s — generated %s%n", timestamp, filename);
 
-            Files.writeString(logPath, logEntry,
-                    StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-
+            Files.writeString(logPath, logEntry, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
         } catch (IOException e) {
             System.out.println("Failed to update RunLog.md: " + e.getMessage());
         }

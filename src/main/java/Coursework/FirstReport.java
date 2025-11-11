@@ -9,10 +9,6 @@ public class FirstReport {
         this.c = c;
     }
 
-    /**
-     * Query: show all the countries in the world ordered by population
-     * (largest to smallest).
-     */
     public void showCountriesByPopulation() {
         try {
             Statement stmt = c.getConnection().createStatement();
@@ -20,40 +16,25 @@ public class FirstReport {
                     "FROM country ORDER BY Population DESC;";
             ResultSet rset = stmt.executeQuery(sql);
 
-            // Print header in console
-            System.out.println("\nAll countries in the world (largest to smallest population):\n");
-            System.out.printf("%-5s %-45s %-20s %-25s %-15s%n",
-                    "Code", "Name", "Continent", "Region", "Population");
-            System.out.println("=".repeat(115));
-
-            // Create a StringBuilder for Markdown output
             StringBuilder md = new StringBuilder();
-            md.append("# All the countries in the world organised by largest population to smallest\n\n");
+            md.append("# All the countries in the world organised by population\n\n");
             md.append("| Code | Name | Continent | Region | Population |\n");
             md.append("|------|------|------------|---------|-------------|\n");
 
-            // Loop through results
             while (rset.next()) {
-                String code = rset.getString("Code");
-                String name = rset.getString("Name");
-                String continent = rset.getString("Continent");
-                String region = rset.getString("Region");
-                int population = rset.getInt("Population");
-
-                // Print to console
-                System.out.printf("%-5s %-45s %-20s %-25s %-15d%n",
-                        code, name, continent, region, population);
-
-                // Add to markdown
                 md.append(String.format("| %s | %s | %s | %s | %d |\n",
-                        code, name, continent, region, population));
+                        rset.getString("Code"),
+                        rset.getString("Name"),
+                        rset.getString("Continent"),
+                        rset.getString("Region"),
+                        rset.getInt("Population")));
             }
 
-            // Save to file using ReportManager
-            ReportManager.writeMarkdown("FirstReport.md", md.toString());
+            ReportManager.writeMarkdown("1_FirstReport", "FirstReport.md", md.toString());
+            System.out.println("First report completed.");
 
         } catch (Exception e) {
-            System.out.println(" Failed to retrieve countries: " + e.getMessage());
+            System.out.println("Failed to retrieve countries: " + e.getMessage());
         }
     }
 }
