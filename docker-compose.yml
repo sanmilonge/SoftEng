@@ -9,7 +9,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: world
     ports:
-      - "3306:3306"   # host:container
+      - "33060:3306"   # host:container
     volumes:
       - db_data:/var/lib/mysql
 

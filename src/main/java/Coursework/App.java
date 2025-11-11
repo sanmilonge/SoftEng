@@ -10,10 +10,14 @@ public class App {
 
         // Defaults for local debugging (DB exposed on localhost:33060)
         if (args.length < 2) {
-            db.connect();
+            db.connect("localhost:33060", 30000);
+        } else {
+            db.connect(args[0], Integer.parseInt(args[1]));
         }
+
         fr.showCountriesByPopulation();
         sr.showCitiesByPopulation();
 
         db.disconnect();
-    }}
+    }
+}

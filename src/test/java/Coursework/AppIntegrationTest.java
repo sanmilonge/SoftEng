@@ -41,7 +41,7 @@ public class AppIntegrationTest {
 
         // Try to connect to the world-db container
         // (port 33060 matches docker-compose / CI workflow config)
-        db.connect();
+        db.connect("localhost:33060", 1000);
 
         // Assert the underlying Java SQL Connection object is actually set up
         assertNotNull(db.getConnection(), "DB connection should be established in @BeforeAll");

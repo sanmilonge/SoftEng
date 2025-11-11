@@ -33,7 +33,7 @@ jobs:
       - name: Run integration tests
         run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
 
-     
+
       - name: Upload Code Coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
