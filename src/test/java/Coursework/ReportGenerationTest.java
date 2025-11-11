@@ -41,7 +41,7 @@ public class ReportGenerationTest {
 
         // Connect to the database on localhost port 3306.
         // The world-db container must be running (via docker-compose or CI workflow).
-        con.connect("localhost:3306", 1000);
+        con.connect();
 
         // Prepare the folder used to store generated reports.
         ReportManager.prepareReportFolder();
