@@ -1,10 +1,9 @@
+FROM maven:3.9.9-amazoncorretto-17 AS builder
+WORKDIR /build
+COPY . .
+RUN mvn clean package -DskipTests
+
 FROM amazoncorretto:17
-
-# Working directory
 WORKDIR /app
-
-# Copy packaged JAR (the one built by Maven)
-COPY ./target/devops.jar /app/devops.jar
-
-# Run the app (connect to db container on port 3306, delay 30s)
+COPY --from=builder /build/target/devops.jar /app/devops.jar
 ENTRYPOINT ["java", "-jar", "devops.jar", "db:3306", "30000"]
