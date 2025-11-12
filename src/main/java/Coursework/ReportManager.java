@@ -5,27 +5,33 @@ import java.nio.file.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * Handles creation, cleanup, and writing of report files.
- * Automatically manages report folders and timestamps.
- * Maintains a global RunLog.md in the main reports folder.
- */
 public class ReportManager {
 
-    // Base folder for all generated reports
-    private static final String REPORT_FOLDER = "src/main/resources/reports";
+    private static final String BASE_REPORT_FOLDER = "src/main/resources/reports";
+
+    // Determine active report folder (can be overridden in tests)
+    private static final String REPORT_FOLDER =
+            System.getProperty("report.folder", BASE_REPORT_FOLDER);
 
     /**
-     * Prepares the base reports folder by deleting old files/folders
-     * and recreating it cleanly.
+     * Prepare (and if needed, clear) the current report folder.
+     * Does NOT delete production folders like 1_, 3_, 7_.
      */
     public static void prepareReportFolder() {
         try {
             Path folderPath = Paths.get(REPORT_FOLDER);
 
+            // If we're working in the main "reports" folder, never delete production data
+            if (folderPath.endsWith("reports")) {
+                Files.createDirectories(folderPath);
+                System.out.println("Preserving production report folders: " + folderPath.toAbsolutePath());
+                return;
+            }
+
+            // Otherwise clear test folder only
             if (Files.exists(folderPath)) {
                 Files.walk(folderPath)
-                        .sorted((a, b) -> b.compareTo(a)) // delete children before parents
+                        .sorted((a, b) -> b.compareTo(a))
                         .forEach(path -> {
                             try {
                                 Files.deleteIfExists(path);
@@ -36,7 +42,7 @@ public class ReportManager {
             }
 
             Files.createDirectories(folderPath);
-            System.out.println("Report folder ready: " + folderPath.toAbsolutePath());
+            System.out.println("Test report folder ready: " + folderPath.toAbsolutePath());
 
         } catch (IOException e) {
             System.out.println("Error preparing report folder: " + e.getMessage());
@@ -44,53 +50,40 @@ public class ReportManager {
     }
 
     /**
-     * Writes a Markdown file into a specific subfolder, with timestamped filenames.
-     *
-     * @param subfolder    Subdirectory (e.g., "1_FirstReport")
-     * @param baseFilename Report filename (e.g., "FirstReport.md")
-     * @param content      Markdown content to write
+     * Write markdown to a subfolder, automatically placing it under
+     * either /reports or /reports/TestReports based on current mode.
      */
     public static void writeMarkdown(String subfolder, String baseFilename, String content) {
         try {
             String timestamp = LocalDateTime.now()
                     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm"));
-
             String nameWithoutExt = baseFilename.replace(".md", "");
             String finalName = nameWithoutExt + "_" + timestamp + ".md";
 
-            // Create the subfolder for this report
-            Path folderPath = Paths.get(REPORT_FOLDER, subfolder);
+            // Normalize subfolder path so “TestReports” doesn’t get duplicated
+            Path folderPath = Paths.get(REPORT_FOLDER).resolve(subfolder).normalize();
             Files.createDirectories(folderPath);
 
-            // Write the markdown file inside its subfolder
             Path filePath = folderPath.resolve(finalName);
             Files.writeString(filePath, content, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 
             System.out.println("Report saved: " + filePath.toAbsolutePath());
 
-            // Log the generation globally
-            logReportGeneration(subfolder, finalName);
+            logReportGeneration(finalName);
 
         } catch (IOException e) {
             System.out.println("Failed to write report: " + e.getMessage());
         }
     }
 
-    /**
-     * Logs report generation info inside the global RunLog.md in the main reports folder.
-     */
-    private static void logReportGeneration(String subfolder, String filename) {
+    private static void logReportGeneration(String filename) {
         try {
             Path logPath = Paths.get(REPORT_FOLDER, "RunLog.md");
             String timestamp = LocalDateTime.now()
                     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            String logEntry = String.format("- %s — generated *%s*%n", timestamp, filename);
 
-            String logEntry = String.format("- %s — generated %s in folder %s%n",
-                    timestamp, filename, subfolder);
-
-            Files.writeString(logPath, logEntry,
-                    StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-
+            Files.writeString(logPath, logEntry, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
         } catch (IOException e) {
             System.out.println("Failed to update RunLog.md: " + e.getMessage());
         }

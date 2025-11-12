@@ -8,77 +8,47 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * ReportManagerTest
- * -----------------
- * Unit test for the ReportManager class.
- *
- * What it checks:
- * 1. That the reports folder exists after preparation.
- * 2. That ReportManager.writeMarkdown() creates a new markdown file
- *    with a timestamp in its filename, inside a specific subfolder.
- * 3. That RunLog.md is created/updated when a report is generated.
- */
 class ReportManagerTest {
 
-    // Path to the directory where reports should be written
-    static Path outDir;
+    static Path testDir;
 
-    /**
-     * Runs once before all tests.
-     * It sets up the reports folder so every test starts clean.
-     */
     @BeforeAll
     static void setUp() throws Exception {
-        // Define the output folder (same as used in ReportManager)
-        outDir = Paths.get("src", "main", "resources", "reports");
+        // Force ReportManager to use this folder for testing
+        System.setProperty("report.folder", "src/main/resources/reports/TestReports");
 
-        // Prepare the folder (ReportManager deletes old files + recreates it)
-        ReportManager.prepareReportFolder();
-
-        // Verify that the folder actually exists before running tests
-        assertTrue(Files.exists(outDir), "Report folder should exist");
+        testDir = Paths.get("src", "main", "resources", "reports", "TestReports");
+        if (Files.exists(testDir)) {
+            Files.walk(testDir)
+                    .sorted((a, b) -> b.compareTo(a))
+                    .forEach(path -> {
+                        try {
+                            Files.deleteIfExists(path);
+                        } catch (Exception ignored) {}
+                    });
+        }
+        Files.createDirectories(testDir);
     }
 
-    /**
-     * Test: writeMarkdown_createsTimestampedFile_andUpdatesLog
-     * ---------------------------------------------------------
-     * Checks that calling writeMarkdown() successfully:
-     * 1. Creates a file named JUnitReport_YYYY-MM-dd_HH-mm.md
-     *    inside the "TestReports" subfolder.
-     * 2. Updates (or creates) RunLog.md to record the report generation.
-     */
     @Test
     void writeMarkdown_createsTimestampedFile_andUpdatesLog() throws Exception {
-        // Define a base filename (ReportManager will add a timestamp)
-        String base = "JUnitReport.md";
+        // Write the markdown directly into TestReports (no extra nesting)
+        ReportManager.writeMarkdown("", "JUnitReport.md", "# hello\ncontent");
 
-        // Create a new markdown report in its own subfolder
-        ReportManager.writeMarkdown("TestReports", "JUnitReport.md", "Test content");
-
-        // Path to the subfolder
-        Path testSubfolder = outDir.resolve("TestReports");
-
-        // AtomicBoolean allows modification inside lambda
         AtomicBoolean found = new AtomicBoolean(false);
-
-        // Walk through all files in the reports/TestReports folder
-        try (var stream = Files.walk(testSubfolder)) {
+        try (var stream = Files.walk(testDir)) {
             stream.filter(Files::isRegularFile).forEach(p -> {
                 String n = p.getFileName().toString();
-                // Look for something like "JUnitReport_2025-11-10_02-15.md"
                 if (n.startsWith("JUnitReport_") && n.endsWith(".md")) {
                     found.set(true);
                 }
             });
         }
 
-        // Assert that a timestamped markdown file was created
-        assertTrue(found.get(),
-                "A timestamped markdown file should be created (JUnitReport_*.md)");
+        assertTrue(found.get(), "JUnitReport_*.md should be created inside TestReports");
 
-        // Assert that RunLog.md exists — meaning report generation was logged
-        assertTrue(Files.exists(outDir.resolve("RunLog.md")),
-                "RunLog.md should be created/updated after writing report");
+        // Verify that the RunLog.md is also written in the same folder
+        Path logPath = testDir.resolve("RunLog.md");
+        assertTrue(Files.exists(logPath), "RunLog.md should exist in TestReports folder");
     }
 }
