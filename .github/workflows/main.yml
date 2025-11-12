@@ -9,11 +9,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
-          java-version: '17'          # matches your local run in screenshot
+          java-version: '17'
           distribution: 'temurin'
       - name: Run unit tests
-        run: mvn -Dtest=Coursework.AppTest test
-        # or run them all: mvn test
+        run: mvn -Dtest=Coursework.AppTest,Coursework.ReportManagerTest test
 
   IntegrationTests:
     name: Integration Tests (world-db)
@@ -32,7 +31,16 @@ jobs:
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
       - name: Run integration tests
-        run: mvn -Dtest=Coursework.AppIntegrationTest test
+        run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
+
+
+      - name: Upload Code Coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          directory: ./target/site/jacoco
+          verbose: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Stop & clean DB container
         if: always()
@@ -53,4 +61,26 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
       - name: Compose up (exit when app exits)
-        run: docker compose up --abort-on-container-e
+        run: docker compose up --abort-on-container-exit
+
+  AutoGenerateReports:
+    name: Generate and Upload Reports
+    runs-on: ubuntu-22.04
+    needs: [BuildCompose]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run app to generate reports
+        run: |
+          mvn package -DskipTests
+          docker compose up --abort-on-container-exit --build
+
+      - name: Upload Generated Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: Generated_Reports
+          path: src/main/resources/reports/
