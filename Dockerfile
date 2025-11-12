@@ -1,15 +1,9 @@
-#FROM openjdk:latest
-#COPY ./target/classes/Coursework /tmp/Coursework
-#WORKDIR /tmp
-#ENTRYPOINT ["java", "Coursework.App"]
+FROM maven:3.9.9-amazoncorretto-17 AS builder
+WORKDIR /build
+COPY . .
+RUN mvn clean package -DskipTests
 
 FROM amazoncorretto:17
-
-# Set working directory
 WORKDIR /app
-
-# Copy the packaged JAR (includes dependencies)
-COPY target/Coursework-2.0-SNAPSHOT-jar-with-dependencies.jar app.jar
-
-# Run the JAR
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY --from=builder /build/target/devops.jar /app/devops.jar
+ENTRYPOINT ["java", "-jar", "devops.jar", "db:3306", "30000"]
