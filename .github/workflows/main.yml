@@ -52,28 +52,28 @@ jobs:
     name: Build app with docker-compose
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      # build the JAR first
-      - name: Package app
-        run: mvn -B -DskipTests package
-
-      # confirm JAR exists before docker build
-      - name: Verify JAR built
-        run: ls -lh target/
-
-    
-      - name: Allow target folder in Docker context
+      - name: Show Docker info
         run: |
-          echo "!target/*.jar" >> .dockerignore
+          docker --version
+          docker compose version
 
-      # bring up containers
       - name: Compose up (exit when app exits)
         run: docker compose up --abort-on-container-exit --build
+
+      - name: Cleanup containers
+        if: always()
+        run: |
+          docker compose down --volumes --remove-orphans
+          docker system prune -af
 
   AutoGenerateReports:
     name: Generate and Upload Reports
@@ -87,10 +87,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Run app to generate reports
-        run: |
-          mvn package -DskipTests
-          echo "!target/*.jar" >> .dockerignore
-          docker compose up --abort-on-container-exit --build
+        run: docker compose up --abort-on-container-exit --build
 
       - name: Upload Generated Reports
         uses: actions/upload-artifact@v4
