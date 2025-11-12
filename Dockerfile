@@ -1,15 +1,11 @@
-#FROM openjdk:latest
-#COPY ./target/classes/Coursework /tmp/Coursework
-#WORKDIR /tmp
-#ENTRYPOINT ["java", "Coursework.App"]
+FROM amazoncorretto:17
 
-FROM openjdk:17-jdk-slim
-
-# Set working directory
+# Working directory
 WORKDIR /app
 
-# Copy the packaged JAR (includes dependencies)
-COPY target/Coursework-2.0-SNAPSHOT-jar-with-dependencies.jar app.jar
+# Copy packaged JAR (the one built by Maven)
+COPY ./target/devops.jar /app/devops.jar
 
-# Run the JAR
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the app (connect to db container on port 3306, delay 30s)
+ENTRYPOINT ["java", "-jar", "devops.jar", "db:3306", "30000"]
+
