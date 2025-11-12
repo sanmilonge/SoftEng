@@ -24,15 +24,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Spin up the world DB container from your db/ folder
       - name: Build DB image
         run: docker build -t worlddb ./db
+
       - name: Run DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
       - name: Run integration tests
         run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
-
 
       - name: Upload Code Coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -58,10 +57,23 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+
+      # build the JAR first
       - name: Package app
-        run: mvn package -DskipTests
+        run: mvn -B -DskipTests package
+
+      # confirm JAR exists before docker build
+      - name: Verify JAR built
+        run: ls -lh target/
+
+    
+      - name: Allow target folder in Docker context
+        run: |
+          echo "!target/*.jar" >> .dockerignore
+
+      # bring up containers
       - name: Compose up (exit when app exits)
-        run: docker compose up --abort-on-container-exit
+        run: docker compose up --abort-on-container-exit --build
 
   AutoGenerateReports:
     name: Generate and Upload Reports
@@ -77,6 +89,7 @@ jobs:
       - name: Run app to generate reports
         run: |
           mvn package -DskipTests
+          echo "!target/*.jar" >> .dockerignore
           docker compose up --abort-on-container-exit --build
 
       - name: Upload Generated Reports
