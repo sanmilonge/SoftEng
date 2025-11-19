@@ -1,0 +1,52 @@
+package Coursework;
+
+import java.sql.*;
+
+public class TwentyFourthReport {
+    private final Connection c;
+
+    public TwentyFourthReport(Connection c) {
+        this.c = c;
+    }
+
+    public void showRegionPopulationSummary() {
+        try {
+            Statement stmt = c.getConnection().createStatement();
+
+            String sql =
+                    "SELECT " +
+                            "    country.Region AS Region, " +
+                            "    SUM(country.Population) AS TotalPopulation, " +
+                            "    SUM(city.Population) AS CityPopulation, " +
+                            "    (SUM(country.Population) - SUM(city.Population)) AS NonCityPopulation " +
+                            "FROM country " +
+                            "LEFT JOIN city ON country.Code = city.CountryCode " +
+                            "GROUP BY country.Region " +
+                            "ORDER BY TotalPopulation DESC;";
+
+            ResultSet rset = stmt.executeQuery(sql);
+
+            StringBuilder md = new StringBuilder();
+            md.append("# Population Summary for Each Region\n\n");
+            md.append("| Region | Total Population | Population in Cities | Population Not in Cities |\n");
+            md.append("|--------|------------------|-----------------------|----------------------------|\n");
+
+            while (rset.next()) {
+                md.append(String.format("| %s | %d | %d | %d |\n",
+                        rset.getString("Region"),
+                        rset.getLong("TotalPopulation"),
+                        rset.getLong("CityPopulation"),
+                        rset.getLong("NonCityPopulation")));
+            }
+
+            ReportManager.writeMarkdown("24_TwentyFourthReport",
+                    "TwentyFourthReport.md",
+                    md.toString());
+
+            System.out.println("Twenty-fourth report completed.");
+
+        } catch (Exception e) {
+            System.out.println("Failed to generate region population summary: " + e.getMessage());
+        }
+    }
+}
