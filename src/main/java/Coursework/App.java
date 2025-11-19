@@ -5,9 +5,10 @@ public class App {
         ReportManager.prepareReportFolder();
 
         Connection con = new Connection();
-        FirstReport fr = new FirstReport(con);
-        ThirdReport tr = new ThirdReport(con);
-        SeventhReport sr = new SeventhReport(con);
+        FirstReport f1r = new FirstReport(con);
+        SecondReport s2r = new SecondReport(con);
+        ThirdReport t3r = new ThirdReport(con);
+        SeventhReport s7r = new SeventhReport(con);
 
 
         // Defaults for local debugging (DB exposed on localhost:33060)
@@ -17,9 +18,11 @@ public class App {
             con.connect(args[0], Integer.parseInt(args[1]));
         }
 
-        fr.showCountriesByPopulation();
-        sr.showCitiesByPopulation();
-        tr.showCountriesByRegion();
+        f1r.showCountriesByPopulation();
+        s2r.showCountriesContinent();
+        t3r.showCountriesByRegion();
+        s7r.showCitiesByPopulation();
+
 
         con.disconnect();
     }
