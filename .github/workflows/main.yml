@@ -3,7 +3,7 @@ on: push
 
 permissions:
   contents: write
-
+# write permissions
 jobs:
   UnitTests:
     name: Unit Tests
