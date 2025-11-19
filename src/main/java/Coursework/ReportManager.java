@@ -7,7 +7,8 @@ import java.time.format.DateTimeFormatter;
 
 public class ReportManager {
 
-    private static final String REPORTS_ROOT = "src/main/resources/reports";
+    private static final String REPORTS_ROOT =
+            System.getProperty("report.folder", "src/main/resources/reports");
 
     /**
      * Called at the start of the app.
