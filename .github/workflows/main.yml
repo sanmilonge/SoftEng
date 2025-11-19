@@ -24,14 +24,15 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      # Spin up the world DB container from your db/ folder
       - name: Build DB image
         run: docker build -t worlddb ./db
-
       - name: Run DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
       - name: Run integration tests
         run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
+
 
       - name: Upload Code Coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -52,28 +53,15 @@ jobs:
     name: Build app with docker-compose
     runs-on: ubuntu-22.04
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-
-      - name: Show Docker info
-        run: |
-          docker --version
-          docker compose version
-
+      - name: Package app
+        run: mvn package -DskipTests
       - name: Compose up (exit when app exits)
-        run: docker compose up --abort-on-container-exit --build
-
-      - name: Cleanup containers
-        if: always()
-        run: |
-          docker compose down --volumes --remove-orphans
-          docker system prune -af
+        run: docker compose up --abort-on-container-exit
 
   AutoGenerateReports:
     name: Generate and Upload Reports
@@ -87,7 +75,9 @@ jobs:
           distribution: 'temurin'
 
       - name: Run app to generate reports
-        run: docker compose up --abort-on-container-exit --build
+        run: |
+          mvn package -DskipTests
+          docker compose up --abort-on-container-exit --build
 
       - name: Upload Generated Reports
         uses: actions/upload-artifact@v4
