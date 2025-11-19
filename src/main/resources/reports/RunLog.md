@@ -54,3 +54,30 @@
 - 2025-11-19 00:14:51 — generated *Micronesia_2025-11-19_00-14.md*
 - 2025-11-19 00:14:51 — generated *British Islands_2025-11-19_00-14.md*
 - 2025-11-19 00:14:51 — generated *Micronesia_Caribbean_2025-11-19_00-14.md*
+- 2025-11-19 00:28:54 — generated *FirstReport_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *SeventhReport_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Caribbean_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Southern and Central Asia_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Central Africa_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Southern Europe_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Middle East_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *South America_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Polynesia_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Antarctica_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Australia and New Zealand_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Western Europe_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Eastern Africa_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Western Africa_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Eastern Europe_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Central America_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *North America_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Southeast Asia_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Southern Africa_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Eastern Asia_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Nordic Countries_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Northern Africa_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Baltic Countries_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Melanesia_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Micronesia_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *British Islands_2025-11-19_00-28.md*
+- 2025-11-19 00:28:54 — generated *Micronesia_Caribbean_2025-11-19_00-28.md*
