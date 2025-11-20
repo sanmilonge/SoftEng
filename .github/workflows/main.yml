@@ -26,7 +26,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # CLEAN UP ANY LEFTOVER CONTAINERS TO AVOID PORT CONFLICTS
+      # Clean up any leftover containers to avoid "port already in use" errors
       - name: Kill old containers
         run: |
           docker rm -f $(docker ps -aq) || true
@@ -34,9 +34,9 @@ jobs:
       - name: Build DB image
         run: docker build -t worlddb ./db
 
-      # USE A UNIQUE PORT TO AVOID BIND ERRORS
+      # IMPORTANT: Use the SAME port used by your docker-compose.yml and tests
       - name: Run DB container
-        run: docker run -d --name world-db -p 13306:3306 worlddb
+        run: docker run -d --name world-db -p 33060:3306 worlddb
 
       - name: Run integration tests
         run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
@@ -69,7 +69,7 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
-      # NON-INTERACTIVE RUN FOR CI - FEEDS ALL 5 INPUTS
+      # Feed all 5 required inputs to avoid Scanner crashes in CI
       - name: Run app non-interactively (CI only)
         run: |
           echo -e "10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
