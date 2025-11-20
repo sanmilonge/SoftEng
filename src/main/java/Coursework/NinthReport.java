@@ -1,35 +1,34 @@
-
 /**
- * As a data analyst, I want the system to produce a report of all cities in a continent
- * ordered by population from largest to smallest so that I can study urban concentration
- * at the continental level */
+ * As a Data Analyst I want the system to produce a report of all cities in a
+ * region ordered by population from largest to smallest so that I can study
+ * urban concentration at the regional level.*/
 
 package Coursework;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
- *Eighth Report
+ * NinthReport
  * ------------
- * Generates per-continent Markdown reports of cities by population.
+ * Generates per-region Markdown reports of cities by population.
  */
-public class EighthReport {
+public class NinthReport {
     private final Connection c;
 
-    public EighthReport(Connection c) {
+    public NinthReport(Connection c) {
         this.c = c;
     }
 
-
-    public void showCitiesContinent() {
+    public void showCitiesByRegion() {
         GetAll helper = new GetAll(c);
-        List<String> continents = helper.getAllContinents();
-        String subfolder = "8_EighthReport";
+        List<String> regions = helper.getAllRegions();
+        String subfolder = "9_NinthReport";
 
-        for (String continent : continents) {
+        for (String region : regions) {
             StringBuilder md = new StringBuilder();
-            md.append("# Cities in ").append(continent).append("\n\n");
+            md.append("# Cities in ").append(region).append("\n\n");
             md.append("| City | Country | District | Population |\n");
             md.append("|------|----------|-----------|-------------|\n");
 
@@ -42,10 +41,10 @@ public class EighthReport {
                                      FROM city
                                      JOIN country
                                      ON city.CountryCode =country.Code
-                                     WHERE country.Continent = ?
+                                     WHERE country.Region = ?
                                      ORDER BY city.Population DESC;""";
                 PreparedStatement pstmt = c.getConnection().prepareStatement(query);
-                pstmt.setString(1, continent);
+                pstmt.setString(1, region);
                 ResultSet rset = pstmt.executeQuery();
 
                 while (rset.next()) {
@@ -56,21 +55,19 @@ public class EighthReport {
                             rset.getInt("Population")));
                 }
 
-                String safeContinentName = continent.replaceAll("[^a-zA-Z0-9\\-_ ]", "_");
-                ReportManager.writeMarkdown(subfolder, safeContinentName + ".md", md.toString());
+                String safeRegionName = region.replaceAll("[^a-zA-Z0-9\\-_ ]", "_");
+                ReportManager.writeMarkdown(subfolder, safeRegionName + ".md", md.toString());
 
-                System.out.println("Report saved for continent: " + continent);
+                System.out.println("Report saved for region: " + region);
 
                 rset.close();
                 pstmt.close();
 
             } catch (SQLException e) {
-                System.out.println("Failed to create report for continent " + continent + ": " + e.getMessage());
+                System.out.println("Failed to create report for region " + region + ": " + e.getMessage());
             }
         }
 
-        System.out.println("All reports for cities grouped by continents have been generated successfully in " + subfolder);
+        System.out.println("All regional reports generated successfully in " + subfolder);
     }
 }
-
-

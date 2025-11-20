@@ -7,10 +7,17 @@ import java.time.format.DateTimeFormatter;
 
 public class ReportManager {
 
+    /**
+     * Always resolves the report folder dynamically.
+     * Tests override report.folder → production does not.
+     */
     private static String getReportRoot() {
         return System.getProperty("report.folder", "src/main/resources/reports");
     }
 
+    /**
+     * Deletes all report subfolders EXCEPT RunLog.md.
+     */
     public static void prepareReportFolder() {
         Path root = Paths.get(getReportRoot());
 
@@ -35,10 +42,13 @@ public class ReportManager {
         }
     }
 
+    /**
+     * Recursively deletes folder.
+     */
     private static void deleteFolder(Path folder) {
         try {
             Files.walk(folder)
-                    .sorted((a, b) -> b.compareTo(a))
+                    .sorted((a, b) -> b.compareTo(a))   // delete children first
                     .forEach(path -> {
                         try {
                             Files.deleteIfExists(path);
@@ -51,6 +61,9 @@ public class ReportManager {
         }
     }
 
+    /**
+     * Writes a timestamped markdown file into its subfolder.
+     */
     public static void writeMarkdown(String subfolder, String baseFilename, String content) {
         try {
             String timestamp = LocalDateTime.now()
@@ -80,14 +93,20 @@ public class ReportManager {
         }
     }
 
+    /**
+     * Appends a line to RunLog.md showing which report was generated.
+     */
     private static void logReportGeneration(String subfolder, String filename) {
         try {
             Path logPath = Paths.get(getReportRoot(), "RunLog.md");
+
             String timestamp = LocalDateTime.now()
                     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
-            String logEntry = String.format("- %s — [%s] generated %s%n",
-                    timestamp, subfolder, filename);
+            String logEntry = String.format(
+                    "- %s — [%s] generated %s%n",
+                    timestamp, subfolder, filename
+            );
 
             Files.writeString(
                     logPath,

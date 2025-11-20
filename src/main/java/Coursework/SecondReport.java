@@ -1,7 +1,7 @@
 /**
- * As a data analyst, I want the system to produce a report of all countries
- * in a specific region ordered by population from largest to smallest so that
- * I can identify the most and least populated regions*/
+ *As a data analyst, I want the system to produce a report of all countries
+ * in a selected continent ordered by population (largest to smallest) so
+ * that I can analyse population distribution within that continent*/
 
 package Coursework;
 
