@@ -1,6 +1,18 @@
+/**
+ * As a data analyst, I want the system to produce a report of all
+ * cities in the world ordered by population from largest to smallest
+ * so that I can understand global urbanization patterns*/
+
 package Coursework;
 
 import java.sql.*;
+
+/**
+ * SeventhReport
+ * ------------
+ * Generates Markdown report of cities by population.
+ * Uses ReportManager to correctly handle normal and test report paths.
+ */
 
 public class SeventhReport {
     private final Connection c;

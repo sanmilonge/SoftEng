@@ -13,7 +13,7 @@ public class ReportManager {
     /**
      * Called at the start of the app.
      * Deletes every report subfolder (1_FirstReport, 2_SecondReport, etc)
-     * but keeps RunLog.md untouched.
+     * keeps RunLog.md untouched.
      */
     public static void prepareReportFolder() {
         Path root = Paths.get(REPORTS_ROOT);

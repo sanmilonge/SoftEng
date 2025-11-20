@@ -1,5 +1,6 @@
 package Coursework;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.nio.file.*;
@@ -12,6 +13,11 @@ import static org.junit.jupiter.api.Assertions.*;
  * Uses the TestReports folder so production reports are never touched.
  */
 class ReportManagerTest extends ReportTestSupport {
+    @BeforeEach
+    void resetFolder() {
+        System.clearProperty("report.folder");
+    }
+
 
     @Test
     void prepareReportFolder_deletesSubfoldersButPreservesRunLog() throws Exception {

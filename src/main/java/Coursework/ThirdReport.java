@@ -1,3 +1,8 @@
+/**
+ * As a data analyst, I want the system to produce a report of all countries
+ * in a specific region ordered by population from largest to smallest so that
+ * I can identify the most and least populated regions */
+
 package Coursework;
 
 import java.sql.*;
@@ -17,29 +22,9 @@ public class ThirdReport {
         this.c = c;
     }
 
-    private List<String> getAllRegions() {
-        List<String> regions = new ArrayList<>();
-        try {
-            String query = "SELECT DISTINCT Region FROM country;";
-            Statement stmt = c.getConnection().createStatement();
-            ResultSet rslt = stmt.executeQuery(query);
-
-            while (rslt.next()) {
-                String region = rslt.getString("Region");
-                if (region != null && !region.trim().isEmpty()) {
-                    regions.add(region.trim());
-                }
-            }
-            rslt.close();
-            stmt.close();
-        } catch (Exception e) {
-            System.out.println("Failed to retrieve regions: " + e.getMessage());
-        }
-        return regions;
-    }
-
     public void showCountriesByRegion() {
-        List<String> regions = getAllRegions();
+        GetAll helper = new GetAll(c);
+        List<String> regions = helper.getAllRegions();
         String subfolder = "3_ThirdReport";
 
         for (String region : regions) {
