@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *Second Report (test)
+ *Second Report
  * ------------
  * Generates per-continent Markdown reports of countries by population.
  */
