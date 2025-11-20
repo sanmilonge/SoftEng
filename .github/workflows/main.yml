@@ -26,10 +26,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      # CLEAN UP ANY LEFTOVER CONTAINERS TO AVOID PORT CONFLICTS
+      - name: Kill old containers
+        run: |
+          docker rm -f $(docker ps -aq) || true
+
       - name: Build DB image
         run: docker build -t worlddb ./db
+
+      # USE A UNIQUE PORT TO AVOID BIND ERRORS
       - name: Run DB container
-        run: docker run -d --name world-db -p 33060:3306 worlddb
+        run: docker run -d --name world-db -p 13306:3306 worlddb
 
       - name: Run integration tests
         run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
@@ -62,13 +69,13 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
-      # ⚠️ FIX: Non-interactive input for CI (5 inputs total)
+      # NON-INTERACTIVE RUN FOR CI - FEEDS ALL 5 INPUTS
       - name: Run app non-interactively (CI only)
         run: |
           echo -e "10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
 
       - name: Stop services
-        run: docker compose down
+        run: docker compose down || true
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
