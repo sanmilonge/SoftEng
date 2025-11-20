@@ -65,13 +65,16 @@ jobs:
       - name: Compose up (exit when app exits)
         run: docker compose up --abort-on-container-exit
       - name: Deploy JAR to GitHub Releases
+      - name: Publish Release (master only)
+        if: github.ref == 'refs/heads/master'
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           automatic_release_tag: "latest"
           files: |
-            ./target/*.jar  
+            ./target/*.jar
+
   AutoGenerateReports:
     name: Generate and Upload Reports
     runs-on: ubuntu-22.04
