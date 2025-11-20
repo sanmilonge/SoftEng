@@ -3,7 +3,6 @@ on: push
 permissions:
   contents: write
 
-
 jobs:
   UnitTests:
     name: Unit Tests
@@ -27,7 +26,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Spin up the world DB container from your db/ folder
       - name: Build DB image
         run: docker build -t worlddb ./db
       - name: Run DB container
@@ -35,7 +33,6 @@ jobs:
 
       - name: Run integration tests
         run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
-
 
       - name: Upload Code Coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -61,10 +58,18 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+
       - name: Package app
         run: mvn package -DskipTests
-      - name: Compose up (exit when app exits)
-        run: docker compose up --abort-on-container-exit
+
+      # ⚠️ FIX: run app with automatic input to avoid Scanner crash
+      - name: Run app non-interactively (CI only)
+        run: |
+          echo "10" | docker compose run --rm app
+
+      - name: Stop services
+        run: docker compose down
+
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
