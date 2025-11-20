@@ -62,10 +62,10 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
-      # ⚠️ FIX: run app with automatic input to avoid Scanner crash
+      # ⚠️ FIX: Non-interactive input for CI (5 inputs total)
       - name: Run app non-interactively (CI only)
         run: |
-          echo "10" | docker compose run --rm app
+          echo -e "10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
 
       - name: Stop services
         run: docker compose down
