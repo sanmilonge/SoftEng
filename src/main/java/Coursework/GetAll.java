@@ -75,4 +75,24 @@ public class GetAll {
         }
         return countries;
     }
+
+    public List<String> getAllDistricts() {
+        List<String> districts = new ArrayList<>();
+        try {
+            String query = "SELECT DISTINCT District  FROM city;";
+            Statement stmt = c.getConnection().createStatement();
+            ResultSet rslt = stmt.executeQuery(query);
+
+            while (rslt.next()) {
+                String district = rslt.getString("District");
+                if (district != null && !district.isEmpty()) {
+                    districts.add(district.trim());
+                }
+            }
+            stmt.close();
+        } catch (Exception e) {
+            System.out.println("Failed to retrieve districts: " + e.getMessage());
+        }
+        return districts;
+    }
 }
