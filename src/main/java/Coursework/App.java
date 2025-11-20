@@ -17,6 +17,7 @@ public class App {
         SeventhReport s7r = new SeventhReport(con);
         EighthReport e8r = new EighthReport(con);
         NinthReport n9r = new NinthReport(con);
+        TenthReport t10r = new TenthReport(con);
 
 
         // Defaults for local debugging (DB exposed on localhost:33060)
@@ -32,7 +33,7 @@ public class App {
         s7r.showCitiesByPopulation();
         e8r.showCitiesContinent();
         n9r.showCitiesByRegion();
-
+        t10r.showCitiesByCountry();
 
         con.disconnect();
     }

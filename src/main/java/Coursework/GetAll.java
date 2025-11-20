@@ -56,4 +56,23 @@ public class GetAll {
         }
         return regions;
     }
+    public List<String> getAllCountries() {
+        List<String> countries = new ArrayList<>();
+        try {
+            String query = "SELECT Name AS Country  FROM country;";
+            Statement stmt = c.getConnection().createStatement();
+            ResultSet rslt = stmt.executeQuery(query);
+
+            while (rslt.next()) {
+                String country = rslt.getString("Country");
+                if (country != null && !country.isEmpty()) {
+                    countries.add(country.trim());
+                }
+            }
+            stmt.close();
+        } catch (Exception e) {
+            System.out.println("Failed to retrieve countries: " + e.getMessage());
+        }
+        return countries;
+    }
 }
