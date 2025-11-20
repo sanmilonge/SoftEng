@@ -1,10 +1,19 @@
+/**
+ *As a data analyst, I want the system to produce a report of all countries
+ * in the world ordered by population (largest to smallest) so that I can
+ * compare global population sizes */
+
 package Coursework;
 
 import java.sql.*;
 
 public class FirstReport {
     private final Connection c;
-
+    /**
+     *First Report
+     * ------------
+     * Generates Markdown report of countries by population.
+     */
     public FirstReport(Connection c) {
         this.c = c;
     }

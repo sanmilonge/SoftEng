@@ -1,13 +1,18 @@
+/**
+ * As a data analyst, I want the system to produce a report of all countries
+ * in a specific region ordered by population from largest to smallest so that
+ * I can identify the most and least populated regions*/
+
 package Coursework;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  *Second Reports
  * ------------
- * Generates per-continent Markdown reports of countries by population.
+ * Generates per-continent Markdown report of countries by population.
  */
 public class SecondReport {
     private final Connection c;
@@ -16,29 +21,9 @@ public class SecondReport {
         this.c = c;
     }
 
-    private List<String> getAllContinents() {
-        List<String> continents = new ArrayList<>();
-        try {
-            String query = "SELECT DISTINCT Continent FROM country;";
-            Statement stmt = c.getConnection().createStatement();
-            ResultSet rslt = stmt.executeQuery(query);
-
-            while (rslt.next()) {
-                String continent = rslt.getString("Continent");
-                if (continent != null && !continent.trim().isEmpty()) {
-                    continents.add(continent.trim());
-                }
-            }
-            rslt.close();
-            stmt.close();
-        } catch (Exception e) {
-            System.out.println("Failed to retrieve continents: " + e.getMessage());
-        }
-        return continents;
-    }
-
     public void showCountriesContinent() {
-        List<String> continents = getAllContinents();
+        GetAll helper = new GetAll(c);
+        List<String> continents = helper.getAllContinents();
         String subfolder = "2_SecondReport";
 
         for (String continent : continents) {
