@@ -1,54 +1,63 @@
 package Coursework;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.nio.file.*;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ReportManagerTest {
+/**
+ * Unit tests for ReportManager.
+ * Uses the TestReports folder so production reports are never touched.
+ */
+class ReportManagerTest extends ReportTestSupport {
 
-    static Path testDir;
+    @Test
+    void prepareReportFolder_deletesSubfoldersButPreservesRunLog() throws Exception {
+        Path root = TEST_REPORT_ROOT;
 
-    @BeforeAll
-    static void setUp() throws Exception {
-        // Force ReportManager to use this folder for testing
-        System.setProperty("report.folder", "src/main/resources/reports/TestReports");
+        // Arrange: create dummy subfolders and RunLog.md
+        Path sub1 = root.resolve("1_FirstReport");
+        Path sub2 = root.resolve("2_SecondReport");
+        Files.createDirectories(sub1);
+        Files.createDirectories(sub2);
 
-        testDir = Paths.get("src", "main", "resources", "reports", "TestReports");
-        if (Files.exists(testDir)) {
-            Files.walk(testDir)
-                    .sorted((a, b) -> b.compareTo(a))
-                    .forEach(path -> {
-                        try {
-                            Files.deleteIfExists(path);
-                        } catch (Exception ignored) {}
-                    });
-        }
-        Files.createDirectories(testDir);
+        Path fileInSub1 = sub1.resolve("dummy.md");
+        Files.writeString(fileInSub1, "dummy");
+
+        Path runLog = root.resolve("RunLog.md");
+        Files.writeString(runLog, "existing log line");
+
+        // Act
+        ReportManager.prepareReportFolder();
+
+        // Assert: subfolders removed
+        assertFalse(Files.exists(sub1), "1_FirstReport should be deleted by prepareReportFolder");
+        assertFalse(Files.exists(sub2), "2_SecondReport should be deleted by prepareReportFolder");
+
+        // Assert: RunLog.md preserved
+        assertTrue(Files.exists(runLog), "RunLog.md should be preserved");
+        String logContent = Files.readString(runLog);
+        assertTrue(logContent.contains("existing log line"),
+                "Existing content in RunLog.md should not be removed");
     }
 
     @Test
-    void writeMarkdown_createsTimestampedFile_andUpdatesLog() throws Exception {
-        // Write the markdown directly into TestReports (no extra nesting)
-        ReportManager.writeMarkdown("", "JUnitReport.md", "# hello\ncontent");
+    void writeMarkdown_createsTimestampedFile_andUpdatesRunLog() throws Exception {
+        // Act
+        ReportManager.writeMarkdown("", "JUnitReport.md", "# Hello\ncontent");
 
-        AtomicBoolean found = new AtomicBoolean(false);
-        try (var stream = Files.walk(testDir)) {
-            stream.filter(Files::isRegularFile).forEach(p -> {
-                String n = p.getFileName().toString();
-                if (n.startsWith("JUnitReport_") && n.endsWith(".md")) {
-                    found.set(true);
-                }
-            });
-        }
+        // Assert markdown created in TestReports
+        boolean found = existsReportFile("", "JUnitReport_");
+        assertTrue(found, "A timestamped JUnitReport_*.md file should be created in TestReports");
 
-        assertTrue(found.get(), "JUnitReport_*.md should be created inside TestReports");
+        // Assert RunLog updated
+        Path logPath = TEST_REPORT_ROOT.resolve("RunLog.md");
+        assertTrue(Files.exists(logPath), "RunLog.md should exist after writing a report");
 
-        // Verify that the RunLog.md is also written in the same folder
-        Path logPath = testDir.resolve("RunLog.md");
-        assertTrue(Files.exists(logPath), "RunLog.md should exist in TestReports folder");
+        String log = Files.readString(logPath);
+        assertTrue(log.contains("JUnitReport"),
+                "RunLog.md should contain an entry referencing JUnitReport");
     }
 }
