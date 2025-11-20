@@ -55,7 +55,7 @@ public class App {
         Scanner input = new Scanner(System.in);
 
         // 20th
-        System.out.print("Enter the number of top populated capital cities (N): ");
+        System.out.print("Enter the numbers of top populated capital cities (N): ");
         int n = input.nextInt();
         tr20.showTopNCapitalCities(n);
 
