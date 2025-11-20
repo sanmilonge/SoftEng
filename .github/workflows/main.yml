@@ -1,8 +1,8 @@
 name: Coursework CI
 on: push
-
 permissions:
   contents: write
+
 
 jobs:
   UnitTests:
@@ -51,6 +51,7 @@ jobs:
           docker stop world-db
           docker rm world-db
           docker image rm worlddb
+
   BuildCompose:
     name: Build app with docker-compose
     runs-on: ubuntu-22.04
@@ -64,14 +65,14 @@ jobs:
         run: mvn package -DskipTests
       - name: Compose up (exit when app exits)
         run: docker compose up --abort-on-container-exit
-      - name: Deploy JAR to GitHub Releases
-        uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           automatic_release_tag: "latest"
           files: |
-            ./target/*.jar  
+            ./target/*.jar
+
   AutoGenerateReports:
     name: Generate and Upload Reports
     runs-on: ubuntu-22.04
@@ -87,6 +88,7 @@ jobs:
         run: |
           mvn package -DskipTests
           docker compose up --abort-on-container-exit --build
+
       - name: Upload Generated Reports
         uses: actions/upload-artifact@v4
         with:
