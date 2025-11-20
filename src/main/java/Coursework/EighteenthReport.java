@@ -9,36 +9,49 @@ public class EighteenthReport {
         this.c = c;
     }
 
-    public void showCapitalCitiesInContinent(String continent) {
+    public void showCapitalCitiesInMultipleContinents() {
+
+        String[] continents = {
+                "Asia",
+                "Europe",
+                "Africa",
+                "North America",
+                "South America",
+                "Oceania"
+        };
+
         try {
             Statement stmt = c.getConnection().createStatement();
 
-            String sql =
-                    "SELECT city.Name AS CityName, " +
-                            "       country.Name AS CountryName, " +
-                            "       city.District AS District, " +
-                            "       city.Population AS Population " +
-                            "FROM city " +
-                            "JOIN country ON city.ID = country.Capital " +
-                            "WHERE country.Continent = '" + continent + "' " +
-                            "ORDER BY city.Population DESC;";
-
-            ResultSet rset = stmt.executeQuery(sql);
-
-            // Markdown output
             StringBuilder md = new StringBuilder();
-            md.append("# Capital Cities in ").append(continent)
-                    .append(" (Largest to Smallest Population)\n\n");
+            md.append("# Capital Cities for Multiple Continents (Population DESC)\n\n");
 
-            md.append("| City Name | Country | District | Population |\n");
-            md.append("|-----------|----------|-----------|-------------|\n");
+            for (String continent : continents) {
 
-            while (rset.next()) {
-                md.append(String.format("| %s | %s | %s | %d |\n",
-                        rset.getString("CityName"),
-                        rset.getString("CountryName"),
-                        rset.getString("District"),
-                        rset.getInt("Population")));
+                md.append("## Continent: ").append(continent).append("\n\n");
+
+                md.append("| City Name | Country | Population |\n");
+                md.append("|-----------|----------|-------------|\n");
+
+                String sql =
+                        "SELECT city.Name AS CityName, " +
+                                "       country.Name AS CountryName, " +
+                                "       city.Population AS Population " +
+                                "FROM city " +
+                                "JOIN country ON city.ID = country.Capital " +
+                                "WHERE country.Continent = '" + continent + "' " +
+                                "ORDER BY city.Population DESC;";
+
+                ResultSet rset = stmt.executeQuery(sql);
+
+                while (rset.next()) {
+                    md.append(String.format("| %s | %s | %d |\n",
+                            rset.getString("CityName"),
+                            rset.getString("CountryName"),
+                            rset.getInt("Population")));
+                }
+
+                md.append("\n"); // space between continent sections
             }
 
             ReportManager.writeMarkdown(
@@ -47,7 +60,7 @@ public class EighteenthReport {
                     md.toString()
             );
 
-            System.out.println("Eighteenth report completed.");
+            System.out.println("Eighteenth report completed (multiple continents).");
 
         } catch (Exception e) {
             System.out.println("Failed to retrieve capital cities: " + e.getMessage());

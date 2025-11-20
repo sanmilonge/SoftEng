@@ -47,7 +47,7 @@ public class App {
         r17.showCapitalCitiesInWorld();
 
         // 18th
-        er.showCapitalCitiesInContinent("Europe");
+        er.showCapitalCitiesInMultipleContinents();
 
         // 19th
         nr.showCapitalCitiesForMultipleRegions();
@@ -55,7 +55,7 @@ public class App {
         Scanner input = new Scanner(System.in);
 
         // 20th
-        System.out.print("Enter the numbers of top populated capital cities (N): ");
+        System.out.print("Enter how many capital cities in order of population in the world: ");
         int n = input.nextInt();
         tr20.showTopNCapitalCities(n);
 

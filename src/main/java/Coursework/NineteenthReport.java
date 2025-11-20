@@ -26,13 +26,12 @@ public class NineteenthReport {
             for (String region : regions) {
                 md.append("## Region: ").append(region).append("\n\n");
 
-                md.append("| City Name | Country | District | Population |\n");
-                md.append("|-----------|----------|-----------|-------------|\n");
+                md.append("| City Name | Country | Population |\n");
+                md.append("|-----------|----------|-------------|\n");
 
                 String sql =
                         "SELECT city.Name AS CityName, " +
                                 "       country.Name AS CountryName, " +
-                                "       city.District AS District, " +
                                 "       city.Population AS Population " +
                                 "FROM city " +
                                 "JOIN country ON city.ID = country.Capital " +
@@ -42,14 +41,13 @@ public class NineteenthReport {
                 ResultSet rset = stmt.executeQuery(sql);
 
                 while (rset.next()) {
-                    md.append(String.format("| %s | %s | %s | %d |\n",
+                    md.append(String.format("| %s | %s | %d |\n",
                             rset.getString("CityName"),
                             rset.getString("CountryName"),
-                            rset.getString("District"),
                             rset.getInt("Population")));
                 }
 
-                md.append("\n"); // space between region sections
+                md.append("\n"); // extra space between regions
             }
 
             ReportManager.writeMarkdown(
