@@ -41,10 +41,13 @@ class FirstReportTest extends ReportTestSupport {
         // Two rows then end
         when(resultSet.next()).thenReturn(true, true, false);
         when(resultSet.getString("Code")).thenReturn("GBR", "NGA");
-        when(resultSet.getString("Name")).thenReturn("United Kingdom", "Nigeria");
+        when(resultSet.getString("Country")).thenReturn("United Kingdom", "Nigeria");
         when(resultSet.getString("Continent")).thenReturn("Europe", "Africa");
         when(resultSet.getString("Region")).thenReturn("British Islands", "Western Africa");
         when(resultSet.getInt("Population")).thenReturn(60000000, 200000000);
+        when(resultSet.getString("Capital")).thenReturn("London", "Abuja");
+
+
 
         try (MockedStatic<ReportManager> rm = mockReportManagerStatic()) {
             FirstReport report = new FirstReport(connection);
@@ -62,6 +65,8 @@ class FirstReportTest extends ReportTestSupport {
                                     md.contains("United Kingdom") &&
                                     md.contains("NGA") &&
                                     md.contains("Nigeria")
+                                    && md.contains("Abuja")
+
                     )
             ));
         }

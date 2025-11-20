@@ -15,7 +15,8 @@ import static org.mockito.Mockito.*;
 
 /**
  * Unit test for SecondReport using Mockito.
- * Verifies that per-continent markdown is generated and passed to ReportManager.
+ * Updated to work with the new SQL including Country, Continent,
+ * Region, Population, and Capital.
  */
 @ExtendWith(MockitoExtension.class)
 class SecondReportTest extends ReportTestSupport {
@@ -51,16 +52,23 @@ class SecondReportTest extends ReportTestSupport {
         when(continentsResult.next()).thenReturn(true, false);
         when(continentsResult.getString("Continent")).thenReturn("Europe");
 
-        // Per-continent countries
-        when(sqlConnection.prepareStatement(startsWith("SELECT Code, Name, Region, Population")))
+        // Per-continent SQL:
+        // SELECT country.Code, country.Name AS Country, country.Continent,
+        //        country.Region, country.Population, city.Name AS Capital ...
+        when(sqlConnection.prepareStatement(startsWith("SELECT country.Code")))
                 .thenReturn(continentPreparedStatement);
+
         when(continentPreparedStatement.executeQuery()).thenReturn(continentCountriesResult);
 
+        // Mock data rows
         when(continentCountriesResult.next()).thenReturn(true, true, false);
+
         when(continentCountriesResult.getString("Code")).thenReturn("GBR", "FRA");
-        when(continentCountriesResult.getString("Name")).thenReturn("United Kingdom", "France");
+        when(continentCountriesResult.getString("Country")).thenReturn("United Kingdom", "France");
+        when(continentCountriesResult.getString("Continent")).thenReturn("Europe", "Europe");
         when(continentCountriesResult.getString("Region")).thenReturn("British Islands", "Western Europe");
-        when(continentCountriesResult.getInt("Population")).thenReturn(60000000, 65000000);
+        when(continentCountriesResult.getInt("Population")).thenReturn(67000000, 65000000);
+        when(continentCountriesResult.getString("Capital")).thenReturn("London", "Paris");
 
         try (MockedStatic<ReportManager> rm = mockReportManagerStatic()) {
             SecondReport report = new SecondReport(connection);
@@ -68,7 +76,7 @@ class SecondReportTest extends ReportTestSupport {
             // Act
             report.showCountriesContinent();
 
-            // Assert
+            // Assert: markdown contains all required fields
             rm.verify(() -> ReportManager.writeMarkdown(
                     eq("2_SecondReport"),
                     eq("Europe.md"),
@@ -76,8 +84,15 @@ class SecondReportTest extends ReportTestSupport {
                             md.contains("# Countries in Europe") &&
                                     md.contains("GBR") &&
                                     md.contains("United Kingdom") &&
+                                    md.contains("Europe") &&
+                                    md.contains("British Islands") &&
+                                    md.contains("67000000") &&
+                                    md.contains("London") &&      // Capital
                                     md.contains("FRA") &&
-                                    md.contains("France")
+                                    md.contains("France") &&
+                                    md.contains("Western Europe") &&
+                                    md.contains("65000000") &&
+                                    md.contains("Paris")          // Capital
                     )
             ));
         }
