@@ -15,8 +15,6 @@ import static org.mockito.Mockito.*;
 
 /**
  * Unit test for ThirdReport using Mockito.
- * Updated to match new SQL fields:
- * Code, Country, Continent, Region, Population, Capital
  */
 @ExtendWith(MockitoExtension.class)
 class ThirdReportTest extends ReportTestSupport {
