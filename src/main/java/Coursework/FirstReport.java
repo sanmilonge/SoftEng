@@ -12,7 +12,7 @@ public class FirstReport {
     /**
      *First Report
      * ------------
-     * Generates Markdown report of countries by population.
+     * Generatess Markdown report of countries by population.
      */
     public FirstReport(Connection c) {
         this.c = c;
