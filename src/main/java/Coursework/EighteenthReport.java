@@ -14,7 +14,10 @@ public class EighteenthReport {
             Statement stmt = c.getConnection().createStatement();
 
             String sql =
-                    "SELECT city.ID, city.Name, country.Name AS CountryName, country.Continent, city.Population " +
+                    "SELECT city.Name AS CityName, " +
+                            "       country.Name AS CountryName, " +
+                            "       city.District AS District, " +
+                            "       city.Population AS Population " +
                             "FROM city " +
                             "JOIN country ON city.ID = country.Capital " +
                             "WHERE country.Continent = '" + continent + "' " +
@@ -22,27 +25,27 @@ public class EighteenthReport {
 
             ResultSet rset = stmt.executeQuery(sql);
 
-            // Build Markdown output
+            // Markdown output
             StringBuilder md = new StringBuilder();
-            md.append("# All the capital cities in ")
-                    .append(continent)
-                    .append(" organised by largest population to smallest.\n\n");
+            md.append("# Capital Cities in ").append(continent)
+                    .append(" (Largest to Smallest Population)\n\n");
 
-            md.append("| City ID | City Name | Country | Continent | Population |\n");
-            md.append("|---------|------------|----------|------------|-------------|\n");
+            md.append("| City Name | Country | District | Population |\n");
+            md.append("|-----------|----------|-----------|-------------|\n");
 
             while (rset.next()) {
-                md.append(String.format("| %d | %s | %s | %s | %d |\n",
-                        rset.getInt("ID"),
-                        rset.getString("Name"),
+                md.append(String.format("| %s | %s | %s | %d |\n",
+                        rset.getString("CityName"),
                         rset.getString("CountryName"),
-                        rset.getString("Continent"),
+                        rset.getString("District"),
                         rset.getInt("Population")));
             }
 
-            ReportManager.writeMarkdown("18_EighteenthReport",
+            ReportManager.writeMarkdown(
+                    "18_EighteenthReport",
                     "EighteenthReport.md",
-                    md.toString());
+                    md.toString()
+            );
 
             System.out.println("Eighteenth report completed.");
 

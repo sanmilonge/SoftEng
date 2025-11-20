@@ -14,7 +14,10 @@ public class TwentySecondReport {
             Statement stmt = c.getConnection().createStatement();
 
             String sql =
-                    "SELECT city.ID, city.Name, country.Name AS CountryName, country.Region, city.Population " +
+                    "SELECT city.Name AS CityName, " +
+                            "       country.Name AS CountryName, " +
+                            "       city.District AS District, " +
+                            "       city.Population AS Population " +
                             "FROM city " +
                             "JOIN country ON city.ID = country.Capital " +
                             "WHERE country.Region = '" + region + "' " +
@@ -23,27 +26,29 @@ public class TwentySecondReport {
 
             ResultSet rset = stmt.executeQuery(sql);
 
+            // Markdown output
             StringBuilder md = new StringBuilder();
             md.append("# Top ").append(n)
                     .append(" Populated Capital Cities in Region: ")
                     .append(region)
                     .append("\n\n");
 
-            md.append("| City ID | City Name | Country | Region | Population |\n");
-            md.append("|---------|------------|----------|---------|-------------|\n");
+            md.append("| City Name | Country | District | Population |\n");
+            md.append("|-----------|----------|-----------|-------------|\n");
 
             while (rset.next()) {
-                md.append(String.format("| %d | %s | %s | %s | %d |\n",
-                        rset.getInt("ID"),
-                        rset.getString("Name"),
+                md.append(String.format("| %s | %s | %s | %d |\n",
+                        rset.getString("CityName"),
                         rset.getString("CountryName"),
-                        rset.getString("Region"),
+                        rset.getString("District"),
                         rset.getInt("Population")));
             }
 
-            ReportManager.writeMarkdown("22_TwentySecondReport",
+            ReportManager.writeMarkdown(
+                    "22_TwentySecondReport",
                     "TwentySecondReport.md",
-                    md.toString());
+                    md.toString()
+            );
 
             System.out.println("Twenty-second report completed.");
 

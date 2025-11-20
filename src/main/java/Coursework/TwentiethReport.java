@@ -14,7 +14,10 @@ public class TwentiethReport {
             Statement stmt = c.getConnection().createStatement();
 
             String sql =
-                    "SELECT city.ID, city.Name, country.Name AS CountryName, city.Population " +
+                    "SELECT city.Name AS CityName, " +
+                            "       country.Name AS CountryName, " +
+                            "       city.District AS District, " +
+                            "       city.Population AS Population " +
                             "FROM city " +
                             "JOIN country ON city.ID = country.Capital " +
                             "ORDER BY city.Population DESC " +
@@ -22,25 +25,27 @@ public class TwentiethReport {
 
             ResultSet rset = stmt.executeQuery(sql);
 
-            // Build Markdown output
+            // Markdown output
             StringBuilder md = new StringBuilder();
             md.append("# Top ").append(n)
                     .append(" Populated Capital Cities in the World\n\n");
 
-            md.append("| City ID | City Name | Country | Population |\n");
-            md.append("|---------|------------|----------|-------------|\n");
+            md.append("| City Name | Country | District | Population |\n");
+            md.append("|-----------|----------|-----------|-------------|\n");
 
             while (rset.next()) {
-                md.append(String.format("| %d | %s | %s | %d |\n",
-                        rset.getInt("ID"),
-                        rset.getString("Name"),
+                md.append(String.format("| %s | %s | %s | %d |\n",
+                        rset.getString("CityName"),
                         rset.getString("CountryName"),
+                        rset.getString("District"),
                         rset.getInt("Population")));
             }
 
-            ReportManager.writeMarkdown("20_TwentiethReport",
+            ReportManager.writeMarkdown(
+                    "20_TwentiethReport",
                     "TwentiethReport.md",
-                    md.toString());
+                    md.toString()
+            );
 
             System.out.println("Twentieth report completed.");
 

@@ -26,11 +26,14 @@ public class NineteenthReport {
             for (String region : regions) {
                 md.append("## Region: ").append(region).append("\n\n");
 
-                md.append("| City ID | City Name | Country | Region | Population |\n");
-                md.append("|---------|------------|----------|---------|-------------|\n");
+                md.append("| City Name | Country | District | Population |\n");
+                md.append("|-----------|----------|-----------|-------------|\n");
 
                 String sql =
-                        "SELECT city.ID, city.Name, country.Name AS CountryName, country.Region, city.Population " +
+                        "SELECT city.Name AS CityName, " +
+                                "       country.Name AS CountryName, " +
+                                "       city.District AS District, " +
+                                "       city.Population AS Population " +
                                 "FROM city " +
                                 "JOIN country ON city.ID = country.Capital " +
                                 "WHERE country.Region = '" + region + "' " +
@@ -39,22 +42,23 @@ public class NineteenthReport {
                 ResultSet rset = stmt.executeQuery(sql);
 
                 while (rset.next()) {
-                    md.append(String.format("| %d | %s | %s | %s | %d |\n",
-                            rset.getInt("ID"),
-                            rset.getString("Name"),
+                    md.append(String.format("| %s | %s | %s | %d |\n",
+                            rset.getString("CityName"),
                             rset.getString("CountryName"),
-                            rset.getString("Region"),
+                            rset.getString("District"),
                             rset.getInt("Population")));
                 }
 
-                md.append("\n"); // space between regions
+                md.append("\n"); // space between region sections
             }
 
-            ReportManager.writeMarkdown("19_NineteenthReport",
+            ReportManager.writeMarkdown(
+                    "19_NineteenthReport",
                     "NineteenthReport.md",
-                    md.toString());
+                    md.toString()
+            );
 
-            System.out.println("Combined region report (19th) completed.");
+            System.out.println("Nineteenth report completed.");
 
         } catch (Exception e) {
             System.out.println("Failed to retrieve capital cities: " + e.getMessage());

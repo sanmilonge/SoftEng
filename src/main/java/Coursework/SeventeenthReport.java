@@ -2,14 +2,14 @@ package Coursework;
 
 import java.sql.*;
 
-public class TwentyFirstReport {
+public class SeventeenthReport {
     private final Connection c;
 
-    public TwentyFirstReport(Connection c) {
+    public SeventeenthReport(Connection c) {
         this.c = c;
     }
 
-    public void showTopNCapitalCitiesInContinent(String continent, int n) {
+    public void showCapitalCitiesInWorld() {
         try {
             Statement stmt = c.getConnection().createStatement();
 
@@ -20,19 +20,12 @@ public class TwentyFirstReport {
                             "       city.Population AS Population " +
                             "FROM city " +
                             "JOIN country ON city.ID = country.Capital " +
-                            "WHERE country.Continent = '" + continent + "' " +
-                            "ORDER BY city.Population DESC " +
-                            "LIMIT " + n + ";";
+                            "ORDER BY city.Population DESC;";
 
             ResultSet rset = stmt.executeQuery(sql);
 
-            // Markdown output
             StringBuilder md = new StringBuilder();
-            md.append("# Top ").append(n)
-                    .append(" Populated Capital Cities in ")
-                    .append(continent)
-                    .append("\n\n");
-
+            md.append("# All Capital Cities in the World by Population\n\n");
             md.append("| City Name | Country | District | Population |\n");
             md.append("|-----------|----------|-----------|-------------|\n");
 
@@ -45,15 +38,15 @@ public class TwentyFirstReport {
             }
 
             ReportManager.writeMarkdown(
-                    "21_TwentyFirstReport",
-                    "TwentyFirstReport.md",
+                    "17_SeventeenthReport",
+                    "SeventeenthReport.md",
                     md.toString()
             );
 
-            System.out.println("Twenty-first report completed.");
+            System.out.println("Seventeenth report completed.");
 
         } catch (Exception e) {
-            System.out.println("Failed to retrieve top N capital cities in a continent: " + e.getMessage());
+            System.out.println("Failed to retrieve capital cities: " + e.getMessage());
         }
     }
 }

@@ -2,36 +2,36 @@ package Coursework;
 
 import java.sql.*;
 
-public class TwentyThirdReport {
+public class TwentyEighthReport {
     private final Connection c;
 
-    public TwentyThirdReport(Connection c) {
+    public TwentyEighthReport(Connection c) {
         this.c = c;
     }
 
-    public void showContinentPopulationSummary() {
+    public void showPopulationOfAllRegions() {
         try {
             Statement stmt = c.getConnection().createStatement();
 
             String sql =
-                    "SELECT country.Continent AS Continent, " +
+                    "SELECT country.Region AS Region, " +
                             "       SUM(country.Population) AS TotalPopulation, " +
                             "       SUM(city.Population) AS CityPopulation " +
                             "FROM country " +
                             "LEFT JOIN city ON country.Code = city.CountryCode " +
-                            "GROUP BY country.Continent " +
+                            "GROUP BY country.Region " +
                             "ORDER BY TotalPopulation DESC;";
 
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population Summary for Each Continent\n\n");
+            md.append("# Population of Each Region\n\n");
 
-            md.append("| Continent | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
-            md.append("|-----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");
+            md.append("| Region | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
+            md.append("|--------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");
 
             while (rset.next()) {
-                String continent = rset.getString("Continent");
+                String region = rset.getString("Region");
                 long totalPop = rset.getLong("TotalPopulation");
                 long cityPop = rset.getLong("CityPopulation");
                 long nonCityPop = totalPop - cityPop;
@@ -41,7 +41,7 @@ public class TwentyThirdReport {
 
                 md.append(String.format(
                         "| %s | %d | %d | %.2f%% | %d | %.2f%% |\n",
-                        continent,
+                        region,
                         totalPop,
                         cityPop,
                         pctCity,
@@ -51,14 +51,15 @@ public class TwentyThirdReport {
             }
 
             ReportManager.writeMarkdown(
-                    "23_TwentyThirdReport",
-                    "TwentyThirdReport.md",
+                    "28_TwentyEighthReport",
+                    "TwentyEighthReport.md",
                     md.toString()
             );
 
-            System.out.println("Twenty-third report completed.");
+            System.out.println("Twenty-eighth report completed.");
+
         } catch (Exception e) {
-            System.out.println("Failed to generate continent population summary: " + e.getMessage());
+            System.out.println("Failed to generate region population report: " + e.getMessage());
         }
     }
 }

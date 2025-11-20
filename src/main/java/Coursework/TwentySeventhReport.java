@@ -2,14 +2,14 @@ package Coursework;
 
 import java.sql.*;
 
-public class TwentyThirdReport {
+public class TwentySeventhReport {
     private final Connection c;
 
-    public TwentyThirdReport(Connection c) {
+    public TwentySeventhReport(Connection c) {
         this.c = c;
     }
 
-    public void showContinentPopulationSummary() {
+    public void showPopulationOfAllContinents() {
         try {
             Statement stmt = c.getConnection().createStatement();
 
@@ -25,9 +25,9 @@ public class TwentyThirdReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population Summary for Each Continent\n\n");
+            md.append("# Population of Each Continent\n\n");
 
-            md.append("| Continent | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
+            md.append("| Continent | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
             md.append("|-----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");
 
             while (rset.next()) {
@@ -51,14 +51,15 @@ public class TwentyThirdReport {
             }
 
             ReportManager.writeMarkdown(
-                    "23_TwentyThirdReport",
-                    "TwentyThirdReport.md",
+                    "27_TwentySeventhReport",
+                    "TwentySeventhReport.md",
                     md.toString()
             );
 
-            System.out.println("Twenty-third report completed.");
+            System.out.println("Twenty-seventh report completed.");
+
         } catch (Exception e) {
-            System.out.println("Failed to generate continent population summary: " + e.getMessage());
+            System.out.println("Failed to generate continent population report: " + e.getMessage());
         }
     }
 }
