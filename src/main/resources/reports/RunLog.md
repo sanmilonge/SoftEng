@@ -216,3 +216,209 @@
 - 2025-11-20 02:54:20 — [8_EigthReport] generated Oceania_2025-11-20_02-54.md
 - 2025-11-20 02:54:20 — [8_EigthReport] generated Antarctica_2025-11-20_02-54.md
 - 2025-11-20 15:29:32 — [] generated JUnitReport_2025-11-20_15-29.md
+- 2025-11-20 16:47:26 — [1_FirstReport] generated FirstReport_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Caribbean_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Southern and Central Asia_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Central Africa_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Southern Europe_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Middle East_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated South America_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Polynesia_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Antarctica_2025-11-20_16-47.md
+- 2025-11-20 16:47:26 — [3_ThirdReport] generated Australia and New Zealand_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Western Europe_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Eastern Africa_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Western Africa_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Eastern Europe_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Central America_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated North America_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Southeast Asia_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Southern Africa_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Eastern Asia_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Nordic Countries_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Northern Africa_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Baltic Countries_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Melanesia_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Micronesia_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated British Islands_2025-11-20_16-47.md
+- 2025-11-20 16:47:27 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-20_16-47.md
+- 2025-11-20 16:47:29 — [7_SeventhReport] generated SeventhReport_2025-11-20_16-47.md
+- 2025-11-20 16:47:29 — [8_EighthReport] generated North America_2025-11-20_16-47.md
+- 2025-11-20 16:47:29 — [8_EighthReport] generated Asia_2025-11-20_16-47.md
+- 2025-11-20 16:47:29 — [8_EighthReport] generated Africa_2025-11-20_16-47.md
+- 2025-11-20 16:47:30 — [8_EighthReport] generated Europe_2025-11-20_16-47.md
+- 2025-11-20 16:47:30 — [8_EighthReport] generated South America_2025-11-20_16-47.md
+- 2025-11-20 16:47:30 — [8_EighthReport] generated Oceania_2025-11-20_16-47.md
+- 2025-11-20 16:47:30 — [8_EighthReport] generated Antarctica_2025-11-20_16-47.md
+- 2025-11-20 17:03:40 — [2_SecondReport] generated North America_2025-11-20_17-03.md
+- 2025-11-20 17:03:40 — [2_SecondReport] generated Asia_2025-11-20_17-03.md
+- 2025-11-20 17:03:40 — [2_SecondReport] generated Africa_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [2_SecondReport] generated Europe_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [2_SecondReport] generated South America_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [2_SecondReport] generated Oceania_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [2_SecondReport] generated Antarctica_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Caribbean_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Southern and Central Asia_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Central Africa_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Southern Europe_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Middle East_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated South America_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Polynesia_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Antarctica_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Australia and New Zealand_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Western Europe_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Eastern Africa_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Western Africa_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Eastern Europe_2025-11-20_17-03.md
+- 2025-11-20 17:03:41 — [3_ThirdReport] generated Central America_2025-11-20_17-03.md
+- 2025-11-20 17:03:42 — [3_ThirdReport] generated North America_2025-11-20_17-03.md
+- 2025-11-20 17:03:42 — [3_ThirdReport] generated Southeast Asia_2025-11-20_17-03.md
+- 2025-11-20 17:03:42 — [3_ThirdReport] generated Southern Africa_2025-11-20_17-03.md
+- 2025-11-20 17:03:42 — [3_ThirdReport] generated Eastern Asia_2025-11-20_17-03.md
+- 2025-11-20 17:03:42 — [3_ThirdReport] generated Nordic Countries_2025-11-20_17-03.md
+- 2025-11-20 17:03:42 — [3_ThirdReport] generated Northern Africa_2025-11-20_17-03.md
+- 2025-11-20 17:03:42 — [3_ThirdReport] generated Baltic Countries_2025-11-20_17-03.md
+- 2025-11-20 17:03:45 — [3_ThirdReport] generated Melanesia_2025-11-20_17-03.md
+- 2025-11-20 17:03:46 — [3_ThirdReport] generated Micronesia_2025-11-20_17-03.md
+- 2025-11-20 17:03:47 — [3_ThirdReport] generated British Islands_2025-11-20_17-03.md
+- 2025-11-20 17:03:47 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-20_17-03.md
+- 2025-11-20 17:03:49 — [7_SeventhReport] generated SeventhReport_2025-11-20_17-03.md
+- 2025-11-20 17:03:49 — [8_EighthReport] generated North America_2025-11-20_17-03.md
+- 2025-11-20 17:03:50 — [8_EighthReport] generated Asia_2025-11-20_17-03.md
+- 2025-11-20 17:03:51 — [8_EighthReport] generated Africa_2025-11-20_17-03.md
+- 2025-11-20 17:03:51 — [8_EighthReport] generated Europe_2025-11-20_17-03.md
+- 2025-11-20 17:03:52 — [8_EighthReport] generated South America_2025-11-20_17-03.md
+- 2025-11-20 17:03:52 — [8_EighthReport] generated Oceania_2025-11-20_17-03.md
+- 2025-11-20 17:03:52 — [8_EighthReport] generated Antarctica_2025-11-20_17-03.md
+- 2025-11-20 17:11:27 — [2_SecondReport] generated North America_2025-11-20_17-11.md
+- 2025-11-20 17:11:27 — [2_SecondReport] generated Asia_2025-11-20_17-11.md
+- 2025-11-20 17:11:27 — [2_SecondReport] generated Africa_2025-11-20_17-11.md
+- 2025-11-20 17:11:27 — [2_SecondReport] generated Europe_2025-11-20_17-11.md
+- 2025-11-20 17:11:27 — [2_SecondReport] generated South America_2025-11-20_17-11.md
+- 2025-11-20 17:11:27 — [2_SecondReport] generated Oceania_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [2_SecondReport] generated Antarctica_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Caribbean_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Southern and Central Asia_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Central Africa_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Southern Europe_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Middle East_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated South America_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Polynesia_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Antarctica_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Australia and New Zealand_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Western Europe_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Eastern Africa_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Western Africa_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Eastern Europe_2025-11-20_17-11.md
+- 2025-11-20 17:11:28 — [3_ThirdReport] generated Central America_2025-11-20_17-11.md
+- 2025-11-20 17:11:29 — [3_ThirdReport] generated North America_2025-11-20_17-11.md
+- 2025-11-20 17:11:29 — [3_ThirdReport] generated Southeast Asia_2025-11-20_17-11.md
+- 2025-11-20 17:11:29 — [3_ThirdReport] generated Southern Africa_2025-11-20_17-11.md
+- 2025-11-20 17:11:30 — [3_ThirdReport] generated Eastern Asia_2025-11-20_17-11.md
+- 2025-11-20 17:11:30 — [3_ThirdReport] generated Nordic Countries_2025-11-20_17-11.md
+- 2025-11-20 17:11:30 — [3_ThirdReport] generated Northern Africa_2025-11-20_17-11.md
+- 2025-11-20 17:11:31 — [3_ThirdReport] generated Baltic Countries_2025-11-20_17-11.md
+- 2025-11-20 17:11:31 — [3_ThirdReport] generated Melanesia_2025-11-20_17-11.md
+- 2025-11-20 17:11:31 — [3_ThirdReport] generated Micronesia_2025-11-20_17-11.md
+- 2025-11-20 17:11:32 — [3_ThirdReport] generated British Islands_2025-11-20_17-11.md
+- 2025-11-20 17:11:32 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-20_17-11.md
+- 2025-11-20 17:11:33 — [7_SeventhReport] generated SeventhReport_2025-11-20_17-11.md
+- 2025-11-20 17:11:34 — [8_EighthReport] generated North America_2025-11-20_17-11.md
+- 2025-11-20 17:11:35 — [8_EighthReport] generated Asia_2025-11-20_17-11.md
+- 2025-11-20 17:11:35 — [8_EighthReport] generated Africa_2025-11-20_17-11.md
+- 2025-11-20 17:11:35 — [8_EighthReport] generated Europe_2025-11-20_17-11.md
+- 2025-11-20 17:11:35 — [8_EighthReport] generated South America_2025-11-20_17-11.md
+- 2025-11-20 17:11:36 — [8_EighthReport] generated Oceania_2025-11-20_17-11.md
+- 2025-11-20 17:11:36 — [8_EighthReport] generated Antarctica_2025-11-20_17-11.md
+- 2025-11-20 17:33:36 — [2_SecondReport] generated North America_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [2_SecondReport] generated Asia_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [2_SecondReport] generated Africa_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [2_SecondReport] generated Europe_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [2_SecondReport] generated South America_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [2_SecondReport] generated Oceania_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [2_SecondReport] generated Antarctica_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [3_ThirdReport] generated Antarctica_2025-11-20_17-33.md
+- 2025-11-20 17:33:36 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-20_17-33.md
+- 2025-11-20 17:33:37 — [7_SeventhReport] generated SeventhReport_2025-11-20_17-33.md
+- 2025-11-20 17:33:37 — [8_EighthReport] generated North America_2025-11-20_17-33.md
+- 2025-11-20 17:33:38 — [8_EighthReport] generated Asia_2025-11-20_17-33.md
+- 2025-11-20 17:33:38 — [8_EighthReport] generated Africa_2025-11-20_17-33.md
+- 2025-11-20 17:33:38 — [8_EighthReport] generated Europe_2025-11-20_17-33.md
+- 2025-11-20 17:33:39 — [8_EighthReport] generated South America_2025-11-20_17-33.md
+- 2025-11-20 17:33:39 — [8_EighthReport] generated Oceania_2025-11-20_17-33.md
+- 2025-11-20 17:33:39 — [8_EighthReport] generated Antarctica_2025-11-20_17-33.md
+- 2025-11-20 17:41:59 — [1_FirstReport] generated FirstReport_2025-11-20_17-41.md
+- 2025-11-20 17:41:59 — [2_SecondReport] generated North America_2025-11-20_17-41.md
+- 2025-11-20 17:41:59 — [2_SecondReport] generated Asia_2025-11-20_17-41.md
+- 2025-11-20 17:41:59 — [2_SecondReport] generated Africa_2025-11-20_17-41.md
+- 2025-11-20 17:41:59 — [2_SecondReport] generated Europe_2025-11-20_17-41.md
+- 2025-11-20 17:42:00 — [2_SecondReport] generated South America_2025-11-20_17-42.md
+- 2025-11-20 17:42:00 — [2_SecondReport] generated Oceania_2025-11-20_17-42.md
+- 2025-11-20 17:42:00 — [2_SecondReport] generated Antarctica_2025-11-20_17-42.md
+- 2025-11-20 17:42:00 — [3_ThirdReport] generated Antarctica_2025-11-20_17-42.md
+- 2025-11-20 17:42:03 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-20_17-42.md
+- 2025-11-20 17:42:05 — [7_SeventhReport] generated SeventhReport_2025-11-20_17-42.md
+- 2025-11-20 17:42:06 — [8_EighthReport] generated North America_2025-11-20_17-42.md
+- 2025-11-20 17:42:06 — [8_EighthReport] generated Asia_2025-11-20_17-42.md
+- 2025-11-20 17:42:06 — [8_EighthReport] generated Africa_2025-11-20_17-42.md
+- 2025-11-20 17:42:07 — [8_EighthReport] generated Europe_2025-11-20_17-42.md
+- 2025-11-20 17:42:07 — [8_EighthReport] generated South America_2025-11-20_17-42.md
+- 2025-11-20 17:42:07 — [8_EighthReport] generated Oceania_2025-11-20_17-42.md
+- 2025-11-20 17:42:07 — [8_EighthReport] generated Antarctica_2025-11-20_17-42.md
+- 2025-11-20 18:09:50 — [1_FirstReport] generated FirstReport_2025-11-20_18-09.md
+- 2025-11-20 18:09:50 — [2_SecondReport] generated North America_2025-11-20_18-09.md
+- 2025-11-20 18:09:50 — [2_SecondReport] generated Asia_2025-11-20_18-09.md
+- 2025-11-20 18:09:50 — [2_SecondReport] generated Africa_2025-11-20_18-09.md
+- 2025-11-20 18:09:50 — [2_SecondReport] generated Europe_2025-11-20_18-09.md
+- 2025-11-20 18:09:50 — [2_SecondReport] generated South America_2025-11-20_18-09.md
+- 2025-11-20 18:09:50 — [2_SecondReport] generated Oceania_2025-11-20_18-09.md
+- 2025-11-20 18:09:50 — [2_SecondReport] generated Antarctica_2025-11-20_18-09.md
+- 2025-11-20 18:09:51 — [7_SeventhReport] generated SeventhReport_2025-11-20_18-09.md
+- 2025-11-20 18:09:52 — [8_EighthReport] generated North America_2025-11-20_18-09.md
+- 2025-11-20 18:09:52 — [8_EighthReport] generated Asia_2025-11-20_18-09.md
+- 2025-11-20 18:09:52 — [8_EighthReport] generated Africa_2025-11-20_18-09.md
+- 2025-11-20 18:09:52 — [8_EighthReport] generated Europe_2025-11-20_18-09.md
+- 2025-11-20 18:09:53 — [8_EighthReport] generated South America_2025-11-20_18-09.md
+- 2025-11-20 18:09:53 — [8_EighthReport] generated Oceania_2025-11-20_18-09.md
+- 2025-11-20 18:09:53 — [8_EighthReport] generated Antarctica_2025-11-20_18-09.md
+- 2025-11-20 18:12:22 — [1_FirstReport] generated FirstReport_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [2_SecondReport] generated North America_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [2_SecondReport] generated Asia_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [2_SecondReport] generated Africa_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [2_SecondReport] generated Europe_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [2_SecondReport] generated South America_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [2_SecondReport] generated Oceania_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [2_SecondReport] generated Antarctica_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Caribbean_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Southern and Central Asia_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Central Africa_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Southern Europe_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Middle East_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated South America_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Polynesia_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Antarctica_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Australia and New Zealand_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Western Europe_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Eastern Africa_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Western Africa_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Eastern Europe_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Central America_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated North America_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Southeast Asia_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Southern Africa_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Eastern Asia_2025-11-20_18-12.md
+- 2025-11-20 18:12:22 — [3_ThirdReport] generated Nordic Countries_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [3_ThirdReport] generated Northern Africa_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [3_ThirdReport] generated Baltic Countries_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [3_ThirdReport] generated Melanesia_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [3_ThirdReport] generated Micronesia_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [3_ThirdReport] generated British Islands_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [7_SeventhReport] generated SeventhReport_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [8_EighthReport] generated North America_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [8_EighthReport] generated Asia_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [8_EighthReport] generated Africa_2025-11-20_18-12.md
+- 2025-11-20 18:12:23 — [8_EighthReport] generated Europe_2025-11-20_18-12.md
+- 2025-11-20 18:12:24 — [8_EighthReport] generated South America_2025-11-20_18-12.md
+- 2025-11-20 18:12:24 — [8_EighthReport] generated Oceania_2025-11-20_18-12.md
+- 2025-11-20 18:12:24 — [8_EighthReport] generated Antarctica_2025-11-20_18-12.md

@@ -30,22 +30,24 @@ public class ThirdReport {
         for (String region : regions) {
             StringBuilder md = new StringBuilder();
             md.append("# Countries in ").append(region).append("\n\n");
-            md.append("| Code | Name | Continent | Population |\n");
-            md.append("|------|------|------------|-------------|\n");
+            md.append("| Code | Country | Continent | Region | Population | Capital |\n");
+            md.append("|------|------|------------|------------|-------------|------------|\n");
 
             try {
-                String query = "SELECT Code, Name, Continent, Population " +
-                        "FROM country WHERE Region = ? ORDER BY Population DESC;";
+                String query = "SELECT country.Code, country.Name AS Country, country.Continent, country.Region, country.Population, city.Name AS Capital " +
+                        "FROM country JOIN city on city.ID = country.Capital WHERE Region = ? ORDER BY country.Population DESC;";
                 PreparedStatement pstmt = c.getConnection().prepareStatement(query);
                 pstmt.setString(1, region);
                 ResultSet rset = pstmt.executeQuery();
 
                 while (rset.next()) {
-                    md.append(String.format("| %s | %s | %s | %d |\n",
+                    md.append(String.format("| %s | %s | %s | %s | %d | %s |\n",
                             rset.getString("Code"),
-                            rset.getString("Name"),
+                            rset.getString("Country"),
                             rset.getString("Continent"),
-                            rset.getInt("Population")));
+                            rset.getString("Region"),
+                            rset.getInt("Population"),
+                            rset.getString("Capital")));
                 }
 
                 String safeRegionName = region.replaceAll("[^a-zA-Z0-9\\-_ ]", "_");

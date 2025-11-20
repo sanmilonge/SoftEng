@@ -10,12 +10,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.ArgumentMatchers.startsWith;
 import static org.mockito.Mockito.*;
 
 /**
  * Unit test for ThirdReport using Mockito.
- * Verifies per-region reports are generated and passed to ReportManager.
+ * Updated to match new SQL fields:
+ * Code, Country, Continent, Region, Population, Capital
  */
 @ExtendWith(MockitoExtension.class)
 class ThirdReportTest extends ReportTestSupport {
@@ -40,10 +41,10 @@ class ThirdReportTest extends ReportTestSupport {
 
     @Test
     void showCountriesByRegion_generatesMarkdownPerRegion() throws Exception {
-        // Arrange DB mocks
+        // Arrange
         when(connection.getConnection()).thenReturn(sqlConnection);
 
-        // Distinct regions
+        // Mock distinct regions
         when(sqlConnection.createStatement()).thenReturn(distinctRegionStatement);
         when(distinctRegionStatement.executeQuery(startsWith("SELECT DISTINCT Region")))
                 .thenReturn(regionsResult);
@@ -51,24 +52,32 @@ class ThirdReportTest extends ReportTestSupport {
         when(regionsResult.next()).thenReturn(true, false);
         when(regionsResult.getString("Region")).thenReturn("Western Europe");
 
-        // Per-region countries
-        when(sqlConnection.prepareStatement(startsWith("SELECT Code, Name, Continent, Population")))
+        // Mock per-region SQL:
+        // SELECT country.Code, country.Name AS Country, country.Continent,
+        //        country.Region, country.Population, city.Name AS Capital ...
+        when(sqlConnection.prepareStatement(startsWith("SELECT country.Code")))
                 .thenReturn(regionPreparedStatement);
+
         when(regionPreparedStatement.executeQuery()).thenReturn(regionCountriesResult);
 
+        // Fake result rows
         when(regionCountriesResult.next()).thenReturn(true, false);
+
         when(regionCountriesResult.getString("Code")).thenReturn("GBR");
-        when(regionCountriesResult.getString("Name")).thenReturn("United Kingdom");
+        when(regionCountriesResult.getString("Country")).thenReturn("United Kingdom");
         when(regionCountriesResult.getString("Continent")).thenReturn("Europe");
-        when(regionCountriesResult.getInt("Population")).thenReturn(60000000);
+        when(regionCountriesResult.getString("Region")).thenReturn("Western Europe");
+        when(regionCountriesResult.getInt("Population")).thenReturn(67000000);
+        when(regionCountriesResult.getString("Capital")).thenReturn("London");
 
         try (MockedStatic<ReportManager> rm = mockReportManagerStatic()) {
+
             ThirdReport report = new ThirdReport(connection);
 
             // Act
             report.showCountriesByRegion();
 
-            // Assert
+            // Assert markdown output
             rm.verify(() -> ReportManager.writeMarkdown(
                     eq("3_ThirdReport"),
                     eq("Western Europe.md"),
@@ -76,7 +85,10 @@ class ThirdReportTest extends ReportTestSupport {
                             md.contains("# Countries in Western Europe") &&
                                     md.contains("GBR") &&
                                     md.contains("United Kingdom") &&
-                                    md.contains("Europe")
+                                    md.contains("Europe") &&
+                                    md.contains("Western Europe") &&
+                                    md.contains("67000000") &&
+                                    md.contains("London")           // capital
                     )
             ));
         }

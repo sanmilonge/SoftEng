@@ -29,22 +29,28 @@ public class SecondReport {
         for (String continent : continents) {
             StringBuilder md = new StringBuilder();
             md.append("# Countries in ").append(continent).append("\n\n");
-            md.append("| Code | Country | Region | Population |\n");
-            md.append("|------|------|------------|-------------|\n");
+            md.append("| Code | Country | Continent | Region | Population | Capital |\n");
+            md.append("|------|------|------------|------------|-------------|------------|\n");
 
             try {
-                String query = "SELECT Code, Name, Region, Population " +
-                        "FROM country WHERE Continent = ? ORDER BY Population DESC;";
+                String query =     "SELECT country.Code, country.Name AS Country, country.Continent, country.Region, " +
+                        "country.Population, city.Name AS Capital " +
+                        "FROM country " +
+                        "LEFT JOIN city ON country.Capital = city.ID WHERE Continent = ? " +
+                        "ORDER BY country.Population DESC;";
                 PreparedStatement pstmt = c.getConnection().prepareStatement(query);
                 pstmt.setString(1, continent);
                 ResultSet rset = pstmt.executeQuery();
 
                 while (rset.next()) {
-                    md.append(String.format("| %s | %s | %s | %d |\n",
+                    md.append(String.format("| %s | %s | %s | %s | %d | %s |\n",
                             rset.getString("Code"),
-                            rset.getString("Name"),
+                            rset.getString("Country"),
+                            rset.getString("Continent"),
                             rset.getString("Region"),
-                            rset.getInt("Population")));
+                            rset.getInt("Population"),
+                            rset.getString("Capital")
+                    ));
                 }
 
                 String safeContinentName = continent.replaceAll("[^a-zA-Z0-9\\-_ ]", "_");
