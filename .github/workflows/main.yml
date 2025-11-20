@@ -26,7 +26,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Clean up any leftover containers to avoid "port already in use" errors
+      # Clean any leftover containers to avoid port issues
       - name: Kill old containers
         run: |
           docker rm -f $(docker ps -aq) || true
@@ -34,7 +34,7 @@ jobs:
       - name: Build DB image
         run: docker build -t worlddb ./db
 
-      # IMPORTANT: Use the SAME port used by your docker-compose.yml and tests
+      # MUST match your docker-compose.yml (33060:3306)
       - name: Run DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
@@ -69,7 +69,7 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
-      # Feed all 5 required inputs to avoid Scanner crashes in CI
+      # Feed ALL required inputs (5 inputs)
       - name: Run app non-interactively (CI only)
         run: |
           echo -e "10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
@@ -96,10 +96,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Run app to generate reports
+      # Feed the same 5 inputs again for report generation
+      - name: Run app non-interactively to generate reports
         run: |
           mvn package -DskipTests
-          docker compose up --abort-on-container-exit --build
+          echo -e "10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
 
       - name: Upload Generated Reports
         uses: actions/upload-artifact@v4
