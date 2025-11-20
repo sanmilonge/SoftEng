@@ -13,17 +13,23 @@ public class TwentyFourthReport {
         try {
             Statement stmt = c.getConnection().createStatement();
 
+            // Correct SQL to avoid double-counting
             String sql =
-                    "SELECT country.Region AS Region, " +
-                            "       SUM(country.Population) AS TotalPopulation, " +
-                            "       SUM(city.Population) AS CityPopulation " +
-                            "FROM country " +
-                            "LEFT JOIN city ON country.Code = city.CountryCode " +
-                            "GROUP BY country.Region " +
+                    "SELECT c.Region AS Region, " +
+                            "       SUM(c.Population) AS TotalPopulation, " +
+                            "       SUM(COALESCE(cc.CityPopulation, 0)) AS CityPopulation " +
+                            "FROM country c " +
+                            "LEFT JOIN ( " +
+                            "    SELECT CountryCode, SUM(Population) AS CityPopulation " +
+                            "    FROM city " +
+                            "    GROUP BY CountryCode " +
+                            ") cc ON c.Code = cc.CountryCode " +
+                            "GROUP BY c.Region " +
                             "ORDER BY TotalPopulation DESC;";
 
             ResultSet rset = stmt.executeQuery(sql);
 
+            // Build markdown
             StringBuilder md = new StringBuilder();
             md.append("# Population Summary for Each Region\n\n");
 

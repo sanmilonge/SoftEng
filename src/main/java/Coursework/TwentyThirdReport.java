@@ -13,17 +13,23 @@ public class TwentyThirdReport {
         try {
             Statement stmt = c.getConnection().createStatement();
 
+            // Correct SQL: avoid double-counting by aggregating cities per country first
             String sql =
-                    "SELECT country.Continent AS Continent, " +
-                            "       SUM(country.Population) AS TotalPopulation, " +
-                            "       SUM(city.Population) AS CityPopulation " +
-                            "FROM country " +
-                            "LEFT JOIN city ON country.Code = city.CountryCode " +
-                            "GROUP BY country.Continent " +
+                    "SELECT c.Continent AS Continent, " +
+                            "       SUM(c.Population) AS TotalPopulation, " +
+                            "       SUM(COALESCE(cc.CityPopulation, 0)) AS CityPopulation " +
+                            "FROM country c " +
+                            "LEFT JOIN ( " +
+                            "    SELECT CountryCode, SUM(Population) AS CityPopulation " +
+                            "    FROM city " +
+                            "    GROUP BY CountryCode " +
+                            ") cc ON c.Code = cc.CountryCode " +
+                            "GROUP BY c.Continent " +
                             "ORDER BY TotalPopulation DESC;";
 
             ResultSet rset = stmt.executeQuery(sql);
 
+            // Build markdown output
             StringBuilder md = new StringBuilder();
             md.append("# Population Summary for Each Continent\n\n");
 
@@ -50,6 +56,7 @@ public class TwentyThirdReport {
                 ));
             }
 
+            // Write markdown file
             ReportManager.writeMarkdown(
                     "23_TwentyThirdReport",
                     "TwentyThirdReport.md",
@@ -57,6 +64,7 @@ public class TwentyThirdReport {
             );
 
             System.out.println("Twenty-third report completed.");
+
         } catch (Exception e) {
             System.out.println("Failed to generate continent population summary: " + e.getMessage());
         }

@@ -46,8 +46,8 @@ public class TwentySixthReport {
             StringBuilder md = new StringBuilder();
             md.append("# World Population Summary\n\n");
 
-            md.append("| Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
-            md.append("|------------------|----------------------|-------------|---------------------------|-------------------|\n");
+            md.append("| Total World Population | World Population in Cities | % In Cities | World Population Not in Cities | % Not in Cities |\n");
+            md.append("|------------------------|----------------------------|-------------|---------------------------------|-------------------|\n");
 
             md.append(String.format(
                     "| %d | %d | %.2f%% | %d | %.2f%% |\n",

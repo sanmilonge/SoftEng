@@ -15,11 +15,8 @@ public class ThirtyFirstReport {
 
             String sql =
                     "SELECT city.Name AS CityName, " +
-                            "       country.Name AS CountryName, " +
-                            "       city.District AS District, " +
                             "       city.Population AS Population " +
                             "FROM city " +
-                            "JOIN country ON city.CountryCode = country.Code " +
                             "ORDER BY city.Population DESC;";
 
             ResultSet rset = stmt.executeQuery(sql);
@@ -27,26 +24,22 @@ public class ThirtyFirstReport {
             StringBuilder md = new StringBuilder();
             md.append("# Population Summary for Each City\n\n");
 
-            md.append("| City Name | Country | District | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
-            md.append("|-----------|----------|-----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");
+            md.append("| City Name | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
+            md.append("|-----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");
 
             while (rset.next()) {
                 String cityName = rset.getString("CityName");
-                String countryName = rset.getString("CountryName");
-                String district = rset.getString("District");
                 long totalPop = rset.getLong("Population");
 
-                long cityPop = totalPop;     // entire population of a city is urban
+                long cityPop = totalPop;  // Entire population is urban
                 long nonCityPop = 0;
 
                 double pctCity = 100.0;
                 double pctNonCity = 0.0;
 
                 md.append(String.format(
-                        "| %s | %s | %s | %d | %d | %.2f%% | %d | %.2f%% |\n",
+                        "| %s | %d | %d | %.2f%% | %d | %.2f%% |\n",
                         cityName,
-                        countryName,
-                        district,
                         totalPop,
                         cityPop,
                         pctCity,

@@ -14,10 +14,7 @@ public class TwentyFifthReport {
             Statement stmt = c.getConnection().createStatement();
 
             String sql =
-                    "SELECT country.Code AS Code, " +
-                            "       country.Name AS CountryName, " +
-                            "       country.Continent AS Continent, " +
-                            "       country.Region AS Region, " +
+                    "SELECT country.Name AS CountryName, " +
                             "       country.Population AS TotalPopulation, " +
                             "       IFNULL(SUM(city.Population), 0) AS CityPopulation " +
                             "FROM country " +
@@ -30,14 +27,11 @@ public class TwentyFifthReport {
             StringBuilder md = new StringBuilder();
             md.append("# Population Summary for Each Country\n\n");
 
-            md.append("| Country Code | Country | Continent | Region | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
-            md.append("|--------------|----------|-----------|--------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");
+            md.append("| Country | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
+            md.append("|---------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");
 
             while (rset.next()) {
-                String code = rset.getString("Code");
                 String name = rset.getString("CountryName");
-                String continent = rset.getString("Continent");
-                String region = rset.getString("Region");
                 long totalPop = rset.getLong("TotalPopulation");
                 long cityPop = rset.getLong("CityPopulation");
                 long nonCityPop = totalPop - cityPop;
@@ -46,11 +40,8 @@ public class TwentyFifthReport {
                 double pctNonCity = (nonCityPop * 100.0) / totalPop;
 
                 md.append(String.format(
-                        "| %s | %s | %s | %s | %d | %d | %.2f%% | %d | %.2f%% |\n",
-                        code,
+                        "| %s | %d | %d | %.2f%% | %d | %.2f%% |\n",
                         name,
-                        continent,
-                        region,
                         totalPop,
                         cityPop,
                         pctCity,

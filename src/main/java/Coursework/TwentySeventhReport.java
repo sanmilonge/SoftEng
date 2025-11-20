@@ -14,12 +14,16 @@ public class TwentySeventhReport {
             Statement stmt = c.getConnection().createStatement();
 
             String sql =
-                    "SELECT country.Continent AS Continent, " +
-                            "       SUM(country.Population) AS TotalPopulation, " +
-                            "       SUM(city.Population) AS CityPopulation " +
-                            "FROM country " +
-                            "LEFT JOIN city ON country.Code = city.CountryCode " +
-                            "GROUP BY country.Continent " +
+                    "SELECT c.Continent AS Continent, " +
+                            "       SUM(c.Population) AS TotalPopulation, " +
+                            "       SUM(COALESCE(ct.CityPopulation, 0)) AS CityPopulation " +
+                            "FROM country c " +
+                            "LEFT JOIN ( " +
+                            "    SELECT CountryCode, SUM(Population) AS CityPopulation " +
+                            "    FROM city " +
+                            "    GROUP BY CountryCode " +
+                            ") ct ON c.Code = ct.CountryCode " +
+                            "GROUP BY c.Continent " +
                             "ORDER BY TotalPopulation DESC;";
 
             ResultSet rset = stmt.executeQuery(sql);

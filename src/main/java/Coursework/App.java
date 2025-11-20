@@ -62,18 +62,18 @@ public class App {
         input.nextLine(); // clear buffer
 
         // 21st
-        System.out.print("Enter a continent for top populated capital cities: ");
+        System.out.print("Enter a continent to find out the the top populated capital cities: ");
         String continent = input.nextLine();
-        System.out.print("Enter the number of capital cities to return (N): ");
+        System.out.print("Enter the number of  top capital cities to return: ");
         int n2 = input.nextInt();
         tr21.showTopNCapitalCitiesInContinent(continent, n2);
 
         input.nextLine(); // clear buffer
 
         // 22nd
-        System.out.print("Enter a region for top populated capital cities: ");
+        System.out.print("Enter a region to find out the the top populated capital cities: ");
         String region = input.nextLine();
-        System.out.print("Enter the number of capital cities to return (N): ");
+        System.out.print("Enter the number of  top capital cities to return: ");
         int n3 = input.nextInt();
         tr22.showTopNCapitalCitiesInRegion(region, n3);
 
