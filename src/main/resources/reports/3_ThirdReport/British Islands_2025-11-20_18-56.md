@@ -1,6 +1,0 @@
-# Countries in British Islands
-
-| Code | Country | Continent | Region | Population | Capital |
-|------|------|------------|------------|-------------|------------|
-| GBR | United Kingdom | Europe | British Islands | 59623400 | London |
-| IRL | Ireland | Europe | British Islands | 3775100 | Dublin |
