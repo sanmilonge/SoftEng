@@ -23,7 +23,7 @@ public class ThirtiethReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population of Each District\n\n");
+            md.append("The population of a district\n\n");
 
             md.append("| District | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
             md.append("|----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

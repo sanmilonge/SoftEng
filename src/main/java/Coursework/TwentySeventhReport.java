@@ -29,7 +29,7 @@ public class TwentySeventhReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population of Each Continent\n\n");
+            md.append("The population of a continent\n\n");
 
             md.append("| Continent | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
             md.append("|-----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

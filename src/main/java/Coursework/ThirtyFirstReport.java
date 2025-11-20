@@ -22,7 +22,7 @@ public class ThirtyFirstReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population Summary for Each City\n\n");
+            md.append("The population of a city\n\n");
 
             md.append("| City Name | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
             md.append("|-----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

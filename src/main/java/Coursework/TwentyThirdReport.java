@@ -31,7 +31,7 @@ public class TwentyThirdReport {
 
             // Build markdown output
             StringBuilder md = new StringBuilder();
-            md.append("# Population Summary for Each Continent\n\n");
+            md.append("The population of people, people living in cities, and people not living in cities in each continent\n\n");
 
             md.append("| Continent | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
             md.append("|-----------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

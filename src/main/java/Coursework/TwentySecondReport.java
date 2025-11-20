@@ -28,7 +28,7 @@ public class TwentySecondReport {
             // Markdown output
             StringBuilder md = new StringBuilder();
             md.append("# Top ").append(n)
-                    .append(" Populated Capital Cities in Region: ")
+                    .append(" Top Populated Capital Cities in Region: ")
                     .append(region)
                     .append("\n\n");
 

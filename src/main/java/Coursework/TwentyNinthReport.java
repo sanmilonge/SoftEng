@@ -25,7 +25,7 @@ public class TwentyNinthReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population of Each Country\n\n");
+            md.append("The population of a country\n\n");
 
             md.append("| Country | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
             md.append("|---------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

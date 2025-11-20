@@ -31,7 +31,7 @@ public class TwentyFourthReport {
 
             // Build markdown
             StringBuilder md = new StringBuilder();
-            md.append("# Population Summary for Each Region\n\n");
+            md.append("The population of people, people living in cities, and people not living in cities in each region\n\n");
 
             md.append("| Region | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
             md.append("|--------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

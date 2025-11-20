@@ -21,7 +21,7 @@ public class NineteenthReport {
             Statement stmt = c.getConnection().createStatement();
 
             StringBuilder md = new StringBuilder();
-            md.append("# Capital Cities for Multiple Regions (Population DESC)\n\n");
+            md.append("All the capital cities in a region organised by largest to smallest\n\n");
 
             for (String region : regions) {
                 md.append("## Region: ").append(region).append("\n\n");

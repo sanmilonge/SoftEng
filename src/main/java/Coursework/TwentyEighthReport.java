@@ -30,7 +30,7 @@ public class TwentyEighthReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population of Each Region\n\n");
+            md.append("The population of a region\n\n");
 
             md.append("| Region | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not In Cities |\n");
             md.append("|--------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

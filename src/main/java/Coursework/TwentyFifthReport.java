@@ -25,7 +25,7 @@ public class TwentyFifthReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# Population Summary for Each Country\n\n");
+            md.append("The population of people, people living in cities, and people not living in cities in each country\n\n");
 
             md.append("| Country | Total Population | Population in Cities | % In Cities | Population Not in Cities | % Not in Cities |\n");
             md.append("|---------|------------------|-----------------------|-------------|---------------------------|-------------------|\n");

@@ -44,7 +44,7 @@ public class TwentySixthReport {
 
             // Build markdown output
             StringBuilder md = new StringBuilder();
-            md.append("# World Population Summary\n\n");
+            md.append("The population of the world\n\n");
 
             md.append("| Total World Population | World Population in Cities | % In Cities | World Population Not in Cities | % Not in Cities |\n");
             md.append("|------------------------|----------------------------|-------------|---------------------------------|-------------------|\n");

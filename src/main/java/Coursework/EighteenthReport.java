@@ -24,7 +24,7 @@ public class EighteenthReport {
             Statement stmt = c.getConnection().createStatement();
 
             StringBuilder md = new StringBuilder();
-            md.append("# Capital Cities for Multiple Continents (Population DESC)\n\n");
+            md.append("All the capital cities in a continent organised by largest population to smallest\n\n");
 
             for (String continent : continents) {
 

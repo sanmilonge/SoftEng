@@ -24,7 +24,7 @@ public class SeventeenthReport {
             ResultSet rset = stmt.executeQuery(sql);
 
             StringBuilder md = new StringBuilder();
-            md.append("# All the capital cities in the world organised by largest population to smallest\n\n");
+            md.append("All the capital cities in the world organised by largest population to smallest\n\n");
             md.append("| City Name | Country | Population |\n");
             md.append("|-----------|----------|-------------|\n");
 

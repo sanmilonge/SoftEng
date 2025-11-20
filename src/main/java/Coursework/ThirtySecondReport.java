@@ -34,7 +34,7 @@ public class ThirtySecondReport {
 
             // Build markdown
             StringBuilder md = new StringBuilder();
-            md.append("# Number of People Who Speak Selected Languages\n\n");
+            md.append("Number of People Who Speak Selected Languages\n\n");
             md.append("| Language | Total Speakers | % of World Population |\n");
             md.append("|----------|----------------|------------------------|\n");
 
