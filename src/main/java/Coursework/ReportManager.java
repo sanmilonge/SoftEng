@@ -8,18 +8,22 @@ import java.time.format.DateTimeFormatter;
 public class ReportManager {
 
     /**
-     * Always resolves the report folder dynamically.
-     * Tests override report.folder → production does not.
+     * IMPORTANT:
+     * Report root is now dynamic.
+     * Tests set:  System.setProperty("report.folder", "src/main/resources/reports/TestReports")
+     * App uses:   src/main/resources/reports
      */
-    private static String getReportRoot() {
+    private static String getReportsRoot() {
         return System.getProperty("report.folder", "src/main/resources/reports");
     }
 
     /**
-     * Deletes all report subfolders EXCEPT RunLog.md.
+     * Called at the start of the app.
+     * Deletes report subfolders (1_FirstReport, etc)
+     * but keeps RunLog.md untouched.
      */
     public static void prepareReportFolder() {
-        Path root = Paths.get(getReportRoot());
+        Path root = Paths.get(getReportsRoot());
 
         try {
             if (!Files.exists(root)) {
@@ -29,6 +33,7 @@ public class ReportManager {
 
             try (DirectoryStream<Path> stream = Files.newDirectoryStream(root)) {
                 for (Path item : stream) {
+                    // DELETE ONLY SUBFOLDERS
                     if (Files.isDirectory(item)) {
                         deleteFolder(item);
                     }
@@ -43,12 +48,12 @@ public class ReportManager {
     }
 
     /**
-     * Recursively deletes folder.
+     * Recursively deletes a folder and all its contents.
      */
     private static void deleteFolder(Path folder) {
         try {
             Files.walk(folder)
-                    .sorted((a, b) -> b.compareTo(a))   // delete children first
+                    .sorted((a, b) -> b.compareTo(a)) // Delete children first
                     .forEach(path -> {
                         try {
                             Files.deleteIfExists(path);
@@ -62,7 +67,7 @@ public class ReportManager {
     }
 
     /**
-     * Writes a timestamped markdown file into its subfolder.
+     * Writes a Markdown file for a report.
      */
     public static void writeMarkdown(String subfolder, String baseFilename, String content) {
         try {
@@ -72,7 +77,7 @@ public class ReportManager {
             String nameWithoutExt = baseFilename.replace(".md", "");
             String finalName = nameWithoutExt + "_" + timestamp + ".md";
 
-            Path folderPath = Paths.get(getReportRoot(), subfolder);
+            Path folderPath = Paths.get(getReportsRoot(), subfolder);
             Files.createDirectories(folderPath);
 
             Path filePath = folderPath.resolve(finalName);
@@ -94,18 +99,20 @@ public class ReportManager {
     }
 
     /**
-     * Appends a line to RunLog.md showing which report was generated.
+     * Appends entry to RunLog.md
      */
     private static void logReportGeneration(String subfolder, String filename) {
         try {
-            Path logPath = Paths.get(getReportRoot(), "RunLog.md");
+            Path logPath = Paths.get(getReportsRoot(), "RunLog.md");
 
             String timestamp = LocalDateTime.now()
                     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
             String logEntry = String.format(
                     "- %s — [%s] generated %s%n",
-                    timestamp, subfolder, filename
+                    timestamp,
+                    subfolder,
+                    filename
             );
 
             Files.writeString(

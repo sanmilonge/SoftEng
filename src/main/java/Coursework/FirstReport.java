@@ -45,7 +45,7 @@ public class FirstReport {
             }
 
             ReportManager.writeMarkdown("1_FirstReport", "FirstReport.md", md.toString());
-            System.out.println("First report completed.");
+            System.out.println("First report completed");
 
         } catch (Exception e) {
             System.out.println("Failed to retrieve countries: " + e.getMessage());
