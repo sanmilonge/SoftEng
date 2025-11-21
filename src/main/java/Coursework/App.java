@@ -52,7 +52,7 @@ public class App {
         ThirtySecondReport tr32 = new ThirtySecondReport(con);
 
         // ---- VALIDATED INPUT METHODS ----
-
+        //Fourth report
         int n4 = askForInt(input,
                 "Enter how many countries to see most populated countries in the world:",
                 1, 260);
@@ -60,15 +60,22 @@ public class App {
         System.out.println("✓ You selected: " + n4);
         f4r.showTopNCountries(n4);
 
+
+        //Twentieth Report
         int n20 = askForInt(input,
                 "Enter how many capital cities in order of population in the world:",
                 1, 260);
 
         System.out.println("✓ You selected: " + n20);
         tr20.showTopNCapitalCities(n20);
+        System.out.println("Press enter to continue.");
+        if (!CI_MODE)
+        {
+            input.nextLine(); // clear buffer
+        }
 
-        input.nextLine(); // clear buffer
 
+        //TwentyFirst Report
         String continent = askForString(input,
                 "Enter a continent to find the top populated capital cities:");
 
@@ -80,9 +87,14 @@ public class App {
 
         System.out.println("✓ You selected: " + n21);
         tr21.showTopNCapitalCitiesInContinent(continent, n21);
+        System.out.println("Press enter to continue.");
+        if (!CI_MODE)
+        {
+            input.nextLine(); // clear buffer
+        }
 
-        input.nextLine();
 
+        //TwentySecond Report
         String region = askForString(input,
                 "Enter a region to find the top populated capital cities:");
 
@@ -94,6 +106,13 @@ public class App {
 
         System.out.println("✓ You selected: " + n22);
         tr22.showTopNCapitalCitiesInRegion(region, n22);
+        System.out.println("Press enter to continue.");
+        if (!CI_MODE)
+        {
+            input.nextLine(); // clear buffer
+        }
+
+
 
         // ---- RUN REMAINING REPORTS ----
         f1r.showCountriesByPopulation();
