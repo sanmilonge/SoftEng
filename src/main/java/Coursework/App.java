@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         ReportManager.prepareReportFolder();
 
         Connection con = new Connection();
@@ -12,6 +13,7 @@ public class App {
         FirstReport f1r = new FirstReport(con);
         SecondReport s2r = new SecondReport(con);
         ThirdReport t3r = new ThirdReport(con);
+        FourthReport f4r = new FourthReport(con);
         SeventhReport s7r = new SeventhReport(con);
         EighthReport e8r = new EighthReport(con);
         NinthReport n9r = new NinthReport(con);
@@ -48,6 +50,10 @@ public class App {
       f1r.showCountriesByPopulation();
         s2r.showCountriesContinent();
         t3r.showCountriesByRegion();
+
+        System.out.println("Enter how many countries to see most populated countries in the world: ");
+        int n4 = input.nextInt();
+        f4r.showTopNCountries(n4);
         s7r.showCitiesByPopulation();
         e8r.showCitiesContinent();
         n9r.showCitiesByRegion();
@@ -63,7 +69,7 @@ public class App {
         // 19th
         nr.showCapitalCitiesForMultipleRegions();
 
-        Scanner input = new Scanner(System.in);
+
 
         // 20th
         System.out.print("Enter how many capital cities in order of population in the world: ");
