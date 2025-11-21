@@ -1,6 +1,6 @@
 /**
- * Basic 'get' SQL functions that reports can import*/
-
+ * Basic 'get' SQL functions that reports can import
+ */
 
 package Coursework;
 
@@ -17,6 +17,7 @@ public class GetAll {
         this.c = c;
     }
 
+    /** Returns list of continents in db */
     public List<String> getAllContinents() {
         List<String> continents = new ArrayList<>();
         try {
@@ -37,6 +38,7 @@ public class GetAll {
         return continents;
     }
 
+    /** Returns list of regions in db */
     public List<String> getAllRegions() {
         List<String> regions = new ArrayList<>();
         try {
@@ -56,10 +58,12 @@ public class GetAll {
         }
         return regions;
     }
+
+    /** Returns list of countries in db */
     public List<String> getAllCountries() {
         List<String> countries = new ArrayList<>();
         try {
-            String query = "SELECT Name AS Country  FROM country;";
+            String query = "SELECT Name AS Country FROM country;";
             Statement stmt = c.getConnection().createStatement();
             ResultSet rslt = stmt.executeQuery(query);
 
@@ -76,10 +80,11 @@ public class GetAll {
         return countries;
     }
 
+    /** Returns list of districts in db */
     public List<String> getAllDistricts() {
         List<String> districts = new ArrayList<>();
         try {
-            String query = "SELECT DISTINCT District  FROM city;";
+            String query = "SELECT DISTINCT District FROM city;";
             Statement stmt = c.getConnection().createStatement();
             ResultSet rslt = stmt.executeQuery(query);
 
@@ -94,5 +99,59 @@ public class GetAll {
             System.out.println("Failed to retrieve districts: " + e.getMessage());
         }
         return districts;
+    }
+
+    /**
+     * Returns total number of countries.
+     *
+     * Behaviour:
+     *  - If region is provided (non-null/non-empty) → count countries in that region
+     *  - Else if continent is provided → count countries in that continent
+     *  - Else → count all countries in the world
+     */
+    public int totalNumberOf(String continent, String region) {
+        int total = 0;
+
+        boolean hasRegion = region != null && !region.trim().isEmpty();
+        boolean hasContinent = continent != null && !continent.trim().isEmpty();
+
+        try {
+            if (hasRegion) {
+                // Filter by region
+                String sql = "SELECT COUNT(*) AS Total FROM country WHERE Region = ?;";
+                try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
+                    pstmt.setString(1, region);
+                    try (ResultSet rset = pstmt.executeQuery()) {
+                        if (rset.next()) {
+                            total = rset.getInt("Total");
+                        }
+                    }
+                }
+            } else if (hasContinent) {
+                // Filter by continent
+                String sql = "SELECT COUNT(*) AS Total FROM country WHERE Continent = ?;";
+                try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
+                    pstmt.setString(1, continent);
+                    try (ResultSet rset = pstmt.executeQuery()) {
+                        if (rset.next()) {
+                            total = rset.getInt("Total");
+                        }
+                    }
+                }
+            } else {
+                // No filters → whole world
+                String sql = "SELECT COUNT(*) AS Total FROM country;";
+                try (Statement stmt = c.getConnection().createStatement();
+                     ResultSet rset = stmt.executeQuery(sql)) {
+                    if (rset.next()) {
+                        total = rset.getInt("Total");
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Failed to count countries: " + e.getMessage());
+        }
+
+        return total;
     }
 }

@@ -27,6 +27,7 @@ public class App {
         SecondReport s2r = new SecondReport(con);
         ThirdReport t3r = new ThirdReport(con);
         FourthReport f4r = new FourthReport(con);
+        FifthReport f5r = new FifthReport(con);
         SeventhReport s7r = new SeventhReport(con);
         EighthReport e8r = new EighthReport(con);
         NinthReport n9r = new NinthReport(con);
@@ -50,21 +51,28 @@ public class App {
         ThirtiethReport tr30 = new ThirtiethReport(con);
         ThirtyFirstReport tr31 = new ThirtyFirstReport(con);
         ThirtySecondReport tr32 = new ThirtySecondReport(con);
-
+        GetAll helper = new GetAll(con);
         // ---- VALIDATED INPUT METHODS ----
-        //Fourth report
+        //Fourth Report
         int n4 = askForInt(input,
                 "Enter how many countries to see most populated countries in the world:",
-                1, 260);
+                1, helper.totalNumberOf(null, null));
 
         System.out.println("✓ You selected: " + n4);
         f4r.showTopNCountries(n4);
+
+        //Fifth Report
+        String continent5 = askForString(input, "Enter continent to find most populated countries: ", "Africa");
+
+        System.out.println("✓ You selected: " + continent5);
+
+        int n5 = askForInt(input, "Enter how many countries to see the most populated in "+ continent5, 1, helper.totalNumberOf(null, continent5));
 
 
         //Twentieth Report
         int n20 = askForInt(input,
                 "Enter how many capital cities in order of population in the world:",
-                1, 260);
+                1, helper.totalNumberOf(null, null));
 
         System.out.println("✓ You selected: " + n20);
         tr20.showTopNCapitalCities(n20);
@@ -77,13 +85,13 @@ public class App {
 
         //TwentyFirst Report
         String continent = askForString(input,
-                "Enter a continent to find the top populated capital cities:");
+                "Enter a continent to find the top populated capital cities:", "Africa");
 
         System.out.println("✓ You selected: " + continent);
 
         int n21 = askForInt(input,
                 "Enter the number of top capital cities to return:",
-                1, 260);
+                1, helper.totalNumberOf(continent, null));
 
         System.out.println("✓ You selected: " + n21);
         tr21.showTopNCapitalCitiesInContinent(continent, n21);
@@ -96,13 +104,13 @@ public class App {
 
         //TwentySecond Report
         String region = askForString(input,
-                "Enter a region to find the top populated capital cities:");
+                "Enter a region to find the top populated capital cities:", "Western Europe");
 
         System.out.println("✓ You selected: " + region);
 
         int n22 = askForInt(input,
                 "Enter the number of top capital cities to return:",
-                1, 260);
+                1, helper.totalNumberOf(region, null));
 
         System.out.println("✓ You selected: " + n22);
         tr22.showTopNCapitalCitiesInRegion(region, n22);
@@ -161,9 +169,9 @@ public class App {
         }
     }
 
-    private static String askForString(Scanner input, String prompt) {
+    private static String askForString(Scanner input, String prompt, String defaultvalue) {
         if (CI_MODE) {
-            return "Europe"; // safe default for CI
+            return defaultvalue; // safe default for CI
         }
 
         String value;
