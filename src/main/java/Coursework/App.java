@@ -28,6 +28,7 @@ public class App {
         ThirdReport t3r = new ThirdReport(con);
         FourthReport f4r = new FourthReport(con);
         FifthReport f5r = new FifthReport(con);
+        SixthReport s6r = new SixthReport(con);
         SeventhReport s7r = new SeventhReport(con);
         EighthReport e8r = new EighthReport(con);
         NinthReport n9r = new NinthReport(con);
@@ -52,6 +53,7 @@ public class App {
         ThirtyFirstReport tr31 = new ThirtyFirstReport(con);
         ThirtySecondReport tr32 = new ThirtySecondReport(con);
         GetAll helper = new GetAll(con);
+
         // ---- VALIDATED INPUT METHODS ----
         //Fourth Report
         int n4 = askForInt(input,
@@ -61,12 +63,34 @@ public class App {
         System.out.println("✓ You selected: " + n4);
         f4r.showTopNCountries(n4);
 
-        //Fifth Report
+//        //Fifth Report
         String continent5 = askForString(input, "Enter continent to find most populated countries: ", "Africa");
 
         System.out.println("✓ You selected: " + continent5);
 
-        int n5 = askForInt(input, "Enter how many countries to see the most populated in "+ continent5, 1, helper.totalNumberOf(null, continent5));
+        int n5 = askForInt(input, "Enter how many countries to see the most populated in "+ continent5, 1, helper.totalNumberOf(continent5, null));
+        System.out.println("✓ You selected: " + n5);
+        f5r.showTopNCountriesInContinent(n5, continent5);
+        System.out.println("Press enter to continue.");
+        if (!CI_MODE)
+        {
+            input.nextLine(); // clear buffer
+        }
+
+
+        //Sixth report
+        String region6 = askForString(input, "Enter region to find most populated countries: ", "Western Europe");
+
+        System.out.println("✓ You selected: " + region6);
+
+        int n6 = askForInt(input, "Enter how many countries to see the most populated in "+ region6, 1, helper.totalNumberOf(null, region6));
+        System.out.println("✓ You selected: " + n6);
+        s6r.showTopNCountriesInRegion(n6, region6);
+        System.out.println("Press enter to continue.");
+        if (!CI_MODE)
+        {
+            input.nextLine(); // clear buffer
+        }
 
 
         //Twentieth Report
