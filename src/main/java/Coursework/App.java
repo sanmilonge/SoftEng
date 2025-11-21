@@ -8,10 +8,16 @@ public class App {
 
         Connection con = new Connection();
 
-        // Reports 1–7
-        FirstReport fr = new FirstReport(con);
-        ThirdReport tr = new ThirdReport(con);
-        SeventhReport sr = new SeventhReport(con);
+        // Reports 1–16
+        FirstReport f1r = new FirstReport(con);
+        SecondReport s2r = new SecondReport(con);
+        ThirdReport t3r = new ThirdReport(con);
+        SeventhReport s7r = new SeventhReport(con);
+        EighthReport e8r = new EighthReport(con);
+        NinthReport n9r = new NinthReport(con);
+        TenthReport t10r = new TenthReport(con);
+        EleventhReport e11r = new EleventhReport(con);
+      
 
         // Reports 17–32
         SeventeenthReport r17 = new SeventeenthReport(con);
@@ -38,10 +44,15 @@ public class App {
             con.connect(args[0], Integer.parseInt(args[1]));
         }
 
-        // Reports 1–7
-        fr.showCountriesByPopulation();
-        sr.showCitiesByPopulation();
-        tr.showCountriesByRegion();
+        // Reports 1–16
+      f1r.showCountriesByPopulation();
+        s2r.showCountriesContinent();
+        t3r.showCountriesByRegion();
+        s7r.showCitiesByPopulation();
+        e8r.showCitiesContinent();
+        n9r.showCitiesByRegion();
+        t10r.showCitiesByCountry();
+        e11r.showCitiesByDistrict();
 
         // 17th — all world capital cities
         r17.showCapitalCitiesInWorld();
