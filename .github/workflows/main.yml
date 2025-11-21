@@ -26,7 +26,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Clean any leftover containers to avoid port issues
       - name: Kill old containers
         run: |
           docker rm -f $(docker ps -aq) || true
@@ -34,7 +33,6 @@ jobs:
       - name: Build DB image
         run: docker build -t worlddb ./db
 
-      # MUST match your docker-compose.yml (33060:3306)
       - name: Run DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
@@ -69,24 +67,23 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
-      # Feed ALL required inputs (5 inputs)
       - name: Run app non-interactively (CI only)
-        run: |
-          echo -e "10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
+        env:
+          CI: "true"
+        run: docker compose run --rm app
 
       - name: Stop services
         run: docker compose down || true
 
       - name: Publish Release (master only)
         if: github.ref == 'refs/heads/master'
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           automatic_release_tag: "latest"
           files: |
             ./target/*.jar
-
 
   AutoGenerateReports:
     name: Generate and Upload Reports
@@ -99,12 +96,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Feed the same inputs again for report generation
       - name: Run app non-interactively to generate reports
+        env:
+          CI: "true"
         run: |
           mvn package -DskipTests
-          echo -e "10\n10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
-
+          docker compose run --rm app
 
       - name: Upload Generated Reports
         uses: actions/upload-artifact@v4
