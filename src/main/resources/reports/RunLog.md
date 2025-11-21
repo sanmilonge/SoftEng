@@ -1,0 +1,1431 @@
+- 2025-11-21 21:03:45 — [4_FourthReport] generated 3_Top_Populated_Countries_In_The_World_2025-11-21_21-03.md
+- 2025-11-21 21:03:52 — [5_FifthReport] generated 2_Top_Populated_Countries_In_Africa_2025-11-21_21-03.md
+- 2025-11-21 21:04:10 — [6_SixthReport] generated 3_Top_Populated_Countries_In_Western_Europe_2025-11-21_21-04.md
+- 2025-11-21 21:04:17 — [20_TwentiethReport] generated TwentiethReport_2025-11-21_21-04.md
+- 2025-11-21 21:04:26 — [21_TwentyFirstReport] generated TwentyFirstReport_2025-11-21_21-04.md
+- 2025-11-21 21:10:12 — [4_FourthReport] generated 1_Top_Populated_Countries_In_The_World_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [5_FifthReport] generated 1_Top_Populated_Countries_In_Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [6_SixthReport] generated 1_Top_Populated_Countries_In_Western_Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [20_TwentiethReport] generated TwentiethReport_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [21_TwentyFirstReport] generated TwentyFirstReport_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [22_TwentySecondReport] generated TwentySecondReport_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [1_FirstReport] generated FirstReport_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [2_SecondReport] generated North America_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [2_SecondReport] generated Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [2_SecondReport] generated Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [2_SecondReport] generated Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [2_SecondReport] generated South America_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [2_SecondReport] generated Oceania_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [2_SecondReport] generated Antarctica_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [3_ThirdReport] generated Caribbean_2025-11-21_21-10.md
+- 2025-11-21 21:10:12 — [3_ThirdReport] generated Southern and Central Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Central Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Southern Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Middle East_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated South America_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Polynesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Antarctica_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Australia and New Zealand_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Western Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Eastern Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Western Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Eastern Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Central America_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated North America_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Southeast Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Southern Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Eastern Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Nordic Countries_2025-11-21_21-10.md
+- 2025-11-21 21:10:13 — [3_ThirdReport] generated Northern Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:14 — [3_ThirdReport] generated Baltic Countries_2025-11-21_21-10.md
+- 2025-11-21 21:10:14 — [3_ThirdReport] generated Melanesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:14 — [3_ThirdReport] generated Micronesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:14 — [3_ThirdReport] generated British Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:14 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-21_21-10.md
+- 2025-11-21 21:10:14 — [7_SeventhReport] generated SeventhReport_2025-11-21_21-10.md
+- 2025-11-21 21:10:14 — [8_EighthReport] generated North America_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [8_EighthReport] generated Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [8_EighthReport] generated Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [8_EighthReport] generated Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [8_EighthReport] generated South America_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [8_EighthReport] generated Oceania_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [8_EighthReport] generated Antarctica_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [9_NinthReport] generated Caribbean_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [9_NinthReport] generated Southern and Central Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [9_NinthReport] generated Central Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:15 — [9_NinthReport] generated Southern Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated Middle East_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated South America_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated Polynesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated Antarctica_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated Australia and New Zealand_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated Western Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated Eastern Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:16 — [9_NinthReport] generated Western Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Eastern Europe_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Central America_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated North America_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Southeast Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Southern Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Eastern Asia_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Nordic Countries_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Northern Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Baltic Countries_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Melanesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Micronesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated British Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [9_NinthReport] generated Micronesia_Caribbean_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated Aruba_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated Afghanistan_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated Angola_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated Anguilla_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated Albania_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated Andorra_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated Netherlands Antilles_2025-11-21_21-10.md
+- 2025-11-21 21:10:17 — [10_TenthReport] generated United Arab Emirates_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Argentina_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Armenia_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated American Samoa_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Antarctica_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated French Southern territories_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Antigua and Barbuda_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Australia_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Austria_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Azerbaijan_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Burundi_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Belgium_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Benin_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Burkina Faso_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Bangladesh_2025-11-21_21-10.md
+- 2025-11-21 21:10:18 — [10_TenthReport] generated Bulgaria_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Bahrain_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Bahamas_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Bosnia and Herzegovina_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Belarus_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Belize_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Bermuda_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Bolivia_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Brazil_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Barbados_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Brunei_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Bhutan_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Bouvet Island_2025-11-21_21-10.md
+- 2025-11-21 21:10:19 — [10_TenthReport] generated Botswana_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Central African Republic_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Canada_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Cocos _Keeling_ Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Switzerland_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Chile_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated China_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated C_te d_Ivoire_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Cameroon_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Congo_ The Democratic Republic of the_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Congo_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Cook Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Colombia_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Comoros_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Cape Verde_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Costa Rica_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Cuba_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Christmas Island_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Cayman Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Cyprus_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Czech Republic_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Germany_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Djibouti_2025-11-21_21-10.md
+- 2025-11-21 21:10:20 — [10_TenthReport] generated Dominica_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Denmark_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Dominican Republic_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Algeria_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Ecuador_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Egypt_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Eritrea_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Western Sahara_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Spain_2025-11-21_21-10.md
+- 2025-11-21 21:10:21 — [10_TenthReport] generated Estonia_2025-11-21_21-10.md
+- 2025-11-21 21:10:22 — [10_TenthReport] generated Ethiopia_2025-11-21_21-10.md
+- 2025-11-21 21:10:22 — [10_TenthReport] generated Finland_2025-11-21_21-10.md
+- 2025-11-21 21:10:23 — [10_TenthReport] generated Fiji Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:23 — [10_TenthReport] generated Falkland Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:24 — [10_TenthReport] generated France_2025-11-21_21-10.md
+- 2025-11-21 21:10:25 — [10_TenthReport] generated Faroe Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:27 — [10_TenthReport] generated Micronesia_ Federated States of_2025-11-21_21-10.md
+- 2025-11-21 21:10:27 — [10_TenthReport] generated Gabon_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated United Kingdom_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated Georgia_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated Ghana_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated Gibraltar_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated Guinea_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated Guadeloupe_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated Gambia_2025-11-21_21-10.md
+- 2025-11-21 21:10:28 — [10_TenthReport] generated Guinea-Bissau_2025-11-21_21-10.md
+- 2025-11-21 21:10:29 — [10_TenthReport] generated Equatorial Guinea_2025-11-21_21-10.md
+- 2025-11-21 21:10:29 — [10_TenthReport] generated Greece_2025-11-21_21-10.md
+- 2025-11-21 21:10:29 — [10_TenthReport] generated Grenada_2025-11-21_21-10.md
+- 2025-11-21 21:10:29 — [10_TenthReport] generated Greenland_2025-11-21_21-10.md
+- 2025-11-21 21:10:29 — [10_TenthReport] generated Guatemala_2025-11-21_21-10.md
+- 2025-11-21 21:10:29 — [10_TenthReport] generated French Guiana_2025-11-21_21-10.md
+- 2025-11-21 21:10:29 — [10_TenthReport] generated Guam_2025-11-21_21-10.md
+- 2025-11-21 21:10:30 — [10_TenthReport] generated Guyana_2025-11-21_21-10.md
+- 2025-11-21 21:10:30 — [10_TenthReport] generated Hong Kong_2025-11-21_21-10.md
+- 2025-11-21 21:10:30 — [10_TenthReport] generated Heard Island and McDonald Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:31 — [10_TenthReport] generated Honduras_2025-11-21_21-10.md
+- 2025-11-21 21:10:31 — [10_TenthReport] generated Croatia_2025-11-21_21-10.md
+- 2025-11-21 21:10:31 — [10_TenthReport] generated Haiti_2025-11-21_21-10.md
+- 2025-11-21 21:10:31 — [10_TenthReport] generated Hungary_2025-11-21_21-10.md
+- 2025-11-21 21:10:31 — [10_TenthReport] generated Indonesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:31 — [10_TenthReport] generated India_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated British Indian Ocean Territory_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated Ireland_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated Iran_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated Iraq_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated Iceland_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated Israel_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated Italy_2025-11-21_21-10.md
+- 2025-11-21 21:10:32 — [10_TenthReport] generated Jamaica_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Jordan_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Japan_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Kazakstan_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Kenya_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Kyrgyzstan_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Cambodia_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Kiribati_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Saint Kitts and Nevis_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated South Korea_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Kuwait_2025-11-21_21-10.md
+- 2025-11-21 21:10:33 — [10_TenthReport] generated Laos_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Lebanon_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Liberia_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Libyan Arab Jamahiriya_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Saint Lucia_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Liechtenstein_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Sri Lanka_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Lesotho_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Lithuania_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Luxembourg_2025-11-21_21-10.md
+- 2025-11-21 21:10:34 — [10_TenthReport] generated Latvia_2025-11-21_21-10.md
+- 2025-11-21 21:10:35 — [10_TenthReport] generated Macao_2025-11-21_21-10.md
+- 2025-11-21 21:10:35 — [10_TenthReport] generated Morocco_2025-11-21_21-10.md
+- 2025-11-21 21:10:35 — [10_TenthReport] generated Monaco_2025-11-21_21-10.md
+- 2025-11-21 21:10:36 — [10_TenthReport] generated Moldova_2025-11-21_21-10.md
+- 2025-11-21 21:10:36 — [10_TenthReport] generated Madagascar_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Maldives_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Mexico_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Marshall Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Macedonia_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Mali_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Malta_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Myanmar_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Mongolia_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Northern Mariana Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Mozambique_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Mauritania_2025-11-21_21-10.md
+- 2025-11-21 21:10:37 — [10_TenthReport] generated Montserrat_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Martinique_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Mauritius_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Malawi_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Malaysia_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Mayotte_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Namibia_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated New Caledonia_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Niger_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Norfolk Island_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Nigeria_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Nicaragua_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Niue_2025-11-21_21-10.md
+- 2025-11-21 21:10:38 — [10_TenthReport] generated Netherlands_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Norway_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Nepal_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Nauru_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated New Zealand_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Oman_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Pakistan_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Panama_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Pitcairn_2025-11-21_21-10.md
+- 2025-11-21 21:10:39 — [10_TenthReport] generated Peru_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Philippines_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Palau_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Papua New Guinea_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Poland_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Puerto Rico_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated North Korea_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Portugal_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Paraguay_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Palestine_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated French Polynesia_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Qatar_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated R_union_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Romania_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Russian Federation_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Rwanda_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Saudi Arabia_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Sudan_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Senegal_2025-11-21_21-10.md
+- 2025-11-21 21:10:40 — [10_TenthReport] generated Singapore_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated South Georgia and the South Sandwich Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Saint Helena_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Svalbard and Jan Mayen_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Solomon Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Sierra Leone_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated El Salvador_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated San Marino_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Somalia_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Saint Pierre and Miquelon_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Sao Tome and Principe_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Suriname_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Slovakia_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Slovenia_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Sweden_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Swaziland_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Seychelles_2025-11-21_21-10.md
+- 2025-11-21 21:10:41 — [10_TenthReport] generated Syria_2025-11-21_21-10.md
+- 2025-11-21 21:10:42 — [10_TenthReport] generated Turks and Caicos Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:42 — [10_TenthReport] generated Chad_2025-11-21_21-10.md
+- 2025-11-21 21:10:42 — [10_TenthReport] generated Togo_2025-11-21_21-10.md
+- 2025-11-21 21:10:42 — [10_TenthReport] generated Thailand_2025-11-21_21-10.md
+- 2025-11-21 21:10:42 — [10_TenthReport] generated Tajikistan_2025-11-21_21-10.md
+- 2025-11-21 21:10:42 — [10_TenthReport] generated Tokelau_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Turkmenistan_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated East Timor_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Tonga_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Trinidad and Tobago_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Tunisia_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Turkey_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Tuvalu_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Taiwan_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Tanzania_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Uganda_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Ukraine_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated United States Minor Outlying Islands_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Uruguay_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated United States_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Uzbekistan_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Holy See _Vatican City State__2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Saint Vincent and the Grenadines_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Venezuela_2025-11-21_21-10.md
+- 2025-11-21 21:10:43 — [10_TenthReport] generated Virgin Islands_ British_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Virgin Islands_ U_S__2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Vietnam_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Vanuatu_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Wallis and Futuna_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Samoa_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Yemen_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Yugoslavia_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated South Africa_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Zambia_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [10_TenthReport] generated Zimbabwe_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [11_EleventhReport] generated Kabol_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [11_EleventhReport] generated Qandahar_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [11_EleventhReport] generated Herat_2025-11-21_21-10.md
+- 2025-11-21 21:10:44 — [11_EleventhReport] generated Balkh_2025-11-21_21-10.md
+- 2025-11-21 21:10:45 — [11_EleventhReport] generated Noord-Holland_2025-11-21_21-10.md
+- 2025-11-21 21:10:45 — [11_EleventhReport] generated Zuid-Holland_2025-11-21_21-10.md
+- 2025-11-21 21:10:45 — [11_EleventhReport] generated Utrecht_2025-11-21_21-10.md
+- 2025-11-21 21:10:45 — [11_EleventhReport] generated Noord-Brabant_2025-11-21_21-10.md
+- 2025-11-21 21:10:45 — [11_EleventhReport] generated Groningen_2025-11-21_21-10.md
+- 2025-11-21 21:10:45 — [11_EleventhReport] generated Gelderland_2025-11-21_21-10.md
+- 2025-11-21 21:10:45 — [11_EleventhReport] generated Overijssel_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Flevoland_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Limburg_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Drenthe_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Cura_ao_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Tirana_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Alger_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Oran_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Constantine_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Annaba_2025-11-21_21-10.md
+- 2025-11-21 21:10:46 — [11_EleventhReport] generated Batna_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated S_tif_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Sidi Bel Abb_s_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Skikda_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Biskra_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Blida_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated B_ja_a_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Mostaganem_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated T_bessa_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Tlemcen_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated B_char_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Tiaret_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Chlef_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Gharda_a_2025-11-21_21-10.md
+- 2025-11-21 21:10:47 — [11_EleventhReport] generated Tutuila_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Andorra la Vella_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Luanda_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Huambo_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Benguela_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Namibe_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated __2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated St John_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Dubai_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Abu Dhabi_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Sharja_2025-11-21_21-10.md
+- 2025-11-21 21:10:48 — [11_EleventhReport] generated Ajman_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Distrito Federal_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Buenos Aires_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated C_rdoba_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Santa F__2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Tucum_n_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Salta_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Corrientes_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Chaco_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Entre Rios_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Mendoza_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Misiones_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Santiago del Estero_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Jujuy_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Neuqu_n_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Formosa_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated La Rioja_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Catamarca_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Chubut_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated San Juan_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated San Luis_2025-11-21_21-10.md
+- 2025-11-21 21:10:49 — [11_EleventhReport] generated Yerevan_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated _irak_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated Lori_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated New South Wales_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated Victoria_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated Queensland_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated West Australia_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated South Australia_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated Capital Region_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated Tasmania_2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated Bak__2025-11-21_21-10.md
+- 2025-11-21 21:10:50 — [11_EleventhReport] generated G_nc__2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Sumqay_t_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Ming__evir_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated New Providence_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated al-Manama_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Dhaka_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Chittagong_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Khulna_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Rajshahi_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Barisal_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Sylhet_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated St Michael_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated Antwerpen_2025-11-21_21-10.md
+- 2025-11-21 21:10:51 — [11_EleventhReport] generated East Flanderi_2025-11-21_21-10.md
+- 2025-11-21 21:10:52 — [11_EleventhReport] generated Hainaut_2025-11-21_21-10.md
+- 2025-11-21 21:10:52 — [11_EleventhReport] generated Li_ge_2025-11-21_21-10.md
+- 2025-11-21 21:10:52 — [11_EleventhReport] generated Bryssel_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated West Flanderi_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Namur_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Belize City_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Cayo_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Atlantique_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Ou_m__2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Atacora_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Borgou_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Saint George_s_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Hamilton_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Thimphu_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Santa Cruz_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated La Paz_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Cochabamba_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Oruro_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Chuquisaca_2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Potos__2025-11-21_21-10.md
+- 2025-11-21 21:10:53 — [11_EleventhReport] generated Tarija_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Federaatio_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Republika Srpska_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Gaborone_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Francistown_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated S_o Paulo_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Rio de Janeiro_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Bahia_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Minas Gerais_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Cear__2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Paran__2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Pernambuco_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Rio Grande do Sul_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Amazonas_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Par__2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Goi_s_2025-11-21_21-10.md
+- 2025-11-21 21:10:54 — [11_EleventhReport] generated Maranh_o_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Alagoas_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Piau__2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Rio Grande do Norte_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Mato Grosso do Sul_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Para_ba_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Mato Grosso_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Sergipe_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Santa Catarina_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Esp_rito Santo_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Rond_nia_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Acre_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Amap__2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Roraima_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated Tocantins_2025-11-21_21-10.md
+- 2025-11-21 21:10:55 — [11_EleventhReport] generated England_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Scotland_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Wales_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated North Ireland_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Jersey_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Tortola_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Brunei and Muara_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Grad Sofija_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Plovdiv_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Varna_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Burgas_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Ruse_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Haskovo_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Lovec_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Kadiogo_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Houet_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Boulkiemd__2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Bujumbura_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Grand Cayman_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Santiago_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Valpara_so_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated B_ob_o_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated Antofagasta_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated La Araucan_a_2025-11-21_21-10.md
+- 2025-11-21 21:10:56 — [11_EleventhReport] generated O_Higgins_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Tarapac__2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Maule_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Los Lagos_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Coquimbo_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Magallanes_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Atacama_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Rarotonga_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated San Jos__2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Djibouti_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated St George_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated Distrito Nacional_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated La Romana_2025-11-21_21-10.md
+- 2025-11-21 21:10:57 — [11_EleventhReport] generated San Pedro de Macor_s_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Duarte_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Puerto Plata_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Guayas_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Pichincha_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Azuay_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated El Oro_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Manab__2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Tungurahua_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Imbabura_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Los R_os_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Loja_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Chimborazo_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Esmeraldas_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Kairo_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Aleksandria_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Giza_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated al-Qalyubiya_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Port Said_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Suez_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated al-Gharbiya_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated al-Daqahliya_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Luxor_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated Asyut_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated al-Sharqiya_2025-11-21_21-10.md
+- 2025-11-21 21:10:58 — [11_EleventhReport] generated al-Faiyum_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Ismailia_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated al-Buhayra_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Assuan_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated al-Minya_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Bani Suwayf_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Qina_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Sawhaj_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated al-Minufiya_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Kafr al-Shaykh_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Shamal Sina_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated San Salvador_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Santa Ana_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated San Miguel_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated La Libertad_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Maekel_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Madrid_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Katalonia_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Valencia_2025-11-21_21-10.md
+- 2025-11-21 21:10:59 — [11_EleventhReport] generated Andalusia_2025-11-21_21-10.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Aragonia_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Baskimaa_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Canary Islands_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Murcia_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Balears_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Castilla and Le_n_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Galicia_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Asturia_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Cantabria_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Navarra_2025-11-21_21-11.md
+- 2025-11-21 21:11:00 — [11_EleventhReport] generated Kastilia-La Mancha_2025-11-21_21-11.md
+- 2025-11-21 21:11:01 — [11_EleventhReport] generated Extremadura_2025-11-21_21-11.md
+- 2025-11-21 21:11:01 — [11_EleventhReport] generated Western Cape_2025-11-21_21-11.md
+- 2025-11-21 21:11:01 — [11_EleventhReport] generated Gauteng_2025-11-21_21-11.md
+- 2025-11-21 21:11:01 — [11_EleventhReport] generated Eastern Cape_2025-11-21_21-11.md
+- 2025-11-21 21:11:01 — [11_EleventhReport] generated KwaZulu-Natal_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Free State_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated North West_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Northern Cape_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Mpumalanga_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Addis Abeba_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Dire Dawa_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Oromia_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Amhara_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Tigray_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated East Falkland_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Central_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated National Capital Reg_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Southern Mindanao_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Central Visayas_2025-11-21_21-11.md
+- 2025-11-21 21:11:02 — [11_EleventhReport] generated Western Mindanao_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Southern Tagalog_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Northern Mindanao_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Western Visayas_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Central Luzon_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Central Mindanao_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Caraga_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated CAR_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Eastern Visayas_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Bicol_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Ilocos_2025-11-21_21-11.md
+- 2025-11-21 21:11:03 — [11_EleventhReport] generated Cagayan Valley_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated ARMM_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Streymoyar_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Estuaire_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Kombo St Mary_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Banjul_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Tbilisi_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Imereti_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Kvemo Kartli_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Adzaria _At_ara__2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Abhasia _Aphazeti__2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Greater Accra_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Ashanti_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Northern_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Western_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Kitaa_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Grande-Terre_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Basse-Terre_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Guatemala_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Quetzaltenango_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Conakry_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Bissau_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Georgetown_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Ouest_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Nord_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Distrito Central_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Cort_s_2025-11-21_21-11.md
+- 2025-11-21 21:11:04 — [11_EleventhReport] generated Atl_ntida_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Kowloon and New Kowl_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Hongkong_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated L_nsimaa_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Jakarta Raya_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated East Java_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated West Java_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Sumatera Utara_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Sumatera Selatan_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Central Java_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Sulawesi Selatan_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Lampung_2025-11-21_21-11.md
+- 2025-11-21 21:11:05 — [11_EleventhReport] generated Sumatera Barat_2025-11-21_21-11.md
+- 2025-11-21 21:11:06 — [11_EleventhReport] generated Kalimantan Selatan_2025-11-21_21-11.md
+- 2025-11-21 21:11:06 — [11_EleventhReport] generated Riau_2025-11-21_21-11.md
+- 2025-11-21 21:11:06 — [11_EleventhReport] generated Bali_2025-11-21_21-11.md
+- 2025-11-21 21:11:06 — [11_EleventhReport] generated Yogyakarta_2025-11-21_21-11.md
+- 2025-11-21 21:11:06 — [11_EleventhReport] generated Kalimantan Barat_2025-11-21_21-11.md
+- 2025-11-21 21:17:17 — [4_FourthReport] generated 5_Top_Populated_Countries_In_The_World_2025-11-21_21-17.md
+- 2025-11-21 21:35:14 — [4_FourthReport] generated 12_Top_Populated_Countries_In_The_World_2025-11-21_21-35.md
+- 2025-11-21 21:50:42 — [4_FourthReport] generated 4_Top_Populated_Countries_In_The_World_2025-11-21_21-50.md
+- 2025-11-21 21:51:31 — [5_FifthReport] generated 5_Top_Populated_Countries_In_Antarctica_2025-11-21_21-51.md
+- 2025-11-21 22:13:22 — [4_FourthReport] generated 12_Top_Populated_Countries_In_The_World_2025-11-21_22-13.md
+- 2025-11-21 22:13:37 — [5_FifthReport] generated 2_Top_Populated_Countries_In_Africa_2025-11-21_22-13.md
+- 2025-11-21 22:13:58 — [6_SixthReport] generated 4_Top_Populated_Countries_In_Caribbean_2025-11-21_22-13.md
+- 2025-11-21 22:14:10 — [20_TwentiethReport] generated TwentiethReport_2025-11-21_22-14.md
+- 2025-11-21 22:14:28 — [21_TwentyFirstReport] generated TwentyFirstReport_2025-11-21_22-14.md
+- 2025-11-21 22:14:38 — [22_TwentySecondReport] generated TwentySecondReport_2025-11-21_22-14.md
+- 2025-11-21 22:14:39 — [1_FirstReport] generated FirstReport_2025-11-21_22-14.md
+- 2025-11-21 22:14:39 — [2_SecondReport] generated North America_2025-11-21_22-14.md
+- 2025-11-21 22:14:39 — [2_SecondReport] generated Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:39 — [2_SecondReport] generated Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:39 — [2_SecondReport] generated Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [2_SecondReport] generated South America_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [2_SecondReport] generated Oceania_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [2_SecondReport] generated Antarctica_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Caribbean_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Southern and Central Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Central Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Southern Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Middle East_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated South America_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Polynesia_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Antarctica_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Australia and New Zealand_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Western Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Eastern Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Western Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Eastern Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:40 — [3_ThirdReport] generated Central America_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated North America_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Southeast Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Southern Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Eastern Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Nordic Countries_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Northern Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Baltic Countries_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Melanesia_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Micronesia_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated British Islands_2025-11-21_22-14.md
+- 2025-11-21 22:14:41 — [3_ThirdReport] generated Micronesia_Caribbean_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [7_SeventhReport] generated SeventhReport_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [8_EighthReport] generated North America_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [8_EighthReport] generated Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [8_EighthReport] generated Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [8_EighthReport] generated Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [8_EighthReport] generated South America_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [8_EighthReport] generated Oceania_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [8_EighthReport] generated Antarctica_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [9_NinthReport] generated Caribbean_2025-11-21_22-14.md
+- 2025-11-21 22:14:42 — [9_NinthReport] generated Southern and Central Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:43 — [9_NinthReport] generated Central Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:43 — [9_NinthReport] generated Southern Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:43 — [9_NinthReport] generated Middle East_2025-11-21_22-14.md
+- 2025-11-21 22:14:43 — [9_NinthReport] generated South America_2025-11-21_22-14.md
+- 2025-11-21 22:14:43 — [9_NinthReport] generated Polynesia_2025-11-21_22-14.md
+- 2025-11-21 22:14:43 — [9_NinthReport] generated Antarctica_2025-11-21_22-14.md
+- 2025-11-21 22:14:44 — [9_NinthReport] generated Australia and New Zealand_2025-11-21_22-14.md
+- 2025-11-21 22:14:44 — [9_NinthReport] generated Western Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:44 — [9_NinthReport] generated Eastern Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:44 — [9_NinthReport] generated Western Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:44 — [9_NinthReport] generated Eastern Europe_2025-11-21_22-14.md
+- 2025-11-21 22:14:44 — [9_NinthReport] generated Central America_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated North America_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Southeast Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Southern Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Eastern Asia_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Nordic Countries_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Northern Africa_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Baltic Countries_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Melanesia_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Micronesia_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated British Islands_2025-11-21_22-14.md
+- 2025-11-21 22:14:45 — [9_NinthReport] generated Micronesia_Caribbean_2025-11-21_22-14.md
+- 2025-11-21 22:14:46 — [10_TenthReport] generated Aruba_2025-11-21_22-14.md
+- 2025-11-21 22:14:46 — [10_TenthReport] generated Afghanistan_2025-11-21_22-14.md
+- 2025-11-21 22:14:46 — [10_TenthReport] generated Angola_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated Anguilla_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated Albania_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated Andorra_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated Netherlands Antilles_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated United Arab Emirates_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated Argentina_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated Armenia_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated American Samoa_2025-11-21_22-14.md
+- 2025-11-21 22:14:47 — [10_TenthReport] generated Antarctica_2025-11-21_22-14.md
+- 2025-11-21 22:14:48 — [10_TenthReport] generated French Southern territories_2025-11-21_22-14.md
+- 2025-11-21 22:14:48 — [10_TenthReport] generated Antigua and Barbuda_2025-11-21_22-14.md
+- 2025-11-21 22:14:48 — [10_TenthReport] generated Australia_2025-11-21_22-14.md
+- 2025-11-21 22:14:48 — [10_TenthReport] generated Austria_2025-11-21_22-14.md
+- 2025-11-21 22:14:49 — [10_TenthReport] generated Azerbaijan_2025-11-21_22-14.md
+- 2025-11-21 22:14:49 — [10_TenthReport] generated Burundi_2025-11-21_22-14.md
+- 2025-11-21 22:14:49 — [10_TenthReport] generated Belgium_2025-11-21_22-14.md
+- 2025-11-21 22:14:50 — [10_TenthReport] generated Benin_2025-11-21_22-14.md
+- 2025-11-21 22:14:52 — [10_TenthReport] generated Burkina Faso_2025-11-21_22-14.md
+- 2025-11-21 22:14:52 — [10_TenthReport] generated Bangladesh_2025-11-21_22-14.md
+- 2025-11-21 22:14:53 — [10_TenthReport] generated Bulgaria_2025-11-21_22-14.md
+- 2025-11-21 22:14:53 — [10_TenthReport] generated Bahrain_2025-11-21_22-14.md
+- 2025-11-21 22:14:53 — [10_TenthReport] generated Bahamas_2025-11-21_22-14.md
+- 2025-11-21 22:14:53 — [10_TenthReport] generated Bosnia and Herzegovina_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Belarus_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Belize_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Bermuda_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Bolivia_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Brazil_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Barbados_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Brunei_2025-11-21_22-14.md
+- 2025-11-21 22:14:54 — [10_TenthReport] generated Bhutan_2025-11-21_22-14.md
+- 2025-11-21 22:14:55 — [10_TenthReport] generated Bouvet Island_2025-11-21_22-14.md
+- 2025-11-21 22:14:55 — [10_TenthReport] generated Botswana_2025-11-21_22-14.md
+- 2025-11-21 22:14:55 — [10_TenthReport] generated Central African Republic_2025-11-21_22-14.md
+- 2025-11-21 22:14:55 — [10_TenthReport] generated Canada_2025-11-21_22-14.md
+- 2025-11-21 22:14:55 — [10_TenthReport] generated Cocos _Keeling_ Islands_2025-11-21_22-14.md
+- 2025-11-21 22:14:56 — [10_TenthReport] generated Switzerland_2025-11-21_22-14.md
+- 2025-11-21 22:14:56 — [10_TenthReport] generated Chile_2025-11-21_22-14.md
+- 2025-11-21 22:14:57 — [10_TenthReport] generated China_2025-11-21_22-14.md
+- 2025-11-21 22:14:57 — [10_TenthReport] generated C_te d_Ivoire_2025-11-21_22-14.md
+- 2025-11-21 22:14:57 — [10_TenthReport] generated Cameroon_2025-11-21_22-14.md
+- 2025-11-21 22:14:58 — [10_TenthReport] generated Congo_ The Democratic Republic of the_2025-11-21_22-14.md
+- 2025-11-21 22:14:59 — [10_TenthReport] generated Congo_2025-11-21_22-14.md
+- 2025-11-21 22:14:59 — [10_TenthReport] generated Cook Islands_2025-11-21_22-14.md
+- 2025-11-21 22:14:59 — [10_TenthReport] generated Colombia_2025-11-21_22-14.md
+- 2025-11-21 22:14:59 — [10_TenthReport] generated Comoros_2025-11-21_22-14.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Cape Verde_2025-11-21_22-14.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Costa Rica_2025-11-21_22-15.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Cuba_2025-11-21_22-15.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Christmas Island_2025-11-21_22-15.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Cayman Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Cyprus_2025-11-21_22-15.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Czech Republic_2025-11-21_22-15.md
+- 2025-11-21 22:15:00 — [10_TenthReport] generated Germany_2025-11-21_22-15.md
+- 2025-11-21 22:15:01 — [10_TenthReport] generated Djibouti_2025-11-21_22-15.md
+- 2025-11-21 22:15:01 — [10_TenthReport] generated Dominica_2025-11-21_22-15.md
+- 2025-11-21 22:15:01 — [10_TenthReport] generated Denmark_2025-11-21_22-15.md
+- 2025-11-21 22:15:01 — [10_TenthReport] generated Dominican Republic_2025-11-21_22-15.md
+- 2025-11-21 22:15:01 — [10_TenthReport] generated Algeria_2025-11-21_22-15.md
+- 2025-11-21 22:15:01 — [10_TenthReport] generated Ecuador_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Egypt_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Eritrea_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Western Sahara_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Spain_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Estonia_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Ethiopia_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Finland_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Fiji Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Falkland Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated France_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Faroe Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Micronesia_ Federated States of_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Gabon_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated United Kingdom_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Georgia_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Ghana_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Gibraltar_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Guinea_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Guadeloupe_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Gambia_2025-11-21_22-15.md
+- 2025-11-21 22:15:02 — [10_TenthReport] generated Guinea-Bissau_2025-11-21_22-15.md
+- 2025-11-21 22:15:03 — [10_TenthReport] generated Equatorial Guinea_2025-11-21_22-15.md
+- 2025-11-21 22:15:03 — [10_TenthReport] generated Greece_2025-11-21_22-15.md
+- 2025-11-21 22:15:03 — [10_TenthReport] generated Grenada_2025-11-21_22-15.md
+- 2025-11-21 22:15:03 — [10_TenthReport] generated Greenland_2025-11-21_22-15.md
+- 2025-11-21 22:15:03 — [10_TenthReport] generated Guatemala_2025-11-21_22-15.md
+- 2025-11-21 22:15:03 — [10_TenthReport] generated French Guiana_2025-11-21_22-15.md
+- 2025-11-21 22:15:03 — [10_TenthReport] generated Guam_2025-11-21_22-15.md
+- 2025-11-21 22:15:04 — [10_TenthReport] generated Guyana_2025-11-21_22-15.md
+- 2025-11-21 22:15:05 — [10_TenthReport] generated Hong Kong_2025-11-21_22-15.md
+- 2025-11-21 22:15:05 — [10_TenthReport] generated Heard Island and McDonald Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:05 — [10_TenthReport] generated Honduras_2025-11-21_22-15.md
+- 2025-11-21 22:15:05 — [10_TenthReport] generated Croatia_2025-11-21_22-15.md
+- 2025-11-21 22:15:06 — [10_TenthReport] generated Haiti_2025-11-21_22-15.md
+- 2025-11-21 22:15:06 — [10_TenthReport] generated Hungary_2025-11-21_22-15.md
+- 2025-11-21 22:15:07 — [10_TenthReport] generated Indonesia_2025-11-21_22-15.md
+- 2025-11-21 22:15:07 — [10_TenthReport] generated India_2025-11-21_22-15.md
+- 2025-11-21 22:15:07 — [10_TenthReport] generated British Indian Ocean Territory_2025-11-21_22-15.md
+- 2025-11-21 22:15:08 — [10_TenthReport] generated Ireland_2025-11-21_22-15.md
+- 2025-11-21 22:15:08 — [10_TenthReport] generated Iran_2025-11-21_22-15.md
+- 2025-11-21 22:15:08 — [10_TenthReport] generated Iraq_2025-11-21_22-15.md
+- 2025-11-21 22:15:08 — [10_TenthReport] generated Iceland_2025-11-21_22-15.md
+- 2025-11-21 22:15:08 — [10_TenthReport] generated Israel_2025-11-21_22-15.md
+- 2025-11-21 22:15:09 — [10_TenthReport] generated Italy_2025-11-21_22-15.md
+- 2025-11-21 22:15:09 — [10_TenthReport] generated Jamaica_2025-11-21_22-15.md
+- 2025-11-21 22:15:09 — [10_TenthReport] generated Jordan_2025-11-21_22-15.md
+- 2025-11-21 22:15:09 — [10_TenthReport] generated Japan_2025-11-21_22-15.md
+- 2025-11-21 22:15:10 — [10_TenthReport] generated Kazakstan_2025-11-21_22-15.md
+- 2025-11-21 22:15:10 — [10_TenthReport] generated Kenya_2025-11-21_22-15.md
+- 2025-11-21 22:15:10 — [10_TenthReport] generated Kyrgyzstan_2025-11-21_22-15.md
+- 2025-11-21 22:15:11 — [10_TenthReport] generated Cambodia_2025-11-21_22-15.md
+- 2025-11-21 22:15:11 — [10_TenthReport] generated Kiribati_2025-11-21_22-15.md
+- 2025-11-21 22:15:11 — [10_TenthReport] generated Saint Kitts and Nevis_2025-11-21_22-15.md
+- 2025-11-21 22:15:12 — [10_TenthReport] generated South Korea_2025-11-21_22-15.md
+- 2025-11-21 22:15:13 — [10_TenthReport] generated Kuwait_2025-11-21_22-15.md
+- 2025-11-21 22:15:13 — [10_TenthReport] generated Laos_2025-11-21_22-15.md
+- 2025-11-21 22:15:14 — [10_TenthReport] generated Lebanon_2025-11-21_22-15.md
+- 2025-11-21 22:15:14 — [10_TenthReport] generated Liberia_2025-11-21_22-15.md
+- 2025-11-21 22:15:14 — [10_TenthReport] generated Libyan Arab Jamahiriya_2025-11-21_22-15.md
+- 2025-11-21 22:15:14 — [10_TenthReport] generated Saint Lucia_2025-11-21_22-15.md
+- 2025-11-21 22:15:14 — [10_TenthReport] generated Liechtenstein_2025-11-21_22-15.md
+- 2025-11-21 22:15:14 — [10_TenthReport] generated Sri Lanka_2025-11-21_22-15.md
+- 2025-11-21 22:15:14 — [10_TenthReport] generated Lesotho_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Lithuania_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Luxembourg_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Latvia_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Macao_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Morocco_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Monaco_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Moldova_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Madagascar_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Maldives_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Mexico_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Marshall Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Macedonia_2025-11-21_22-15.md
+- 2025-11-21 22:15:15 — [10_TenthReport] generated Mali_2025-11-21_22-15.md
+- 2025-11-21 22:15:16 — [10_TenthReport] generated Malta_2025-11-21_22-15.md
+- 2025-11-21 22:15:16 — [10_TenthReport] generated Myanmar_2025-11-21_22-15.md
+- 2025-11-21 22:15:16 — [10_TenthReport] generated Mongolia_2025-11-21_22-15.md
+- 2025-11-21 22:15:16 — [10_TenthReport] generated Northern Mariana Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Mozambique_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Mauritania_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Montserrat_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Martinique_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Mauritius_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Malawi_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Malaysia_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Mayotte_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Namibia_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated New Caledonia_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Niger_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Norfolk Island_2025-11-21_22-15.md
+- 2025-11-21 22:15:17 — [10_TenthReport] generated Nigeria_2025-11-21_22-15.md
+- 2025-11-21 22:15:18 — [10_TenthReport] generated Nicaragua_2025-11-21_22-15.md
+- 2025-11-21 22:15:18 — [10_TenthReport] generated Niue_2025-11-21_22-15.md
+- 2025-11-21 22:15:18 — [10_TenthReport] generated Netherlands_2025-11-21_22-15.md
+- 2025-11-21 22:15:18 — [10_TenthReport] generated Norway_2025-11-21_22-15.md
+- 2025-11-21 22:15:18 — [10_TenthReport] generated Nepal_2025-11-21_22-15.md
+- 2025-11-21 22:15:19 — [10_TenthReport] generated Nauru_2025-11-21_22-15.md
+- 2025-11-21 22:15:20 — [10_TenthReport] generated New Zealand_2025-11-21_22-15.md
+- 2025-11-21 22:15:20 — [10_TenthReport] generated Oman_2025-11-21_22-15.md
+- 2025-11-21 22:15:20 — [10_TenthReport] generated Pakistan_2025-11-21_22-15.md
+- 2025-11-21 22:15:20 — [10_TenthReport] generated Panama_2025-11-21_22-15.md
+- 2025-11-21 22:15:20 — [10_TenthReport] generated Pitcairn_2025-11-21_22-15.md
+- 2025-11-21 22:15:21 — [10_TenthReport] generated Peru_2025-11-21_22-15.md
+- 2025-11-21 22:15:23 — [10_TenthReport] generated Philippines_2025-11-21_22-15.md
+- 2025-11-21 22:15:23 — [10_TenthReport] generated Palau_2025-11-21_22-15.md
+- 2025-11-21 22:15:23 — [10_TenthReport] generated Papua New Guinea_2025-11-21_22-15.md
+- 2025-11-21 22:15:24 — [10_TenthReport] generated Poland_2025-11-21_22-15.md
+- 2025-11-21 22:15:24 — [10_TenthReport] generated Puerto Rico_2025-11-21_22-15.md
+- 2025-11-21 22:15:24 — [10_TenthReport] generated North Korea_2025-11-21_22-15.md
+- 2025-11-21 22:15:24 — [10_TenthReport] generated Portugal_2025-11-21_22-15.md
+- 2025-11-21 22:15:24 — [10_TenthReport] generated Paraguay_2025-11-21_22-15.md
+- 2025-11-21 22:15:24 — [10_TenthReport] generated Palestine_2025-11-21_22-15.md
+- 2025-11-21 22:15:24 — [10_TenthReport] generated French Polynesia_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Qatar_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated R_union_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Romania_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Russian Federation_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Rwanda_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Saudi Arabia_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Sudan_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Senegal_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Singapore_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated South Georgia and the South Sandwich Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Saint Helena_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Svalbard and Jan Mayen_2025-11-21_22-15.md
+- 2025-11-21 22:15:25 — [10_TenthReport] generated Solomon Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:26 — [10_TenthReport] generated Sierra Leone_2025-11-21_22-15.md
+- 2025-11-21 22:15:26 — [10_TenthReport] generated El Salvador_2025-11-21_22-15.md
+- 2025-11-21 22:15:26 — [10_TenthReport] generated San Marino_2025-11-21_22-15.md
+- 2025-11-21 22:15:27 — [10_TenthReport] generated Somalia_2025-11-21_22-15.md
+- 2025-11-21 22:15:27 — [10_TenthReport] generated Saint Pierre and Miquelon_2025-11-21_22-15.md
+- 2025-11-21 22:15:27 — [10_TenthReport] generated Sao Tome and Principe_2025-11-21_22-15.md
+- 2025-11-21 22:15:28 — [10_TenthReport] generated Suriname_2025-11-21_22-15.md
+- 2025-11-21 22:15:28 — [10_TenthReport] generated Slovakia_2025-11-21_22-15.md
+- 2025-11-21 22:15:28 — [10_TenthReport] generated Slovenia_2025-11-21_22-15.md
+- 2025-11-21 22:15:28 — [10_TenthReport] generated Sweden_2025-11-21_22-15.md
+- 2025-11-21 22:15:28 — [10_TenthReport] generated Swaziland_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Seychelles_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Syria_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Turks and Caicos Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Chad_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Togo_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Thailand_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Tajikistan_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Tokelau_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Turkmenistan_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated East Timor_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Tonga_2025-11-21_22-15.md
+- 2025-11-21 22:15:29 — [10_TenthReport] generated Trinidad and Tobago_2025-11-21_22-15.md
+- 2025-11-21 22:15:30 — [10_TenthReport] generated Tunisia_2025-11-21_22-15.md
+- 2025-11-21 22:15:30 — [10_TenthReport] generated Turkey_2025-11-21_22-15.md
+- 2025-11-21 22:15:30 — [10_TenthReport] generated Tuvalu_2025-11-21_22-15.md
+- 2025-11-21 22:15:30 — [10_TenthReport] generated Taiwan_2025-11-21_22-15.md
+- 2025-11-21 22:15:30 — [10_TenthReport] generated Tanzania_2025-11-21_22-15.md
+- 2025-11-21 22:15:30 — [10_TenthReport] generated Uganda_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Ukraine_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated United States Minor Outlying Islands_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Uruguay_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated United States_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Uzbekistan_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Holy See _Vatican City State__2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Saint Vincent and the Grenadines_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Venezuela_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Virgin Islands_ British_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Virgin Islands_ U_S__2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Vietnam_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Vanuatu_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Wallis and Futuna_2025-11-21_22-15.md
+- 2025-11-21 22:15:31 — [10_TenthReport] generated Samoa_2025-11-21_22-15.md
+- 2025-11-21 22:15:32 — [10_TenthReport] generated Yemen_2025-11-21_22-15.md
+- 2025-11-21 22:15:32 — [10_TenthReport] generated Yugoslavia_2025-11-21_22-15.md
+- 2025-11-21 22:15:32 — [10_TenthReport] generated South Africa_2025-11-21_22-15.md
+- 2025-11-21 22:15:32 — [10_TenthReport] generated Zambia_2025-11-21_22-15.md
+- 2025-11-21 22:15:32 — [10_TenthReport] generated Zimbabwe_2025-11-21_22-15.md
+- 2025-11-21 22:15:32 — [11_EleventhReport] generated Kabol_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Qandahar_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Herat_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Balkh_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Noord-Holland_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Zuid-Holland_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Utrecht_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Noord-Brabant_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Groningen_2025-11-21_22-15.md
+- 2025-11-21 22:15:33 — [11_EleventhReport] generated Gelderland_2025-11-21_22-15.md
+- 2025-11-21 22:15:34 — [11_EleventhReport] generated Overijssel_2025-11-21_22-15.md
+- 2025-11-21 22:15:35 — [11_EleventhReport] generated Flevoland_2025-11-21_22-15.md
+- 2025-11-21 22:15:35 — [11_EleventhReport] generated Limburg_2025-11-21_22-15.md
+- 2025-11-21 22:15:36 — [11_EleventhReport] generated Drenthe_2025-11-21_22-15.md
+- 2025-11-21 22:15:36 — [11_EleventhReport] generated Cura_ao_2025-11-21_22-15.md
+- 2025-11-21 22:15:36 — [11_EleventhReport] generated Tirana_2025-11-21_22-15.md
+- 2025-11-21 22:15:36 — [11_EleventhReport] generated Alger_2025-11-21_22-15.md
+- 2025-11-21 22:15:37 — [11_EleventhReport] generated Oran_2025-11-21_22-15.md
+- 2025-11-21 22:15:39 — [11_EleventhReport] generated Constantine_2025-11-21_22-15.md
+- 2025-11-21 22:15:40 — [11_EleventhReport] generated Annaba_2025-11-21_22-15.md
+- 2025-11-21 22:15:40 — [11_EleventhReport] generated Batna_2025-11-21_22-15.md
+- 2025-11-21 22:15:41 — [11_EleventhReport] generated S_tif_2025-11-21_22-15.md
+- 2025-11-21 22:15:41 — [11_EleventhReport] generated Sidi Bel Abb_s_2025-11-21_22-15.md
+- 2025-11-21 22:15:41 — [11_EleventhReport] generated Skikda_2025-11-21_22-15.md
+- 2025-11-21 22:15:42 — [11_EleventhReport] generated Biskra_2025-11-21_22-15.md
+- 2025-11-21 22:15:42 — [11_EleventhReport] generated Blida_2025-11-21_22-15.md
+- 2025-11-21 22:15:42 — [11_EleventhReport] generated B_ja_a_2025-11-21_22-15.md
+- 2025-11-21 22:15:42 — [11_EleventhReport] generated Mostaganem_2025-11-21_22-15.md
+- 2025-11-21 22:15:43 — [11_EleventhReport] generated T_bessa_2025-11-21_22-15.md
+- 2025-11-21 22:15:43 — [11_EleventhReport] generated Tlemcen_2025-11-21_22-15.md
+- 2025-11-21 22:15:43 — [11_EleventhReport] generated B_char_2025-11-21_22-15.md
+- 2025-11-21 22:15:43 — [11_EleventhReport] generated Tiaret_2025-11-21_22-15.md
+- 2025-11-21 22:15:44 — [11_EleventhReport] generated Chlef_2025-11-21_22-15.md
+- 2025-11-21 22:15:44 — [11_EleventhReport] generated Gharda_a_2025-11-21_22-15.md
+- 2025-11-21 22:15:44 — [11_EleventhReport] generated Tutuila_2025-11-21_22-15.md
+- 2025-11-21 22:15:44 — [11_EleventhReport] generated Andorra la Vella_2025-11-21_22-15.md
+- 2025-11-21 22:15:44 — [11_EleventhReport] generated Luanda_2025-11-21_22-15.md
+- 2025-11-21 22:15:44 — [11_EleventhReport] generated Huambo_2025-11-21_22-15.md
+- 2025-11-21 22:15:45 — [11_EleventhReport] generated Benguela_2025-11-21_22-15.md
+- 2025-11-21 22:15:45 — [11_EleventhReport] generated Namibe_2025-11-21_22-15.md
+- 2025-11-21 22:15:45 — [11_EleventhReport] generated __2025-11-21_22-15.md
+- 2025-11-21 22:15:45 — [11_EleventhReport] generated St John_2025-11-21_22-15.md
+- 2025-11-21 22:15:45 — [11_EleventhReport] generated Dubai_2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated Abu Dhabi_2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated Sharja_2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated Ajman_2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated Distrito Federal_2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated Buenos Aires_2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated C_rdoba_2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated Santa F__2025-11-21_22-15.md
+- 2025-11-21 22:15:46 — [11_EleventhReport] generated Tucum_n_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Salta_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Corrientes_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Chaco_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Entre Rios_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Mendoza_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Misiones_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Santiago del Estero_2025-11-21_22-15.md
+- 2025-11-21 22:15:47 — [11_EleventhReport] generated Jujuy_2025-11-21_22-15.md
+- 2025-11-21 22:15:48 — [11_EleventhReport] generated Neuqu_n_2025-11-21_22-15.md
+- 2025-11-21 22:15:48 — [11_EleventhReport] generated Formosa_2025-11-21_22-15.md
+- 2025-11-21 22:15:48 — [11_EleventhReport] generated La Rioja_2025-11-21_22-15.md
+- 2025-11-21 22:15:48 — [11_EleventhReport] generated Catamarca_2025-11-21_22-15.md
+- 2025-11-21 22:15:48 — [11_EleventhReport] generated Chubut_2025-11-21_22-15.md
+- 2025-11-21 22:15:48 — [11_EleventhReport] generated San Juan_2025-11-21_22-15.md
+- 2025-11-21 22:15:49 — [11_EleventhReport] generated San Luis_2025-11-21_22-15.md
+- 2025-11-21 22:15:50 — [11_EleventhReport] generated Yerevan_2025-11-21_22-15.md
+- 2025-11-21 22:15:50 — [11_EleventhReport] generated _irak_2025-11-21_22-15.md
+- 2025-11-21 22:15:50 — [11_EleventhReport] generated Lori_2025-11-21_22-15.md
+- 2025-11-21 22:15:50 — [11_EleventhReport] generated New South Wales_2025-11-21_22-15.md
+- 2025-11-21 22:15:51 — [11_EleventhReport] generated Victoria_2025-11-21_22-15.md
+- 2025-11-21 22:15:51 — [11_EleventhReport] generated Queensland_2025-11-21_22-15.md
+- 2025-11-21 22:15:51 — [11_EleventhReport] generated West Australia_2025-11-21_22-15.md
+- 2025-11-21 22:15:51 — [11_EleventhReport] generated South Australia_2025-11-21_22-15.md
+- 2025-11-21 22:15:52 — [11_EleventhReport] generated Capital Region_2025-11-21_22-15.md
+- 2025-11-21 22:15:52 — [11_EleventhReport] generated Tasmania_2025-11-21_22-15.md
+- 2025-11-21 22:15:52 — [11_EleventhReport] generated Bak__2025-11-21_22-15.md
+- 2025-11-21 22:15:52 — [11_EleventhReport] generated G_nc__2025-11-21_22-15.md
+- 2025-11-21 22:15:52 — [11_EleventhReport] generated Sumqay_t_2025-11-21_22-15.md
+- 2025-11-21 22:15:53 — [11_EleventhReport] generated Ming__evir_2025-11-21_22-15.md
+- 2025-11-21 22:15:53 — [11_EleventhReport] generated New Providence_2025-11-21_22-15.md
+- 2025-11-21 22:15:54 — [11_EleventhReport] generated al-Manama_2025-11-21_22-15.md
+- 2025-11-21 22:15:54 — [11_EleventhReport] generated Dhaka_2025-11-21_22-15.md
+- 2025-11-21 22:15:54 — [11_EleventhReport] generated Chittagong_2025-11-21_22-15.md
+- 2025-11-21 22:15:55 — [11_EleventhReport] generated Khulna_2025-11-21_22-15.md
+- 2025-11-21 22:15:55 — [11_EleventhReport] generated Rajshahi_2025-11-21_22-15.md
+- 2025-11-21 22:15:55 — [11_EleventhReport] generated Barisal_2025-11-21_22-15.md
+- 2025-11-21 22:15:55 — [11_EleventhReport] generated Sylhet_2025-11-21_22-15.md
+- 2025-11-21 22:15:55 — [11_EleventhReport] generated St Michael_2025-11-21_22-15.md
+- 2025-11-21 22:15:56 — [11_EleventhReport] generated Antwerpen_2025-11-21_22-15.md
+- 2025-11-21 22:15:56 — [11_EleventhReport] generated East Flanderi_2025-11-21_22-15.md
+- 2025-11-21 22:15:56 — [11_EleventhReport] generated Hainaut_2025-11-21_22-15.md
+- 2025-11-21 22:15:56 — [11_EleventhReport] generated Li_ge_2025-11-21_22-15.md
+- 2025-11-21 22:15:57 — [11_EleventhReport] generated Bryssel_2025-11-21_22-15.md
+- 2025-11-21 22:15:57 — [11_EleventhReport] generated West Flanderi_2025-11-21_22-15.md
+- 2025-11-21 22:15:57 — [11_EleventhReport] generated Namur_2025-11-21_22-15.md
+- 2025-11-21 22:15:58 — [11_EleventhReport] generated Belize City_2025-11-21_22-15.md
+- 2025-11-21 22:15:58 — [11_EleventhReport] generated Cayo_2025-11-21_22-15.md
+- 2025-11-21 22:15:58 — [11_EleventhReport] generated Atlantique_2025-11-21_22-15.md
+- 2025-11-21 22:15:58 — [11_EleventhReport] generated Ou_m__2025-11-21_22-15.md
+- 2025-11-21 22:15:58 — [11_EleventhReport] generated Atacora_2025-11-21_22-15.md
+- 2025-11-21 22:15:58 — [11_EleventhReport] generated Borgou_2025-11-21_22-15.md
+- 2025-11-21 22:15:59 — [11_EleventhReport] generated Saint George_s_2025-11-21_22-15.md
+- 2025-11-21 22:15:59 — [11_EleventhReport] generated Hamilton_2025-11-21_22-15.md
+- 2025-11-21 22:15:59 — [11_EleventhReport] generated Thimphu_2025-11-21_22-15.md
+- 2025-11-21 22:15:59 — [11_EleventhReport] generated Santa Cruz_2025-11-21_22-15.md
+- 2025-11-21 22:15:59 — [11_EleventhReport] generated La Paz_2025-11-21_22-15.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Cochabamba_2025-11-21_22-16.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Oruro_2025-11-21_22-16.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Chuquisaca_2025-11-21_22-16.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Potos__2025-11-21_22-16.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Tarija_2025-11-21_22-16.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Federaatio_2025-11-21_22-16.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Republika Srpska_2025-11-21_22-16.md
+- 2025-11-21 22:16:00 — [11_EleventhReport] generated Gaborone_2025-11-21_22-16.md
+- 2025-11-21 22:16:01 — [11_EleventhReport] generated Francistown_2025-11-21_22-16.md
+- 2025-11-21 22:16:02 — [11_EleventhReport] generated S_o Paulo_2025-11-21_22-16.md
+- 2025-11-21 22:16:02 — [11_EleventhReport] generated Rio de Janeiro_2025-11-21_22-16.md
+- 2025-11-21 22:16:02 — [11_EleventhReport] generated Bahia_2025-11-21_22-16.md
+- 2025-11-21 22:16:03 — [11_EleventhReport] generated Minas Gerais_2025-11-21_22-16.md
+- 2025-11-21 22:16:04 — [11_EleventhReport] generated Cear__2025-11-21_22-16.md
+- 2025-11-21 22:16:05 — [11_EleventhReport] generated Paran__2025-11-21_22-16.md
+- 2025-11-21 22:16:05 — [11_EleventhReport] generated Pernambuco_2025-11-21_22-16.md
+- 2025-11-21 22:16:06 — [11_EleventhReport] generated Rio Grande do Sul_2025-11-21_22-16.md
+- 2025-11-21 22:16:06 — [11_EleventhReport] generated Amazonas_2025-11-21_22-16.md
+- 2025-11-21 22:16:06 — [11_EleventhReport] generated Par__2025-11-21_22-16.md
+- 2025-11-21 22:16:07 — [11_EleventhReport] generated Goi_s_2025-11-21_22-16.md
+- 2025-11-21 22:16:07 — [11_EleventhReport] generated Maranh_o_2025-11-21_22-16.md
+- 2025-11-21 22:16:08 — [11_EleventhReport] generated Alagoas_2025-11-21_22-16.md
+- 2025-11-21 22:16:08 — [11_EleventhReport] generated Piau__2025-11-21_22-16.md
+- 2025-11-21 22:16:08 — [11_EleventhReport] generated Rio Grande do Norte_2025-11-21_22-16.md
+- 2025-11-21 22:16:08 — [11_EleventhReport] generated Mato Grosso do Sul_2025-11-21_22-16.md
+- 2025-11-21 22:16:08 — [11_EleventhReport] generated Para_ba_2025-11-21_22-16.md
+- 2025-11-21 22:16:09 — [11_EleventhReport] generated Mato Grosso_2025-11-21_22-16.md
+- 2025-11-21 22:16:09 — [11_EleventhReport] generated Sergipe_2025-11-21_22-16.md
+- 2025-11-21 22:16:09 — [11_EleventhReport] generated Santa Catarina_2025-11-21_22-16.md
+- 2025-11-21 22:16:09 — [11_EleventhReport] generated Esp_rito Santo_2025-11-21_22-16.md
+- 2025-11-21 22:16:09 — [11_EleventhReport] generated Rond_nia_2025-11-21_22-16.md
+- 2025-11-21 22:16:09 — [11_EleventhReport] generated Acre_2025-11-21_22-16.md
+- 2025-11-21 22:16:09 — [11_EleventhReport] generated Amap__2025-11-21_22-16.md
+- 2025-11-21 22:16:10 — [11_EleventhReport] generated Roraima_2025-11-21_22-16.md
+- 2025-11-21 22:16:11 — [11_EleventhReport] generated Tocantins_2025-11-21_22-16.md
+- 2025-11-21 22:16:11 — [11_EleventhReport] generated England_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Scotland_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Wales_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated North Ireland_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Jersey_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Tortola_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Brunei and Muara_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Grad Sofija_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Plovdiv_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Varna_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Burgas_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Ruse_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Haskovo_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Lovec_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Kadiogo_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Houet_2025-11-21_22-16.md
+- 2025-11-21 22:16:12 — [11_EleventhReport] generated Boulkiemd__2025-11-21_22-16.md
+- 2025-11-21 22:16:13 — [11_EleventhReport] generated Bujumbura_2025-11-21_22-16.md
+- 2025-11-21 22:16:13 — [11_EleventhReport] generated Grand Cayman_2025-11-21_22-16.md
+- 2025-11-21 22:16:13 — [11_EleventhReport] generated Santiago_2025-11-21_22-16.md
+- 2025-11-21 22:16:13 — [11_EleventhReport] generated Valpara_so_2025-11-21_22-16.md
+- 2025-11-21 22:16:13 — [11_EleventhReport] generated B_ob_o_2025-11-21_22-16.md
+- 2025-11-21 22:16:13 — [11_EleventhReport] generated Antofagasta_2025-11-21_22-16.md
+- 2025-11-21 22:16:13 — [11_EleventhReport] generated La Araucan_a_2025-11-21_22-16.md
+- 2025-11-21 22:16:14 — [11_EleventhReport] generated O_Higgins_2025-11-21_22-16.md
+- 2025-11-21 22:16:14 — [11_EleventhReport] generated Tarapac__2025-11-21_22-16.md
+- 2025-11-21 22:16:14 — [11_EleventhReport] generated Maule_2025-11-21_22-16.md
+- 2025-11-21 22:16:14 — [11_EleventhReport] generated Los Lagos_2025-11-21_22-16.md
+- 2025-11-21 22:16:14 — [11_EleventhReport] generated Coquimbo_2025-11-21_22-16.md
+- 2025-11-21 22:16:14 — [11_EleventhReport] generated Magallanes_2025-11-21_22-16.md
+- 2025-11-21 22:16:14 — [11_EleventhReport] generated Atacama_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Rarotonga_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated San Jos__2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Djibouti_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated St George_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Distrito Nacional_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated La Romana_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated San Pedro de Macor_s_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Duarte_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Puerto Plata_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Guayas_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Pichincha_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Azuay_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated El Oro_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Manab__2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Tungurahua_2025-11-21_22-16.md
+- 2025-11-21 22:16:15 — [11_EleventhReport] generated Imbabura_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Los R_os_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Loja_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Chimborazo_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Esmeraldas_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Kairo_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Aleksandria_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Giza_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated al-Qalyubiya_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Port Said_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Suez_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated al-Gharbiya_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated al-Daqahliya_2025-11-21_22-16.md
+- 2025-11-21 22:16:16 — [11_EleventhReport] generated Luxor_2025-11-21_22-16.md
+- 2025-11-21 22:16:17 — [11_EleventhReport] generated Asyut_2025-11-21_22-16.md
+- 2025-11-21 22:16:17 — [11_EleventhReport] generated al-Sharqiya_2025-11-21_22-16.md
+- 2025-11-21 22:16:17 — [11_EleventhReport] generated al-Faiyum_2025-11-21_22-16.md
+- 2025-11-21 22:16:17 — [11_EleventhReport] generated Ismailia_2025-11-21_22-16.md
+- 2025-11-21 22:16:17 — [11_EleventhReport] generated al-Buhayra_2025-11-21_22-16.md
+- 2025-11-21 22:16:17 — [11_EleventhReport] generated Assuan_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated al-Minya_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Bani Suwayf_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Qina_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Sawhaj_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated al-Minufiya_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Kafr al-Shaykh_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Shamal Sina_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated San Salvador_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Santa Ana_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated San Miguel_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated La Libertad_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Maekel_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Madrid_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Katalonia_2025-11-21_22-16.md
+- 2025-11-21 22:16:18 — [11_EleventhReport] generated Valencia_2025-11-21_22-16.md
+- 2025-11-21 22:16:19 — [11_EleventhReport] generated Andalusia_2025-11-21_22-16.md
+- 2025-11-21 22:16:19 — [11_EleventhReport] generated Aragonia_2025-11-21_22-16.md
+- 2025-11-21 22:16:20 — [11_EleventhReport] generated Baskimaa_2025-11-21_22-16.md
+- 2025-11-21 22:16:20 — [11_EleventhReport] generated Canary Islands_2025-11-21_22-16.md
+- 2025-11-21 22:16:21 — [11_EleventhReport] generated Murcia_2025-11-21_22-16.md
+- 2025-11-21 22:16:21 — [11_EleventhReport] generated Balears_2025-11-21_22-16.md
+- 2025-11-21 22:16:21 — [11_EleventhReport] generated Castilla and Le_n_2025-11-21_22-16.md
+- 2025-11-21 22:16:21 — [11_EleventhReport] generated Galicia_2025-11-21_22-16.md
+- 2025-11-21 22:16:22 — [11_EleventhReport] generated Asturia_2025-11-21_22-16.md
+- 2025-11-21 22:16:23 — [11_EleventhReport] generated Cantabria_2025-11-21_22-16.md
+- 2025-11-21 22:16:23 — [11_EleventhReport] generated Navarra_2025-11-21_22-16.md
+- 2025-11-21 22:16:26 — [11_EleventhReport] generated Kastilia-La Mancha_2025-11-21_22-16.md
+- 2025-11-21 22:16:27 — [11_EleventhReport] generated Extremadura_2025-11-21_22-16.md
+- 2025-11-21 22:16:27 — [11_EleventhReport] generated Western Cape_2025-11-21_22-16.md
+- 2025-11-21 22:16:27 — [11_EleventhReport] generated Gauteng_2025-11-21_22-16.md
+- 2025-11-21 22:16:27 — [11_EleventhReport] generated Eastern Cape_2025-11-21_22-16.md
+- 2025-11-21 22:16:27 — [11_EleventhReport] generated KwaZulu-Natal_2025-11-21_22-16.md
+- 2025-11-21 22:16:27 — [11_EleventhReport] generated Free State_2025-11-21_22-16.md
+- 2025-11-21 22:16:28 — [11_EleventhReport] generated North West_2025-11-21_22-16.md
+- 2025-11-21 22:16:28 — [11_EleventhReport] generated Northern Cape_2025-11-21_22-16.md
+- 2025-11-21 22:16:28 — [11_EleventhReport] generated Mpumalanga_2025-11-21_22-16.md
+- 2025-11-21 22:16:28 — [11_EleventhReport] generated Addis Abeba_2025-11-21_22-16.md
+- 2025-11-21 22:16:28 — [11_EleventhReport] generated Dire Dawa_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Oromia_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Amhara_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Tigray_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated East Falkland_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Central_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated National Capital Reg_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Southern Mindanao_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Central Visayas_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Western Mindanao_2025-11-21_22-16.md
+- 2025-11-21 22:16:29 — [11_EleventhReport] generated Southern Tagalog_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Northern Mindanao_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Western Visayas_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Central Luzon_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Central Mindanao_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Caraga_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated CAR_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Eastern Visayas_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Bicol_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Ilocos_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Cagayan Valley_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated ARMM_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Streymoyar_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Estuaire_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Kombo St Mary_2025-11-21_22-16.md
+- 2025-11-21 22:16:30 — [11_EleventhReport] generated Banjul_2025-11-21_22-16.md
+- 2025-11-21 22:16:31 — [11_EleventhReport] generated Tbilisi_2025-11-21_22-16.md
+- 2025-11-21 22:16:31 — [11_EleventhReport] generated Imereti_2025-11-21_22-16.md
+- 2025-11-21 22:16:31 — [11_EleventhReport] generated Kvemo Kartli_2025-11-21_22-16.md
+- 2025-11-21 22:16:31 — [11_EleventhReport] generated Adzaria _At_ara__2025-11-21_22-16.md
+- 2025-11-21 22:16:31 — [11_EleventhReport] generated Abhasia _Aphazeti__2025-11-21_22-16.md
+- 2025-11-21 22:16:31 — [11_EleventhReport] generated Greater Accra_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Ashanti_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Northern_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Western_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Kitaa_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Grande-Terre_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Basse-Terre_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Guatemala_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Quetzaltenango_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Conakry_2025-11-21_22-16.md
+- 2025-11-21 22:16:32 — [11_EleventhReport] generated Bissau_2025-11-21_22-16.md
+- 2025-11-21 22:16:33 — [11_EleventhReport] generated Georgetown_2025-11-21_22-16.md
+- 2025-11-21 22:16:33 — [11_EleventhReport] generated Ouest_2025-11-21_22-16.md
+- 2025-11-21 22:16:33 — [11_EleventhReport] generated Nord_2025-11-21_22-16.md
+- 2025-11-21 22:16:33 — [11_EleventhReport] generated Distrito Central_2025-11-21_22-16.md
+- 2025-11-21 22:16:33 — [11_EleventhReport] generated Cort_s_2025-11-21_22-16.md
+- 2025-11-21 22:16:33 — [11_EleventhReport] generated Atl_ntida_2025-11-21_22-16.md
+- 2025-11-21 22:16:34 — [11_EleventhReport] generated Kowloon and New Kowl_2025-11-21_22-16.md
+- 2025-11-21 22:16:34 — [11_EleventhReport] generated Hongkong_2025-11-21_22-16.md
+- 2025-11-21 22:16:35 — [11_EleventhReport] generated L_nsimaa_2025-11-21_22-16.md
+- 2025-11-21 22:16:35 — [11_EleventhReport] generated Jakarta Raya_2025-11-21_22-16.md
+- 2025-11-21 22:16:35 — [11_EleventhReport] generated East Java_2025-11-21_22-16.md
+- 2025-11-21 22:16:36 — [11_EleventhReport] generated West Java_2025-11-21_22-16.md
+- 2025-11-21 22:16:36 — [11_EleventhReport] generated Sumatera Utara_2025-11-21_22-16.md
+- 2025-11-21 22:16:36 — [11_EleventhReport] generated Sumatera Selatan_2025-11-21_22-16.md
+- 2025-11-21 22:16:40 — [11_EleventhReport] generated Central Java_2025-11-21_22-16.md
+- 2025-11-21 22:16:40 — [11_EleventhReport] generated Sulawesi Selatan_2025-11-21_22-16.md
+- 2025-11-21 22:16:41 — [11_EleventhReport] generated Lampung_2025-11-21_22-16.md
+- 2025-11-21 22:16:42 — [11_EleventhReport] generated Sumatera Barat_2025-11-21_22-16.md
+- 2025-11-21 22:16:42 — [11_EleventhReport] generated Kalimantan Selatan_2025-11-21_22-16.md
+- 2025-11-21 22:16:42 — [11_EleventhReport] generated Riau_2025-11-21_22-16.md
+- 2025-11-21 22:16:42 — [11_EleventhReport] generated Bali_2025-11-21_22-16.md
+- 2025-11-21 22:16:42 — [11_EleventhReport] generated Yogyakarta_2025-11-21_22-16.md
+- 2025-11-21 22:16:42 — [11_EleventhReport] generated Kalimantan Barat_2025-11-21_22-16.md
+- 2025-11-21 22:16:43 — [11_EleventhReport] generated Kalimantan Timur_2025-11-21_22-16.md
+- 2025-11-21 22:16:43 — [11_EleventhReport] generated Jambi_2025-11-21_22-16.md
+- 2025-11-21 22:16:43 — [11_EleventhReport] generated Sulawesi Utara_2025-11-21_22-16.md
+- 2025-11-21 22:16:43 — [11_EleventhReport] generated Nusa Tenggara Barat_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Molukit_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Bengkulu_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Aceh_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Sulawesi Tengah_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Nusa Tenggara Timur_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Kalimantan Tengah_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Sulawesi Tenggara_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated West Irian_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Maharashtra_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Delhi_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated West Bengali_2025-11-21_22-16.md
+- 2025-11-21 22:16:44 — [11_EleventhReport] generated Tamil Nadu_2025-11-21_22-16.md
+- 2025-11-21 22:16:45 — [11_EleventhReport] generated Andhra Pradesh_2025-11-21_22-16.md
+- 2025-11-21 22:16:45 — [11_EleventhReport] generated Gujarat_2025-11-21_22-16.md
+- 2025-11-21 22:16:45 — [11_EleventhReport] generated Karnataka_2025-11-21_22-16.md
+- 2025-11-21 22:16:45 — [11_EleventhReport] generated Uttar Pradesh_2025-11-21_22-16.md
+- 2025-11-21 22:16:45 — [11_EleventhReport] generated Rajasthan_2025-11-21_22-16.md
+- 2025-11-21 22:16:45 — [11_EleventhReport] generated Madhya Pradesh_2025-11-21_22-16.md
+- 2025-11-21 22:16:46 — [11_EleventhReport] generated Punjab_2025-11-21_22-16.md
+- 2025-11-21 22:16:47 — [11_EleventhReport] generated Bihar_2025-11-21_22-16.md
+- 2025-11-21 22:16:47 — [11_EleventhReport] generated Jammu and Kashmir_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Haryana_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Jharkhand_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Assam_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Kerala_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Chandigarh_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Chhatisgarh_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Orissa_2025-11-21_22-16.md
+- 2025-11-21 22:16:48 — [11_EleventhReport] generated Uttaranchal_2025-11-21_22-16.md
+- 2025-11-21 22:16:49 — [11_EleventhReport] generated Pondicherry_2025-11-21_22-16.md
+- 2025-11-21 22:16:49 — [11_EleventhReport] generated Manipur_2025-11-21_22-16.md
+- 2025-11-21 22:16:49 — [11_EleventhReport] generated Tripura_2025-11-21_22-16.md
+- 2025-11-21 22:16:49 — [11_EleventhReport] generated Mizoram_2025-11-21_22-16.md
+- 2025-11-21 22:16:49 — [11_EleventhReport] generated Meghalaya_2025-11-21_22-16.md
+- 2025-11-21 22:16:49 — [11_EleventhReport] generated Baghdad_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated Ninawa_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated Irbil_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated al-Tamim_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated Basra_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated al-Sulaymaniya_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated al-Najaf_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated Karbala_2025-11-21_22-16.md
+- 2025-11-21 22:16:50 — [11_EleventhReport] generated Babil_2025-11-21_22-16.md
+- 2025-11-21 22:16:51 — [11_EleventhReport] generated DhiQar_2025-11-21_22-16.md
+- 2025-11-21 22:16:51 — [11_EleventhReport] generated Maysan_2025-11-21_22-16.md
+- 2025-11-21 22:16:51 — [11_EleventhReport] generated al-Qadisiya_2025-11-21_22-16.md
+- 2025-11-21 22:16:51 — [11_EleventhReport] generated al-Anbar_2025-11-21_22-16.md
+- 2025-11-21 22:16:51 — [11_EleventhReport] generated Wasit_2025-11-21_22-16.md
+- 2025-11-21 22:16:51 — [11_EleventhReport] generated Diyala_2025-11-21_22-16.md
+- 2025-11-21 22:16:52 — [11_EleventhReport] generated Teheran_2025-11-21_22-16.md
+- 2025-11-21 22:16:52 — [11_EleventhReport] generated Khorasan_2025-11-21_22-16.md
+- 2025-11-21 22:16:53 — [11_EleventhReport] generated Esfahan_2025-11-21_22-16.md
+- 2025-11-21 22:16:53 — [11_EleventhReport] generated East Azerbaidzan_2025-11-21_22-16.md
+- 2025-11-21 22:16:55 — [11_EleventhReport] generated Fars_2025-11-21_22-16.md
+- 2025-11-21 22:16:55 — [11_EleventhReport] generated Khuzestan_2025-11-21_22-16.md
+- 2025-11-21 22:16:55 — [11_EleventhReport] generated Qom_2025-11-21_22-16.md
+- 2025-11-21 22:16:55 — [11_EleventhReport] generated Kermanshah_2025-11-21_22-16.md
+- 2025-11-21 22:16:55 — [11_EleventhReport] generated West Azerbaidzan_2025-11-21_22-16.md
+- 2025-11-21 22:16:55 — [11_EleventhReport] generated Sistan va Baluchesta_2025-11-21_22-16.md
+- 2025-11-21 22:16:56 — [11_EleventhReport] generated Gilan_2025-11-21_22-16.md
+- 2025-11-21 22:16:56 — [11_EleventhReport] generated Hamadan_2025-11-21_22-16.md
+- 2025-11-21 22:16:56 — [11_EleventhReport] generated Kerman_2025-11-21_22-16.md
+- 2025-11-21 22:16:56 — [11_EleventhReport] generated Markazi_2025-11-21_22-16.md
+- 2025-11-21 22:16:57 — [11_EleventhReport] generated Ardebil_2025-11-21_22-16.md
+- 2025-11-21 22:16:57 — [11_EleventhReport] generated Yazd_2025-11-21_22-16.md
+- 2025-11-21 22:16:57 — [11_EleventhReport] generated Qazvin_2025-11-21_22-16.md
+- 2025-11-21 22:16:58 — [11_EleventhReport] generated Zanjan_2025-11-21_22-16.md
+- 2025-11-21 22:16:58 — [11_EleventhReport] generated Kordestan_2025-11-21_22-16.md
+- 2025-11-21 22:16:58 — [11_EleventhReport] generated Hormozgan_2025-11-21_22-16.md
+- 2025-11-21 22:16:58 — [11_EleventhReport] generated Lorestan_2025-11-21_22-16.md
+- 2025-11-21 22:16:58 — [11_EleventhReport] generated Mazandaran_2025-11-21_22-16.md
+- 2025-11-21 22:17:02 — [11_EleventhReport] generated Golestan_2025-11-21_22-17.md
+- 2025-11-21 22:17:02 — [11_EleventhReport] generated Bushehr_2025-11-21_22-17.md
+- 2025-11-21 22:17:03 — [11_EleventhReport] generated Ilam_2025-11-21_22-17.md
+- 2025-11-21 22:17:03 — [11_EleventhReport] generated Semnan_2025-11-21_22-17.md
+- 2025-11-21 22:17:03 — [11_EleventhReport] generated Chaharmahal va Bakht_2025-11-21_22-17.md
+- 2025-11-21 22:17:03 — [11_EleventhReport] generated Leinster_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Munster_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated H_fu_borgarsv__i_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Jerusalem_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Tel Aviv_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Haifa_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Ha Merkaz_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Ha Darom_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Latium_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Lombardia_2025-11-21_22-17.md
+- 2025-11-21 22:17:04 — [11_EleventhReport] generated Campania_2025-11-21_22-17.md
+- 2025-11-21 22:17:05 — [11_EleventhReport] generated Piemonte_2025-11-21_22-17.md
+- 2025-11-21 22:17:05 — [11_EleventhReport] generated Sisilia_2025-11-21_22-17.md
+- 2025-11-21 22:17:05 — [11_EleventhReport] generated Liguria_2025-11-21_22-17.md
+- 2025-11-21 22:17:05 — [11_EleventhReport] generated Emilia-Romagna_2025-11-21_22-17.md
+- 2025-11-21 22:17:05 — [11_EleventhReport] generated Toscana_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Apulia_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Veneto_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Friuli-Venezia Giuli_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Calabria_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Sardinia_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Umbria_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Abruzzit_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Trentino-Alto Adige_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Marche_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Dili_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Wien_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Steiermark_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated North Austria_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Salzburg_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated Tiroli_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated K_rnten_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated St_ Catherine_2025-11-21_22-17.md
+- 2025-11-21 22:17:06 — [11_EleventhReport] generated St_ Andrew_2025-11-21_22-17.md
+- 2025-11-21 22:17:07 — [11_EleventhReport] generated Tokyo-to_2025-11-21_22-17.md
+- 2025-11-21 22:17:07 — [11_EleventhReport] generated Kanagawa_2025-11-21_22-17.md
+- 2025-11-21 22:17:07 — [11_EleventhReport] generated Osaka_2025-11-21_22-17.md
+- 2025-11-21 22:17:07 — [11_EleventhReport] generated Aichi_2025-11-21_22-17.md
+- 2025-11-21 22:17:07 — [11_EleventhReport] generated Hokkaido_2025-11-21_22-17.md
+- 2025-11-21 22:17:07 — [11_EleventhReport] generated Kyoto_2025-11-21_22-17.md
+- 2025-11-21 22:17:08 — [11_EleventhReport] generated Hyogo_2025-11-21_22-17.md
+- 2025-11-21 22:17:08 — [11_EleventhReport] generated Fukuoka_2025-11-21_22-17.md
+- 2025-11-21 22:17:10 — [11_EleventhReport] generated Hiroshima_2025-11-21_22-17.md
+- 2025-11-21 22:17:10 — [11_EleventhReport] generated Miyagi_2025-11-21_22-17.md
+- 2025-11-21 22:17:11 — [11_EleventhReport] generated Chiba_2025-11-21_22-17.md
+- 2025-11-21 22:17:11 — [11_EleventhReport] generated Kumamoto_2025-11-21_22-17.md
+- 2025-11-21 22:17:11 — [11_EleventhReport] generated Okayama_2025-11-21_22-17.md
+- 2025-11-21 22:17:12 — [11_EleventhReport] generated Shizuoka_2025-11-21_22-17.md
+- 2025-11-21 22:17:12 — [11_EleventhReport] generated Kagoshima_2025-11-21_22-17.md
+- 2025-11-21 22:17:12 — [11_EleventhReport] generated Niigata_2025-11-21_22-17.md
+- 2025-11-21 22:17:13 — [11_EleventhReport] generated Saitama_2025-11-21_22-17.md
+- 2025-11-21 22:17:13 — [11_EleventhReport] generated Ehime_2025-11-21_22-17.md
+- 2025-11-21 22:17:13 — [11_EleventhReport] generated Ishikawa_2025-11-21_22-17.md
+- 2025-11-21 22:17:13 — [11_EleventhReport] generated Tochigi_2025-11-21_22-17.md
+- 2025-11-21 22:17:13 — [11_EleventhReport] generated Oita_2025-11-21_22-17.md
+- 2025-11-21 22:17:13 — [11_EleventhReport] generated Nagasaki_2025-11-21_22-17.md
+- 2025-11-21 22:17:14 — [11_EleventhReport] generated Gifu_2025-11-21_22-17.md
+- 2025-11-21 22:17:14 — [11_EleventhReport] generated Wakayama_2025-11-21_22-17.md
+- 2025-11-21 22:17:14 — [11_EleventhReport] generated Nara_2025-11-21_22-17.md
+- 2025-11-21 22:17:15 — [11_EleventhReport] generated Fukushima_2025-11-21_22-17.md
+- 2025-11-21 22:17:17 — [11_EleventhReport] generated Nagano_2025-11-21_22-17.md
+- 2025-11-21 22:17:18 — [11_EleventhReport] generated Kagawa_2025-11-21_22-17.md
+- 2025-11-21 22:17:18 — [11_EleventhReport] generated Toyama_2025-11-21_22-17.md
+- 2025-11-21 22:17:19 — [11_EleventhReport] generated Kochi_2025-11-21_22-17.md
+- 2025-11-21 22:17:19 — [11_EleventhReport] generated Akita_2025-11-21_22-17.md
+- 2025-11-21 22:17:20 — [11_EleventhReport] generated Miyazaki_2025-11-21_22-17.md
+- 2025-11-21 22:17:20 — [11_EleventhReport] generated Okinawa_2025-11-21_22-17.md
+- 2025-11-21 22:17:21 — [11_EleventhReport] generated Aomori_2025-11-21_22-17.md
+- 2025-11-21 22:17:21 — [11_EleventhReport] generated Mie_2025-11-21_22-17.md
+- 2025-11-21 22:17:21 — [11_EleventhReport] generated Iwate_2025-11-21_22-17.md
+- 2025-11-21 22:17:22 — [11_EleventhReport] generated Gumma_2025-11-21_22-17.md
+- 2025-11-21 22:17:22 — [11_EleventhReport] generated Shiga_2025-11-21_22-17.md
+- 2025-11-21 22:17:22 — [11_EleventhReport] generated Tokushima_2025-11-21_22-17.md
+- 2025-11-21 22:17:22 — [11_EleventhReport] generated Yamaguchi_2025-11-21_22-17.md
+- 2025-11-21 22:17:22 — [11_EleventhReport] generated Yamagata_2025-11-21_22-17.md
+- 2025-11-21 22:17:23 — [11_EleventhReport] generated Fukui_2025-11-21_22-17.md
+- 2025-11-21 22:17:23 — [11_EleventhReport] generated Ibaragi_2025-11-21_22-17.md
+- 2025-11-21 22:17:25 — [11_EleventhReport] generated Yamanashi_2025-11-21_22-17.md
+- 2025-11-21 22:17:25 — [11_EleventhReport] generated Saga_2025-11-21_22-17.md
+- 2025-11-21 22:17:25 — [11_EleventhReport] generated Shimane_2025-11-21_22-17.md
+- 2025-11-21 22:17:25 — [11_EleventhReport] generated Tottori_2025-11-21_22-17.md
+- 2025-11-21 22:17:25 — [11_EleventhReport] generated Sanaa_2025-11-21_22-17.md
+- 2025-11-21 22:17:25 — [11_EleventhReport] generated Aden_2025-11-21_22-17.md
+- 2025-11-21 22:17:26 — [11_EleventhReport] generated Taizz_2025-11-21_22-17.md
+- 2025-11-21 22:17:26 — [11_EleventhReport] generated Hodeida_2025-11-21_22-17.md
+- 2025-11-21 22:17:26 — [11_EleventhReport] generated Hadramawt_2025-11-21_22-17.md
+- 2025-11-21 22:17:26 — [11_EleventhReport] generated Ibb_2025-11-21_22-17.md
+- 2025-11-21 22:17:27 — [11_EleventhReport] generated Amman_2025-11-21_22-17.md
+- 2025-11-21 22:17:27 — [11_EleventhReport] generated al-Zarqa_2025-11-21_22-17.md
+- 2025-11-21 22:17:27 — [11_EleventhReport] generated Irbid_2025-11-21_22-17.md
+- 2025-11-21 22:17:27 — [11_EleventhReport] generated Central Serbia_2025-11-21_22-17.md
+- 2025-11-21 22:17:27 — [11_EleventhReport] generated Vojvodina_2025-11-21_22-17.md
+- 2025-11-21 22:17:29 — [11_EleventhReport] generated Kosovo and Metohija_2025-11-21_22-17.md
+- 2025-11-21 22:17:29 — [11_EleventhReport] generated Montenegro_2025-11-21_22-17.md
+- 2025-11-21 22:17:29 — [11_EleventhReport] generated Phnom Penh_2025-11-21_22-17.md
+- 2025-11-21 22:17:29 — [11_EleventhReport] generated Battambang_2025-11-21_22-17.md
+- 2025-11-21 22:17:29 — [11_EleventhReport] generated Siem Reap_2025-11-21_22-17.md
+- 2025-11-21 22:17:30 — [11_EleventhReport] generated Littoral_2025-11-21_22-17.md
+- 2025-11-21 22:17:30 — [11_EleventhReport] generated Centre_2025-11-21_22-17.md
+- 2025-11-21 22:17:30 — [11_EleventhReport] generated Extr_me-Nord_2025-11-21_22-17.md

@@ -67,9 +67,13 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
+      # ------------------------------------------------------------
+      # Create .env file so docker-compose runs in CI mode
+      # ------------------------------------------------------------
+      - name: Set CI mode for Docker Compose
+        run: echo "CI=true" >> .env
+
       - name: Run app non-interactively (CI only)
-        env:
-          CI: "true"
         run: docker compose run --rm app
 
       - name: Stop services
@@ -96,9 +100,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Prepare CI env for Docker Compose
+        run: echo "CI=true" >> .env
+
       - name: Run app non-interactively to generate reports
-        env:
-          CI: "true"
         run: |
           mvn package -DskipTests
           docker compose run --rm app
