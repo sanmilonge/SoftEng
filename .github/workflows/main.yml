@@ -99,11 +99,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Feed the same 5 inputs again for report generation
+      # Feed the same inputs again for report generation
       - name: Run app non-interactively to generate reports
         run: |
           mvn package -DskipTests
-          echo -e "10\n10\nEurope\n5\nWestern Europe\n5" | docker compose run --rm app
+          echo -e "10\n10\nEurope\n5\nWestern Europe\n5\nAsia\n5" | docker compose run --rm app
+
 
       - name: Upload Generated Reports
         uses: actions/upload-artifact@v4
