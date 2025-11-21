@@ -46,14 +46,34 @@ public class App {
             con.connect(args[0], Integer.parseInt(args[1]));
         }
 
-        // Reports 1–16
-      f1r.showCountriesByPopulation();
-        s2r.showCountriesContinent();
-        t3r.showCountriesByRegion();
-
+        // Reports with input
+        //4th
         System.out.println("Enter how many countries to see most populated countries in the world: ");
         int n4 = input.nextInt();
         f4r.showTopNCountries(n4);
+        //20th
+        System.out.print("Enter how many capital cities in order of population in the world: ");
+        int n = input.nextInt();
+        tr20.showTopNCapitalCities(n);
+        // 21st
+        System.out.print("Enter a continent to find out the the top populated capital cities: ");
+        String continent = input.nextLine();
+        System.out.print("Enter the number of  top capital cities to return: ");
+        int n2 = input.nextInt();
+        tr21.showTopNCapitalCitiesInContinent(continent, n2);
+        // 22nd
+        System.out.print("Enter a region to find out the the top populated capital cities: ");
+        String region = input.nextLine();
+        System.out.print("Enter the number of  top capital cities to return: ");
+        int n3 = input.nextInt();
+        tr22.showTopNCapitalCitiesInRegion(region, n3);
+
+
+
+        f1r.showCountriesByPopulation();
+        s2r.showCountriesContinent();
+        t3r.showCountriesByRegion();
+
         s7r.showCitiesByPopulation();
         e8r.showCitiesContinent();
         n9r.showCitiesByRegion();
@@ -69,30 +89,6 @@ public class App {
         // 19th
         nr.showCapitalCitiesForMultipleRegions();
 
-
-
-        // 20th
-        System.out.print("Enter how many capital cities in order of population in the world: ");
-        int n = input.nextInt();
-        tr20.showTopNCapitalCities(n);
-
-        input.nextLine(); // clear buffer
-
-        // 21st
-        System.out.print("Enter a continent to find out the the top populated capital cities: ");
-        String continent = input.nextLine();
-        System.out.print("Enter the number of  top capital cities to return: ");
-        int n2 = input.nextInt();
-        tr21.showTopNCapitalCitiesInContinent(continent, n2);
-
-        input.nextLine(); // clear buffer
-
-        // 22nd
-        System.out.print("Enter a region to find out the the top populated capital cities: ");
-        String region = input.nextLine();
-        System.out.print("Enter the number of  top capital cities to return: ");
-        int n3 = input.nextInt();
-        tr22.showTopNCapitalCitiesInRegion(region, n3);
 
         // 23rd
         tr23.showContinentPopulationSummary();

@@ -1,0 +1,6 @@
+# Cities in American Samoa
+
+| City | Country | District | Population |
+|------|----------|-----------|-------------|
+| Tafuna | American Samoa | Tutuila | 5200 |
+| Fagatogo | American Samoa | Tutuila | 2323 |
