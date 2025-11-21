@@ -17,6 +17,23 @@ public class GetAll {
         this.c = c;
     }
 
+    /**Returns a list of cities in db*/
+    public int GetAllCities(){
+        int Total = 0;
+        String sql = "SELECT COUNT(*) AS Total FROM city;";
+        try (Statement stmt = c.getConnection().createStatement();
+             ResultSet rset = stmt.executeQuery(sql)) {
+            if (rset.next()) {
+                Total = rset.getInt("Total");
+            }
+        } catch (SQLException e) {
+            System.out.println("Failed to count cities: " + e.getMessage());
+            }
+
+        return Total;
+
+    }
+
     /** Returns list of continents in db */
     public List<String> getAllContinents() {
         List<String> continents = new ArrayList<>();

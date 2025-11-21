@@ -35,6 +35,7 @@ public class App {
         NinthReport n9r = new NinthReport(con);
         TenthReport t10r = new TenthReport(con);
         EleventhReport e11r = new EleventhReport(con);
+        TwelfthReport t12r = new TwelfthReport(con);
         SeventeenthReport r17 = new SeventeenthReport(con);
         EighteenthReport er = new EighteenthReport(con);
         NineteenthReport nr = new NineteenthReport(con);
@@ -83,6 +84,11 @@ public class App {
         s6r.showTopNCountriesInRegion(n6, region6);
         pause(input);
 
+        // ---------- 12 ----------
+        int n12 = askForInt(input, "Enter how many cities to know the most populated in the world: ", 1, safeMax(helper.GetAllCities()));
+        t12r.showTopNCitiesITheWorld(n12);
+        pause(input);
+
         // ---------- 20 ----------
         int n20 = askForInt(input,
                 "Enter how many capital cities in order of population in the world:",
@@ -118,8 +124,8 @@ public class App {
         s7r.showCitiesByPopulation();
         e8r.showCitiesContinent();
         n9r.showCitiesByRegion();
-        t10r.showCitiesByCountry();       // ✅ Correct — no args
-        e11r.showCitiesByDistrict();      // ✅ Correct — no args
+        t10r.showCitiesByCountry();
+        e11r.showCitiesByDistrict();
         r17.showCapitalCitiesInWorld();
         er.showCapitalCitiesInMultipleContinents();
         nr.showCapitalCitiesForMultipleRegions();
@@ -170,7 +176,7 @@ public class App {
                 if (option.equalsIgnoreCase(value)) return option;
             }
 
-            System.out.println("❌ Invalid input: '" + value + "'");
+            System.out.println("Invalid input: '" + value + "'");
             System.out.println("Did you mean:");
             validOptions.stream()
                     .sorted((a, b) -> levenshtein(value.toLowerCase(), a.toLowerCase()) -
