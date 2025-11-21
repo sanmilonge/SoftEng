@@ -1,5 +1,0 @@
-# Cities in Turks and Caicos Islands
-
-| City | Country | District | Population |
-|------|----------|-----------|-------------|
-| Cockburn Town | Turks and Caicos Islands | Grand Turk | 4800 |
