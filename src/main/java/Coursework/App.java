@@ -1,5 +1,6 @@
 package Coursework;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -22,19 +23,18 @@ public class App {
             con.connect(args[0], Integer.parseInt(args[1]));
         }
 
-        // Reports 1–16 (no input needed)
+        // Init reports
         FirstReport f1r = new FirstReport(con);
         SecondReport s2r = new SecondReport(con);
         ThirdReport t3r = new ThirdReport(con);
         FourthReport f4r = new FourthReport(con);
         FifthReport f5r = new FifthReport(con);
+        SixthReport s6r = new SixthReport(con);
         SeventhReport s7r = new SeventhReport(con);
         EighthReport e8r = new EighthReport(con);
         NinthReport n9r = new NinthReport(con);
         TenthReport t10r = new TenthReport(con);
         EleventhReport e11r = new EleventhReport(con);
-
-        // Reports 17–32
         SeventeenthReport r17 = new SeventeenthReport(con);
         EighteenthReport er = new EighteenthReport(con);
         NineteenthReport nr = new NineteenthReport(con);
@@ -51,86 +51,75 @@ public class App {
         ThirtiethReport tr30 = new ThirtiethReport(con);
         ThirtyFirstReport tr31 = new ThirtyFirstReport(con);
         ThirtySecondReport tr32 = new ThirtySecondReport(con);
+
         GetAll helper = new GetAll(con);
-        // ---- VALIDATED INPUT METHODS ----
-        //Fourth Report
+
+        // ========== REPORTS THAT REQUIRE USER INPUT ==========
+
+        // ---------- 4 ----------
         int n4 = askForInt(input,
                 "Enter how many countries to see most populated countries in the world:",
-                1, helper.totalNumberOf(null, null));
-
-        System.out.println("✓ You selected: " + n4);
+                1, safeMax(helper.totalNumberOf(null, null)));
         f4r.showTopNCountries(n4);
+        pause(input);
 
-        //Fifth Report
-        String continent5 = askForString(input, "Enter continent to find most populated countries: ", "Africa");
+        // ---------- 5 ----------
+        String continent5 = askForValidatedString(input,
+                "Enter continent to find most populated countries:",
+                helper.getAllContinents(), "Africa");
+        int n5 = askForInt(input,
+                "Enter how many countries to see the most populated in " + continent5,
+                1, safeMax(helper.totalNumberOf(continent5, null)));
+        f5r.showTopNCountriesInContinent(n5, continent5);
+        pause(input);
 
-        System.out.println("✓ You selected: " + continent5);
+        // ---------- 6 ----------
+        String region6 = askForValidatedString(input,
+                "Enter region to find most populated countries:",
+                helper.getAllRegions(), "Western Europe");
+        int n6 = askForInt(input,
+                "Enter how many countries to see the most populated in " + region6,
+                1, safeMax(helper.totalNumberOf(null, region6)));
+        s6r.showTopNCountriesInRegion(n6, region6);
+        pause(input);
 
-        int n5 = askForInt(input, "Enter how many countries to see the most populated in "+ continent5, 1, helper.totalNumberOf(null, continent5));
-
-
-        //Twentieth Report
+        // ---------- 20 ----------
         int n20 = askForInt(input,
                 "Enter how many capital cities in order of population in the world:",
-                1, helper.totalNumberOf(null, null));
-
-        System.out.println("✓ You selected: " + n20);
+                1, safeMax(helper.totalNumberOf(null, null)));
         tr20.showTopNCapitalCities(n20);
-        System.out.println("Press enter to continue.");
-        if (!CI_MODE)
-        {
-            input.nextLine(); // clear buffer
-        }
+        pause(input);
 
-
-        //TwentyFirst Report
-        String continent = askForString(input,
-                "Enter a continent to find the top populated capital cities:", "Africa");
-
-        System.out.println("✓ You selected: " + continent);
-
+        // ---------- 21 ----------
+        String continent21 = askForValidatedString(input,
+                "Enter a continent to find the top populated capital cities:",
+                helper.getAllContinents(), "Africa");
         int n21 = askForInt(input,
                 "Enter the number of top capital cities to return:",
-                1, helper.totalNumberOf(continent, null));
+                1, safeMax(helper.totalNumberOf(continent21, null)));
+        tr21.showTopNCapitalCitiesInContinent(continent21, n21);
+        pause(input);
 
-        System.out.println("✓ You selected: " + n21);
-        tr21.showTopNCapitalCitiesInContinent(continent, n21);
-        System.out.println("Press enter to continue.");
-        if (!CI_MODE)
-        {
-            input.nextLine(); // clear buffer
-        }
-
-
-        //TwentySecond Report
-        String region = askForString(input,
-                "Enter a region to find the top populated capital cities:", "Western Europe");
-
-        System.out.println("✓ You selected: " + region);
-
+        // ---------- 22 ----------
+        String region22 = askForValidatedString(input,
+                "Enter a region to find the top populated capital cities:",
+                helper.getAllRegions(), "Western Europe");
         int n22 = askForInt(input,
                 "Enter the number of top capital cities to return:",
-                1, helper.totalNumberOf(region, null));
+                1, safeMax(helper.totalNumberOf(null, region22)));
+        tr22.showTopNCapitalCitiesInRegion(region22, n22);
+        pause(input);
 
-        System.out.println("✓ You selected: " + n22);
-        tr22.showTopNCapitalCitiesInRegion(region, n22);
-        System.out.println("Press enter to continue.");
-        if (!CI_MODE)
-        {
-            input.nextLine(); // clear buffer
-        }
+        // ========== REPORTS WITH NO USER INPUT ==========
 
-
-
-        // ---- RUN REMAINING REPORTS ----
         f1r.showCountriesByPopulation();
         s2r.showCountriesContinent();
         t3r.showCountriesByRegion();
         s7r.showCitiesByPopulation();
         e8r.showCitiesContinent();
         n9r.showCitiesByRegion();
-        t10r.showCitiesByCountry();
-        e11r.showCitiesByDistrict();
+        t10r.showCitiesByCountry();       // ✅ Correct — no args
+        e11r.showCitiesByDistrict();      // ✅ Correct — no args
         r17.showCapitalCitiesInWorld();
         er.showCapitalCitiesInMultipleContinents();
         nr.showCapitalCitiesForMultipleRegions();
@@ -148,19 +137,20 @@ public class App {
         con.disconnect();
     }
 
-
-    // ---------------- INPUT VALIDATION ---------------- //
+    // ---------- HELPERS ----------
 
     private static int askForInt(Scanner input, String prompt, int min, int max) {
-        if (CI_MODE) {
-            return min; // CI ALWAYS returns a safe default
+        if (CI_MODE) return min;
+
+        if (max < min) {
+            System.out.println("⚠ No data available. Using default value: " + min);
+            return min;
         }
 
-        int value;
         while (true) {
-            System.out.println(prompt);
+            System.out.println(prompt + " (" + min + "–" + max + ")");
             try {
-                value = Integer.parseInt(input.nextLine());
+                int value = Integer.parseInt(input.nextLine().trim());
                 if (value >= min && value <= max) return value;
                 System.out.println("Invalid number. Try again.");
             } catch (Exception e) {
@@ -169,17 +159,52 @@ public class App {
         }
     }
 
-    private static String askForString(Scanner input, String prompt, String defaultvalue) {
-        if (CI_MODE) {
-            return defaultvalue; // safe default for CI
-        }
+    private static String askForValidatedString(Scanner input, String prompt, List<String> validOptions, String defaultValue) {
+        if (CI_MODE) return defaultValue;
 
-        String value;
         while (true) {
             System.out.println(prompt);
-            value = input.nextLine().trim();
-            if (!value.isEmpty()) return value;
-            System.out.println("Input cannot be empty. Try again.");
+            String value = input.nextLine().trim();
+
+            for (String option : validOptions) {
+                if (option.equalsIgnoreCase(value)) return option;
+            }
+
+            System.out.println("❌ Invalid input: '" + value + "'");
+            System.out.println("Did you mean:");
+            validOptions.stream()
+                    .sorted((a, b) -> levenshtein(value.toLowerCase(), a.toLowerCase()) -
+                            levenshtein(value.toLowerCase(), b.toLowerCase()))
+                    .limit(5)
+                    .forEach(opt -> System.out.println("  • " + opt));
         }
+    }
+
+    private static int safeMax(int max) {
+        return Math.max(1, max);
+    }
+
+    private static void pause(Scanner input) {
+        if (!CI_MODE) {
+            System.out.println("Press Enter to continue...");
+            input.nextLine();
+        }
+    }
+
+    private static int levenshtein(String a, String b) {
+        int[][] dp = new int[a.length() + 1][b.length() + 1];
+        for (int i = 0; i <= a.length(); i++) {
+            for (int j = 0; j <= b.length(); j++) {
+                if (i == 0) dp[i][j] = j;
+                else if (j == 0) dp[i][j] = i;
+                else {
+                    dp[i][j] = Math.min(
+                            dp[i - 1][j - 1] + (a.charAt(i - 1) == b.charAt(j - 1) ? 0 : 1),
+                            Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1)
+                    );
+                }
+            }
+        }
+        return dp[a.length()][b.length()];
     }
 }

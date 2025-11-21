@@ -6,14 +6,14 @@ package Coursework;
 
 import java.sql.*;
 
-public class FifthReport {
+public class SixthReport {
     private final Connection c;
 
-    public FifthReport(Connection c) {
+    public SixthReport(Connection c) {
         this.c = c;
     }
 
-    public void showTopNCountriesInContinent(int n, String continent) {
+    public void showTopNCountriesInRegion(int n, String region) {
         String sql =
                 "SELECT country.Code, " +
                         "country.Name AS Country, " +
@@ -23,19 +23,19 @@ public class FifthReport {
                         "city.Name AS Capital " +
                         "FROM country " +
                         "JOIN city ON city.ID = country.Capital " +
-                        "WHERE country.Continent = ? " +
+                        "WHERE country.Region = ? " +
                         "ORDER BY country.Population DESC " +
                         "LIMIT ?;";
 
         try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
-            pstmt.setString(1, continent);
+            pstmt.setString(1, region);
             pstmt.setInt(2, n);
 
             ResultSet rset = pstmt.executeQuery();
 
             StringBuilder md = new StringBuilder();
             md.append("# ").append(n)
-                    .append(" top populated countries in ").append(continent).append("\n\n");
+                    .append(" top populated countries in ").append(region).append("\n\n");
             md.append("| Code | Country | Continent | Region | Population | Capital |\n");
             md.append("|------|---------|-----------|--------|------------|---------|\n");
 
@@ -52,15 +52,15 @@ public class FifthReport {
             }
 
             ReportManager.writeMarkdown(
-                    "5_FifthReport",
-                    n + "_Top_Populated_Countries_In_" + continent.replace(" ", "_") + ".md",
+                    "6_SixthReport",
+                    n + "_Top_Populated_Countries_In_" + region.replace(" ", "_") + ".md",
                     md.toString()
             );
 
-            System.out.println("Fifth report completed.");
+            System.out.println("Sixth report completed.");
         } catch (SQLException e) {
             System.out.println("Failed to retrieve the " + n +
-                    " most populated countries in " + continent + ": " + e.getMessage());
+                    " most populated countries in " + region + ": " + e.getMessage());
             e.printStackTrace();
         }
     }

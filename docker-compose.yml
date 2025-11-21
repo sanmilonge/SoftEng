@@ -19,7 +19,7 @@ services:
     depends_on:
       - db
     environment:
-      CI: "true"
+      CI: ${CI:-false}
     volumes:
       # Mount reports folder from host so reports are visible locally
       - ./src/main/resources/reports:/app/src/main/resources/reports

@@ -15,10 +15,10 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 /**
- * Dynamic unit test for FifthReport – top countries by continent.
+ * Dynamic unit test for SixthReport – top countries by region.
  */
 @ExtendWith(MockitoExtension.class)
-class FifthReportTest extends ReportTestSupport {
+class SixthReportTest extends ReportTestSupport {
 
     @Mock
     Coursework.Connection connection;
@@ -33,14 +33,18 @@ class FifthReportTest extends ReportTestSupport {
     ResultSet resultSet;
 
     @Test
-    void showTopNCountriesInContinent_generatesDynamicMarkdown() throws Exception {
+    void showTopNCountriesInRegion_generatesDynamicMarkdown() throws Exception {
         when(connection.getConnection()).thenReturn(sqlConnection);
         when(sqlConnection.prepareStatement(anyString())).thenReturn(preparedStatement);
         when(preparedStatement.executeQuery()).thenReturn(resultSet);
 
         class Row {
-            String code, name, continent, region, capital;
-            int population;
+            final String code;
+            final String name;
+            final String continent;
+            final String region;
+            final String capital;
+            final int population;
             Row(String c, String n, String con, String r, int p, String cap) {
                 code = c; name = n; continent = con; region = r; population = p; capital = cap;
             }
@@ -59,17 +63,17 @@ class FifthReportTest extends ReportTestSupport {
         when(resultSet.getString("Capital")).thenReturn(rows.get(0).capital, rows.get(1).capital);
 
         int n = 2;
-        String continent = "TestContinent";
+        String region = "TestRegion";
 
         try (MockedStatic<ReportManager> rm = mockReportManagerStatic()) {
-            FifthReport report = new FifthReport(connection);
-            report.showTopNCountriesInContinent(n, continent);
+            SixthReport report = new SixthReport(connection);
+            report.showTopNCountriesInRegion(n, region);
 
             rm.verify(() -> ReportManager.writeMarkdown(
-                    eq("5_FifthReport"),
-                    eq("2_Top_Populated_Countries_In_TestContinent.md"),
+                    eq("6_SixthReport"),
+                    eq("2_Top_Populated_Countries_In_TestRegion.md"),
                     argThat(md -> {
-                        if (!md.contains("# 2 top populated countries in TestContinent")) return false;
+                        if (!md.contains("# 2 top populated countries in TestRegion")) return false;
                         for (Row r : rows) {
                             if (!(md.contains(r.code)
                                     && md.contains(r.name)
