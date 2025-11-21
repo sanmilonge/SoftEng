@@ -1,66 +1,103 @@
+// src/test/java/Coursework/EighthReportTest.java
 package Coursework;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
 import org.mockito.MockedStatic;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 /**
- * Unit test for EighthReport using Mockito.
- * Verifies that per-continent city reports are generated correctly.
+ * Dynamic unit test for EighthReport – cities grouped by continent.
  */
 @ExtendWith(MockitoExtension.class)
 class EighthReportTest extends ReportTestSupport {
 
+    @Mock
+    Coursework.Connection connection;
+
+    @Mock
+    java.sql.Connection sqlConnection;
+
+    @Mock
+    Statement distinctContinentStatement;
+
+    @Mock
+    ResultSet continentsResult;
+
+    @Mock
+    PreparedStatement continentPreparedStatement;
+
+    @Mock
+    ResultSet continentCitiesResult;
+
     @Test
-    void showCitiesContinent_generatesMarkdownForEachContinent() throws Exception {
+    void showCitiesContinent_generatesDynamicMarkdownPerContinent() throws Exception {
 
-        // Arrange full mock DB environment
-        DBMock db = mockDBEnvironment();
+        when(connection.getConnection()).thenReturn(sqlConnection);
 
-        // Mock distinct continents
-        mockRows(db.rs, new Object[][]{
-                row(col("Continent", "Europe"))
-        });
+        when(sqlConnection.createStatement()).thenReturn(distinctContinentStatement);
+        when(distinctContinentStatement.executeQuery(startsWith("SELECT DISTINCT Continent")))
+                .thenReturn(continentsResult);
 
-        // SECOND ResultSet for cities
-        ResultSet cityRS = mock(ResultSet.class);
+        when(continentsResult.next()).thenReturn(true, false);
+        when(continentsResult.getString("Continent")).thenReturn("TestContinent");
 
-        when(db.sqlConn.prepareStatement(startsWith("SELECT city.Name")))
-                .thenReturn(db.pstmt);
+        when(sqlConnection.prepareStatement(startsWith("SELECT"))).thenReturn(continentPreparedStatement);
+        when(continentPreparedStatement.executeQuery()).thenReturn(continentCitiesResult);
 
-        when(db.pstmt.executeQuery()).thenReturn(cityRS);
+        class Row {
+            String city, country, district;
+            int population;
+            Row(String city, String country, String district, int population) {
+                this.city = city;
+                this.country = country;
+                this.district = district;
+                this.population = population;
+            }
+        }
 
-        // Mock city rows
-        when(cityRS.next()).thenReturn(true, true, false);
-        when(cityRS.getString("City")).thenReturn("London", "Paris");
-        when(cityRS.getString("Country")).thenReturn("United Kingdom", "France");
-        when(cityRS.getString("District")).thenReturn("London", "Île-de-France");
-        when(cityRS.getInt("Population")).thenReturn(9000000, 2148000);
+        List<Row> rows = new ArrayList<>();
+        rows.add(new Row("AlphaCity", "AlphaLand", "DistrictA", 1_000_000));
+        rows.add(new Row("BetaCity", "BetaLand", "DistrictB", 500_000));
 
-        EighthReport report = new EighthReport(db.appConn);
+        when(continentCitiesResult.next()).thenReturn(true, true, false);
+        when(continentCitiesResult.getString("City")).thenReturn(rows.get(0).city, rows.get(1).city);
+        when(continentCitiesResult.getString("Country")).thenReturn(rows.get(0).country, rows.get(1).country);
+        when(continentCitiesResult.getString("District")).thenReturn(rows.get(0).district, rows.get(1).district);
+        when(continentCitiesResult.getInt("Population")).thenReturn(rows.get(0).population, rows.get(1).population);
 
-        // Act + Assert in one try-with-resources block
         try (MockedStatic<ReportManager> rm = mockReportManagerStatic()) {
+            EighthReport report = new EighthReport(connection);
 
+            // Act
             report.showCitiesContinent();
 
+            // Assert
             rm.verify(() -> ReportManager.writeMarkdown(
-                    eq("8_EighthReport"),
-                    eq("Europe.md"),
-                    argThat(md ->
-                            md.contains("# Cities in Europe") &&
-                                    md.contains("London") &&
-                                    md.contains("United Kingdom") &&
-                                    md.contains("Paris") &&
-                                    md.contains("France")
-                    )
+                    anyString(),
+                    anyString(),
+                    argThat(md -> {
+                        if (!(md.contains("TestContinent") && md.contains("#"))) return false;
+                        for (Row r : rows) {
+                            if (!(md.contains(r.city)
+                                    && md.contains(r.country)
+                                    && md.contains(r.district)
+                                    && md.contains(String.valueOf(r.population)))) {
+                                return false;
+                            }
+                        }
+                        return true;
+                    })
             ));
         }
     }

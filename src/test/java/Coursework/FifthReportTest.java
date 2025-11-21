@@ -14,11 +14,12 @@ import java.util.List;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.ArgumentMatchers.startsWith;
 import static org.mockito.Mockito.*;
+
 /**
- * Unit test for FirstReport using Mockito to mock DB and ReportManager.
+ * Dynamic Unit test for FifthReport.
  */
 @ExtendWith(MockitoExtension.class)
-class FirstReportTest extends ReportTestSupport {
+class FifthReportTest extends ReportTestSupport {
 
     @Mock
     Coursework.Connection connection;
@@ -33,8 +34,9 @@ class FirstReportTest extends ReportTestSupport {
     ResultSet resultSet;
 
     @Test
-    void showCountriesByPopulation_buildsMarkdownAndCallsReportManager() throws Exception {
-        // Arrange DB mocks
+    void showTopNCountriesInContinent_generatesDynamicMarkdown() throws Exception {
+
+        // Arrange mocks
         when(connection.getConnection()).thenReturn(sqlConnection);
         when(sqlConnection.createStatement()).thenReturn(statement);
 
@@ -43,12 +45,8 @@ class FirstReportTest extends ReportTestSupport {
 
         // ---- Dynamic mock data ----
         class Row {
-            final String code;
-            final String name;
-            final String continent;
-            final String region;
-            final String capital;
-            final int population;
+            String code, name, continent, region, capital;
+            int population;
             Row(String c, String n, String con, String r, int p, String cap) {
                 code = c; name = n; continent = con; region = r; population = p; capital = cap;
             }
@@ -87,21 +85,25 @@ class FirstReportTest extends ReportTestSupport {
                 rows.get(1).capital
         );
 
-
+        int n = 2;
+        String continent = "TestContinent";
 
         try (MockedStatic<ReportManager> rm = mockReportManagerStatic()) {
-            FirstReport report = new FirstReport(connection);
+
+            FifthReport report = new FifthReport(connection);
 
             // Act
-            report.showCountriesByPopulation();
+            report.showTopNCountriesInContinent(n, continent);
 
             // Assert
             rm.verify(() -> ReportManager.writeMarkdown(
-                    eq("1_FirstReport"),
-                    eq("FirstReport.md"),
+                    eq("5_FifthReport"),
+                    eq("2_Top_Populated_Countries_In_TestContinent.md"),
                     argThat(md -> {
+
                         // Header check
-                        if (!md.contains("# All the countries in the world organised by population")) return false;
+                        if (!md.contains("# 2 top populated countries in TestContinent")) return false;
+
                         // Check every mocked row appears
                         for (Row r : rows) {
                             if (!(md.contains(r.code) &&
@@ -114,8 +116,7 @@ class FirstReportTest extends ReportTestSupport {
                             }
                         }
                         return true;
-                            }
-                    )
+                    })
             ));
         }
     }
