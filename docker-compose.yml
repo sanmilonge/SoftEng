@@ -18,8 +18,7 @@ services:
     container_name: cw-app
     depends_on:
       - db
-    environment:
-      CI: "true"
+      - 
     volumes:
       # Mount reports folder from host so reports are visible locally
       - ./src/main/resources/reports:/app/src/main/resources/reports
