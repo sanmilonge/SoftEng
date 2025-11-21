@@ -1,4 +1,4 @@
-# 25 top populated countries in the world
+# 34 top populated countries in the world
 
 | Code | Country | Continent | Region | Population | Capital |
 |------|------|------------|------------|-------------|------------|
@@ -27,3 +27,12 @@
 | COD | Congo, The Democratic Republic of the | Africa | Central Africa | 51654000 | Kinshasa |
 | UKR | Ukraine | Europe | Eastern Europe | 50456000 | Kyiv |
 | KOR | South Korea | Asia | Eastern Asia | 46844000 | Seoul |
+| MMR | Myanmar | Asia | Southeast Asia | 45611000 | Rangoon (Yangon) |
+| COL | Colombia | South America | South America | 42321000 | Santafé de Bogotá |
+| ZAF | South Africa | Africa | Southern Africa | 40377000 | Pretoria |
+| ESP | Spain | Europe | Southern Europe | 39441700 | Madrid |
+| POL | Poland | Europe | Eastern Europe | 38653600 | Warszawa |
+| ARG | Argentina | South America | South America | 37032000 | Buenos Aires |
+| TZA | Tanzania | Africa | Eastern Africa | 33517000 | Dodoma |
+| DZA | Algeria | Africa | Northern Africa | 31471000 | Alger |
+| CAN | Canada | North America | North America | 31147000 | Ottawa |
