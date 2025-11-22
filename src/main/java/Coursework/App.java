@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class App {
-
-    private static final boolean CI_MODE =
+    private static final boolean CI_MODE = //Restricts github to use default values
             System.getenv("CI") != null &&
                     System.getenv("CI").equalsIgnoreCase("true");
 
@@ -36,6 +35,7 @@ public class App {
         TenthReport t10r = new TenthReport(con);
         EleventhReport e11r = new EleventhReport(con);
         TwelfthReport t12r = new TwelfthReport(con);
+        ThirteenthReport t13r = new ThirteenthReport(con);
         SeventeenthReport r17 = new SeventeenthReport(con);
         EighteenthReport er = new EighteenthReport(con);
         NineteenthReport nr = new NineteenthReport(con);
@@ -60,7 +60,7 @@ public class App {
         // ---------- 4 ----------
         int n4 = askForInt(input,
                 "Enter how many countries to see most populated countries in the world:",
-                1, safeMax(helper.totalNumberOf(null, null)));
+                1, safeMax(helper.totalNumberOfCountries(null, null)));
         f4r.showTopNCountries(n4);
         pause(input);
 
@@ -70,7 +70,7 @@ public class App {
                 helper.getAllContinents(), "Africa");
         int n5 = askForInt(input,
                 "Enter how many countries to see the most populated in " + continent5,
-                1, safeMax(helper.totalNumberOf(continent5, null)));
+                1, safeMax(helper.totalNumberOfCountries(continent5, null)));
         f5r.showTopNCountriesInContinent(n5, continent5);
         pause(input);
 
@@ -80,19 +80,25 @@ public class App {
                 helper.getAllRegions(), "Western Europe");
         int n6 = askForInt(input,
                 "Enter how many countries to see the most populated in " + region6,
-                1, safeMax(helper.totalNumberOf(null, region6)));
+                1, safeMax(helper.totalNumberOfCountries(null, region6)));
         s6r.showTopNCountriesInRegion(n6, region6);
         pause(input);
 
         // ---------- 12 ----------
-        int n12 = askForInt(input, "Enter how many cities to know the most populated in the world: ", 1, safeMax(helper.GetAllCities()));
+        int n12 = askForInt(input, "Enter how many cities to know the most populated in the world: ", 1, safeMax(helper.totalNumberOfCities(null, null, null, null)));
         t12r.showTopNCitiesITheWorld(n12);
+        pause(input);
+
+        // ---------- 13 ----------
+        String continent13 = askForValidatedString(input, "Enter continent to find the most populated cities: ", helper.getAllContinents(), "Africa");
+        int n13 = askForInt(input, "Enter how many cities to see the most populated in " + continent13, 1, safeMax(helper.totalNumberOfCities(continent13, null, null, null)));
+        t13r.showTopNCitiesInContinent(n13, continent13);
         pause(input);
 
         // ---------- 20 ----------
         int n20 = askForInt(input,
                 "Enter how many capital cities in order of population in the world:",
-                1, safeMax(helper.totalNumberOf(null, null)));
+                1, safeMax(helper.totalNumberOfCountries(null, null)));
         tr20.showTopNCapitalCities(n20);
         pause(input);
 
@@ -102,7 +108,7 @@ public class App {
                 helper.getAllContinents(), "Africa");
         int n21 = askForInt(input,
                 "Enter the number of top capital cities to return:",
-                1, safeMax(helper.totalNumberOf(continent21, null)));
+                1, safeMax(helper.totalNumberOfCountries(continent21, null)));
         tr21.showTopNCapitalCitiesInContinent(continent21, n21);
         pause(input);
 
@@ -112,7 +118,7 @@ public class App {
                 helper.getAllRegions(), "Western Europe");
         int n22 = askForInt(input,
                 "Enter the number of top capital cities to return:",
-                1, safeMax(helper.totalNumberOf(null, region22)));
+                1, safeMax(helper.totalNumberOfCountries(null, region22)));
         tr22.showTopNCapitalCitiesInRegion(region22, n22);
         pause(input);
 
@@ -149,7 +155,7 @@ public class App {
         if (CI_MODE) return min;
 
         if (max < min) {
-            System.out.println("⚠ No data available. Using default value: " + min);
+            System.out.println("No data available. Using default value: " + min);
             return min;
         }
 
