@@ -38,6 +38,7 @@ public class App {
         ThirteenthReport t13r = new ThirteenthReport(con);
         FourteenthReport f14r = new FourteenthReport(con);
         FifteenthReport f15r = new FifteenthReport(con);
+        SixteenthReport s16r = new SixteenthReport(con);
         SeventeenthReport s17r = new SeventeenthReport(con);
         EighteenthReport e18r = new EighteenthReport(con);
         NineteenthReport n19r = new NineteenthReport(con);
@@ -104,9 +105,15 @@ public class App {
         pause(input);
 
         // ---------- 15 ----------
-        String country = askForValidatedString(input, "Enter country to find the most populated cities: ", helper.getAllCountries(), "United States");
+        String country = askForValidatedString(input, "Enter district to find the most populated cities: ", helper.getAllCountries(), "United States");
         int n15 = askForInt(input, "Enter how many cities to see the most populated in " + country, 1, safeMax(helper.totalNumberOfCities(null, null, country, null)));
         f15r.showTopNCitiesInCountry(n15, country);
+        pause(input);
+
+        // ---------- 16 ----------
+        String district = askForValidatedString(input, "Enter district to find the most populated cities: ", helper.getAllDistricts(), "California");
+        int n16 = askForInt(input, "Enter how many cities to see the most populated in " + district, 1, safeMax(helper.totalNumberOfCities(null, null, null, district)));
+        s16r.showTopNCitiesInDistrict(n16, district);
         pause(input);
 
         // ---------- 20 ----------

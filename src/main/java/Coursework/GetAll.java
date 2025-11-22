@@ -194,20 +194,24 @@ public class GetAll {
                 String sql = "SELECT COUNT(*) AS Total " +
                         "FROM city JOIN country ON city.CountryCode = country.Code " +
                         "WHERE country.Name = ?;";
-                try (Statement stmt = c.getConnection().createStatement();
-                     ResultSet rset = stmt.executeQuery(sql)) {
-                    if (rset.next()) {
-                        total = rset.getInt("Total");
+                try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
+                    pstmt.setString(1, continent);
+                    try (ResultSet rset = pstmt.executeQuery()) {
+                        if (rset.next()) {
+                            total = rset.getInt("Total");
+                        }
                     }
                 }
             }
             else if (hasDistrict){
                 // Filter by country
                 String sql = "SELECT COUNT(*) AS Total FROM city WHERE District = ?;";
-                try (Statement stmt = c.getConnection().createStatement();
-                     ResultSet rset = stmt.executeQuery(sql)) {
-                    if (rset.next()) {
-                        total = rset.getInt("Total");
+                try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
+                    pstmt.setString(1, continent);
+                    try (ResultSet rset = pstmt.executeQuery()) {
+                        if (rset.next()) {
+                            total = rset.getInt("Total");
+                        }
                     }
                 }
             }
