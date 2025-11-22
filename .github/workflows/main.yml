@@ -6,32 +6,13 @@ permissions:
   contents: write
 
 jobs:
-  UnitTests:
-    name: Unit Tests
+  Tests:
+    name: Unit + Integration Tests (FULL COVERAGE)
     runs-on: ubuntu-22.04
+
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
 
-      - name: Run unit tests with coverage
-        run: mvn test
-
-      - name: Upload Code Coverage to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          directory: ./target/site/jacoco
-          verbose: true
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
-  IntegrationTests:
-    name: Integration Tests (world-db)
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
@@ -43,11 +24,11 @@ jobs:
       - name: Build DB image
         run: docker build -t worlddb ./db
 
-      - name: Run DB container
+      - name: Start DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
-      - name: Run integration tests with coverage
-        run: mvn verify -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest
+      - name: Run ALL tests with coverage (unit + integration)
+        run: mvn clean verify
 
       - name: Upload Code Coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -67,8 +48,11 @@ jobs:
   BuildCompose:
     name: Build app with docker-compose
     runs-on: ubuntu-22.04
+    needs: Tests
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
@@ -99,9 +83,11 @@ jobs:
   AutoGenerateReports:
     name: Generate and Upload Reports
     runs-on: ubuntu-22.04
-    needs: [BuildCompose]
+    needs: BuildCompose
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
