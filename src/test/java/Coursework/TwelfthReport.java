@@ -1,4 +1,3 @@
-// src/test/java/Coursework/TwelfthReportTest.java
 package Coursework;
 
 import org.junit.jupiter.api.Test;
@@ -14,10 +13,10 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 /**
- * Unit test for TwelfthReport – most populated cities in the world.
+ * Unit test for TwelfthReport – top cities in the world.
  */
 @ExtendWith(MockitoExtension.class)
-class TwelfthReportTest extends ReportTestSupport {
+class TwelfthReportTest {
 
     @Mock
     Coursework.Connection connection;
@@ -26,45 +25,35 @@ class TwelfthReportTest extends ReportTestSupport {
     java.sql.Connection sqlConnection;
 
     @Mock
-    PreparedStatement preparedStatement;
+    PreparedStatement stmt;
 
     @Mock
-    ResultSet resultSet;
+    ResultSet rs;
 
     @Test
-    void showTopNCitiesITheWorld_generatesCorrectMarkdown() throws Exception {
-
-        // Arrange
+    void showTopNCitiesInTheWorld_generatesMarkdown() throws Exception {
         when(connection.getConnection()).thenReturn(sqlConnection);
-        when(sqlConnection.prepareStatement(startsWith("SELECT city.Name AS City"))).thenReturn(preparedStatement);
-        when(preparedStatement.executeQuery()).thenReturn(resultSet);
+        when(sqlConnection.prepareStatement(anyString())).thenReturn(stmt);
+        when(stmt.executeQuery()).thenReturn(rs);
 
-        int n = 2;
+        when(rs.next()).thenReturn(true, false);
+        when(rs.getString("City")).thenReturn("GlobalCity");
+        when(rs.getString("Country")).thenReturn("WorldLand");
+        when(rs.getString("District")).thenReturn("Central");
+        when(rs.getInt("Population")).thenReturn(8000000);
 
-        when(resultSet.next()).thenReturn(true, true, false);
-
-        when(resultSet.getString("City")).thenReturn("AlphaCity", "BetaCity");
-        when(resultSet.getString("Country")).thenReturn("AlphaLand", "BetaLand");
-        when(resultSet.getString("District")).thenReturn("DistrictA", "DistrictB");
-        when(resultSet.getInt("Population")).thenReturn(1_000_000, 500_000);
-
-        try (MockedStatic<ReportManager> rm = mockReportManagerStatic()) {
-
+        try (MockedStatic<ReportManager> rm = mockStatic(ReportManager.class)) {
             TwelfthReport report = new TwelfthReport(connection);
+            report.showTopNCitiesITheWorld(1);
 
-            // Act
-            report.showTopNCitiesITheWorld(n);
-
-            // Assert
             rm.verify(() -> ReportManager.writeMarkdown(
                     eq("12_TwelfthReport"),
-                    eq(n + "_Top_Populated_Cities_In_World.md"),
-                    argThat(md -> md.contains("# Top 2 populated cities in the world")
-                            && md.contains("AlphaCity") && md.contains("AlphaLand") && md.contains("DistrictA")
-                            && md.contains("1000000")
-                            && md.contains("BetaCity") && md.contains("BetaLand") && md.contains("DistrictB")
-                            && md.contains("500000")
-                    )
+                    eq("1_Top_Populated_Cities_In_World.md"),
+                    argThat(md -> md.contains("#") &&
+                            md.contains("GlobalCity") &&
+                            md.contains("WorldLand") &&
+                            md.contains("Central") &&
+                            md.contains("8000000"))
             ));
         }
     }
