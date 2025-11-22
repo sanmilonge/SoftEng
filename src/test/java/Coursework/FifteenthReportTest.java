@@ -13,10 +13,10 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 /**
- * Unit test for FourteenthReport – top cities in a region.
+ * Unit test for FifteenthReport – top cities in a country.
  */
 @ExtendWith(MockitoExtension.class)
-class FourteenthReportTest {
+class FifteenthReportTest {
 
     @Mock
     Coursework.Connection connection;
@@ -31,28 +31,28 @@ class FourteenthReportTest {
     ResultSet rs;
 
     @Test
-    void showTopNCitiesInRegion_generatesMarkdown() throws Exception {
+    void showTopNCitiesInCountry_generatesMarkdown() throws Exception {
         when(connection.getConnection()).thenReturn(sqlConnection);
         when(sqlConnection.prepareStatement(anyString())).thenReturn(stmt);
         when(stmt.executeQuery()).thenReturn(rs);
 
         when(rs.next()).thenReturn(true, false);
-        when(rs.getString("City")).thenReturn("Munich");
-        when(rs.getString("Country")).thenReturn("Germany");
-        when(rs.getString("District")).thenReturn("Bavaria");
-        when(rs.getInt("Population")).thenReturn(1400000);
+        when(rs.getString("City")).thenReturn("Tokyo");
+        when(rs.getString("Country")).thenReturn("Japan");
+        when(rs.getString("District")).thenReturn("Tokyo");
+        when(rs.getInt("Population")).thenReturn(13900000);
 
         try (MockedStatic<ReportManager> rm = mockStatic(ReportManager.class)) {
-            FourteenthReport report = new FourteenthReport(connection);
-            report.showTopNCitiesInRegion(1, "Western Europe");
+            FifteenthReport report = new FifteenthReport(connection);
+            report.showTopNCitiesInCountry(1, "Japan");
 
             rm.verify(() -> ReportManager.writeMarkdown(
-                    eq("14_FourteenthReport"),
-                    eq("1_Top_Populated_Cities_In_Western Europe.md"),
-                    argThat(md -> md.contains("Munich") &&
-                            md.contains("Germany") &&
-                            md.contains("1400000") &&
-                            md.contains("# Top 1 populated cities in Western Europe"))
+                    eq("15_FifteenthReport"),
+                    eq("1_Top_Populated_Cities_In_Japan.md"),
+                    argThat(md -> md.contains("Tokyo") &&
+                            md.contains("Japan") &&
+                            md.contains("13900000") &&
+                            md.contains("# Top 1 populated cities in Japan"))
             ));
         }
     }

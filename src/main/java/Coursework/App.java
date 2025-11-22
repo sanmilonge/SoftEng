@@ -37,6 +37,7 @@ public class App {
         TwelfthReport t12r = new TwelfthReport(con);
         ThirteenthReport t13r = new ThirteenthReport(con);
         FourteenthReport f14r = new FourteenthReport(con);
+        FifteenthReport f15r = new FifteenthReport(con);
         SeventeenthReport s17r = new SeventeenthReport(con);
         EighteenthReport e18r = new EighteenthReport(con);
         NineteenthReport n19r = new NineteenthReport(con);
@@ -100,6 +101,12 @@ public class App {
         String region14 = askForValidatedString(input, "Enter region to find the most populated cities: ", helper.getAllRegions(), "Western Europe");
         int n14 = askForInt(input, "Enter how many cities to see the most populated in " + region14, 1, safeMax(helper.totalNumberOfCities(null, region14, null, null)));
         f14r.showTopNCitiesInRegion(n14, region14);
+        pause(input);
+
+        // ---------- 15 ----------
+        String country = askForValidatedString(input, "Enter country to find the most populated cities: ", helper.getAllCountries(), "United States");
+        int n15 = askForInt(input, "Enter how many cities to see the most populated in " + country, 1, safeMax(helper.totalNumberOfCities(null, null, country, null)));
+        f15r.showTopNCitiesInCountry(n15, country);
         pause(input);
 
         // ---------- 20 ----------
