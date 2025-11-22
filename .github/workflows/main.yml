@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   Tests:
-    name: Unit + Integration Tests (FULL COVERAGE)
+    name: Unit + Integration Tests (with coverage)
     runs-on: ubuntu-22.04
 
     steps:
@@ -27,7 +27,8 @@ jobs:
       - name: Start DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
-      - name: Run ALL tests with coverage (unit + integration)
+      # Run ALL tests with coverage (unit + any integration tests wired through Maven)
+      - name: Run all tests with coverage
         run: mvn clean verify
 
       - name: Upload Code Coverage to Codecov
@@ -35,6 +36,77 @@ jobs:
         with:
           directory: ./target/site/jacoco
           verbose: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Stop & clean DB container
+        if: always()
+        run: |
+          docker stop world-db
+          docker rm world-db
+          docker image rm worlddb
+
+  BuildCompose:
+    name: Build app with docker-compose
+    runs-on: ubuntu-22.04
+    needs: Tests
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Package app
+        run: mvn package -DskipTests
+
+      - name: Set CI mode for Docker Compose
+        run: echo "CI=true" >> .env
+
+      - name: Run app non-interactively (CI only)
+        run: docker compose run --rm app
+
+      - name: Stop services
+        run: docker compose down || true
+
+      - name: Publish Release (master only)
+        if: github.ref == 'refs/heads/master'
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          automatic_release_tag: "latest"
+          files: |
+            ./target/*.jar
+
+  AutoGenerateReports:
+    name: Generate and Upload Reports
+    runs-on: ubuntu-22.04
+    needs: BuildCompose
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Prepare CI env for Docker Compose
+        run: echo "CI=true" >> .env
+
+      - name: Run app non-interactively to generate reports
+        run: |
+          mvn package -DskipTests
+          docker compose run --rm app
+
+      - name: Upload Generated Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: Generated_Reports
+          path: src/main/resources/reports/          verbose: true
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
