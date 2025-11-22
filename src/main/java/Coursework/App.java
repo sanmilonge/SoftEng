@@ -36,22 +36,23 @@ public class App {
         EleventhReport e11r = new EleventhReport(con);
         TwelfthReport t12r = new TwelfthReport(con);
         ThirteenthReport t13r = new ThirteenthReport(con);
-        SeventeenthReport r17 = new SeventeenthReport(con);
-        EighteenthReport er = new EighteenthReport(con);
-        NineteenthReport nr = new NineteenthReport(con);
-        TwentiethReport tr20 = new TwentiethReport(con);
-        TwentyFirstReport tr21 = new TwentyFirstReport(con);
-        TwentySecondReport tr22 = new TwentySecondReport(con);
-        TwentyThirdReport tr23 = new TwentyThirdReport(con);
-        TwentyFourthReport tr24 = new TwentyFourthReport(con);
-        TwentyFifthReport tr25 = new TwentyFifthReport(con);
-        TwentySixthReport tr26 = new TwentySixthReport(con);
-        TwentySeventhReport tr27 = new TwentySeventhReport(con);
-        TwentyEighthReport tr28 = new TwentyEighthReport(con);
-        TwentyNinthReport tr29 = new TwentyNinthReport(con);
-        ThirtiethReport tr30 = new ThirtiethReport(con);
-        ThirtyFirstReport tr31 = new ThirtyFirstReport(con);
-        ThirtySecondReport tr32 = new ThirtySecondReport(con);
+        FourteenthReport f14r = new FourteenthReport(con);
+        SeventeenthReport s17r = new SeventeenthReport(con);
+        EighteenthReport e18r = new EighteenthReport(con);
+        NineteenthReport n19r = new NineteenthReport(con);
+        TwentiethReport t20r = new TwentiethReport(con);
+        TwentyFirstReport t21r = new TwentyFirstReport(con);
+        TwentySecondReport t22r = new TwentySecondReport(con);
+        TwentyThirdReport t23r = new TwentyThirdReport(con);
+        TwentyFourthReport t24r = new TwentyFourthReport(con);
+        TwentyFifthReport t25r = new TwentyFifthReport(con);
+        TwentySixthReport t26r = new TwentySixthReport(con);
+        TwentySeventhReport t27r = new TwentySeventhReport(con);
+        TwentyEighthReport t28r = new TwentyEighthReport(con);
+        TwentyNinthReport t29r = new TwentyNinthReport(con);
+        ThirtiethReport t30r = new ThirtiethReport(con);
+        ThirtyFirstReport t31r = new ThirtyFirstReport(con);
+        ThirtySecondReport t32r = new ThirtySecondReport(con);
 
         GetAll helper = new GetAll(con);
 
@@ -95,11 +96,17 @@ public class App {
         t13r.showTopNCitiesInContinent(n13, continent13);
         pause(input);
 
+        // ---------- 14 ----------
+        String region14 = askForValidatedString(input, "Enter region to find the most populated cities: ", helper.getAllRegions(), "Western Europe");
+        int n14 = askForInt(input, "Enter how many cities to see the most populated in " + region14, 1, safeMax(helper.totalNumberOfCities(null, region14, null, null)));
+        f14r.showTopNCitiesInRegion(n14, region14);
+        pause(input);
+
         // ---------- 20 ----------
         int n20 = askForInt(input,
                 "Enter how many capital cities in order of population in the world:",
                 1, safeMax(helper.totalNumberOfCountries(null, null)));
-        tr20.showTopNCapitalCities(n20);
+        t20r.showTopNCapitalCities(n20);
         pause(input);
 
         // ---------- 21 ----------
@@ -109,7 +116,7 @@ public class App {
         int n21 = askForInt(input,
                 "Enter the number of top capital cities to return:",
                 1, safeMax(helper.totalNumberOfCountries(continent21, null)));
-        tr21.showTopNCapitalCitiesInContinent(continent21, n21);
+        t21r.showTopNCapitalCitiesInContinent(continent21, n21);
         pause(input);
 
         // ---------- 22 ----------
@@ -119,7 +126,7 @@ public class App {
         int n22 = askForInt(input,
                 "Enter the number of top capital cities to return:",
                 1, safeMax(helper.totalNumberOfCountries(null, region22)));
-        tr22.showTopNCapitalCitiesInRegion(region22, n22);
+        t22r.showTopNCapitalCitiesInRegion(region22, n22);
         pause(input);
 
         // ========== REPORTS WITH NO USER INPUT ==========
@@ -132,19 +139,19 @@ public class App {
         n9r.showCitiesByRegion();
         t10r.showCitiesByCountry();
         e11r.showCitiesByDistrict();
-        r17.showCapitalCitiesInWorld();
-        er.showCapitalCitiesInMultipleContinents();
-        nr.showCapitalCitiesForMultipleRegions();
-        tr23.showContinentPopulationSummary();
-        tr24.showRegionPopulationSummary();
-        tr25.showCountryPopulationSummary();
-        tr26.showWorldPopulation();
-        tr27.showPopulationOfAllContinents();
-        tr28.showPopulationOfAllRegions();
-        tr29.showPopulationOfAllCountries();
-        tr30.showPopulationOfAllDistricts();
-        tr31.showPopulationOfAllCities();
-        tr32.showLanguageSpeakers();
+        s17r.showCapitalCitiesInWorld();
+        e18r.showCapitalCitiesInMultipleContinents();
+        n19r.showCapitalCitiesForMultipleRegions();
+        t23r.showContinentPopulationSummary();
+        t24r.showRegionPopulationSummary();
+        t25r.showCountryPopulationSummary();
+        t26r.showWorldPopulation();
+        t27r.showPopulationOfAllContinents();
+        t28r.showPopulationOfAllRegions();
+        t29r.showPopulationOfAllCountries();
+        t30r.showPopulationOfAllDistricts();
+        t31r.showPopulationOfAllCities();
+        t32r.showLanguageSpeakers();
 
         con.disconnect();
     }
