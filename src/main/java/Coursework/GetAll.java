@@ -16,24 +16,6 @@ public class GetAll {
     public GetAll(Connection c) {
         this.c = c;
     }
-
-    /**Returns a list of cities in db*/
-    public int GetAllCities(){
-        int Total = 0;
-        String sql = "SELECT COUNT(*) AS Total FROM city;";
-        try (Statement stmt = c.getConnection().createStatement();
-             ResultSet rset = stmt.executeQuery(sql)) {
-            if (rset.next()) {
-                Total = rset.getInt("Total");
-            }
-        } catch (SQLException e) {
-            System.out.println("Failed to count cities: " + e.getMessage());
-            }
-
-        return Total;
-
-    }
-
     /** Returns list of continents in db */
     public List<String> getAllContinents() {
         List<String> continents = new ArrayList<>();
@@ -126,7 +108,7 @@ public class GetAll {
      *  - Else if continent is provided → count countries in that continent
      *  - Else → count all countries in the world
      */
-    public int totalNumberOf(String continent, String region) {
+    public int totalNumberOfCountries(String continent, String region) {
         int total = 0;
 
         boolean hasRegion = region != null && !region.trim().isEmpty();
@@ -171,4 +153,79 @@ public class GetAll {
 
         return total;
     }
+
+    public int totalNumberOfCities(String continent, String region, String country, String district) {
+        int total = 0;
+
+        boolean hasRegion = region != null && !region.trim().isEmpty();
+        boolean hasContinent = continent != null && !continent.trim().isEmpty();
+        boolean hasCountry = country != null && !country.trim().isEmpty();
+        boolean hasDistrict = district != null && !district.trim().isEmpty();
+
+        try {
+            if (hasRegion) {
+                // Filter by region
+                String sql = "SELECT COUNT(*) AS Total " +
+                        "FROM city JOIN country ON city.CountryCode = country.Code " +
+                        "WHERE country.Region = ?;";
+                try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
+                    pstmt.setString(1, region);
+                    try (ResultSet rset = pstmt.executeQuery()) {
+                        if (rset.next()) {
+                            total = rset.getInt("Total");
+                        }
+                    }
+                }
+            } else if (hasContinent) {
+                // Filter by continent
+                String sql = "SELECT COUNT(*) AS Total " +
+                        "FROM city JOIN country ON city.CountryCode = country.Code " +
+                        "WHERE country.Continent = ?;";
+                try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
+                    pstmt.setString(1, continent);
+                    try (ResultSet rset = pstmt.executeQuery()) {
+                        if (rset.next()) {
+                            total = rset.getInt("Total");
+                        }
+                    }
+                }
+            } else if (hasCountry){
+                // Filter by country
+                String sql = "SELECT COUNT(*) AS Total " +
+                        "FROM city JOIN country ON city.CountryCode = country.Code " +
+                        "WHERE country.Name = ?;";
+                try (Statement stmt = c.getConnection().createStatement();
+                     ResultSet rset = stmt.executeQuery(sql)) {
+                    if (rset.next()) {
+                        total = rset.getInt("Total");
+                    }
+                }
+            }
+            else if (hasDistrict){
+                // Filter by country
+                String sql = "SELECT COUNT(*) AS Total FROM city WHERE District = ?;";
+                try (Statement stmt = c.getConnection().createStatement();
+                     ResultSet rset = stmt.executeQuery(sql)) {
+                    if (rset.next()) {
+                        total = rset.getInt("Total");
+                    }
+                }
+            }
+            else {
+                // No filters → whole world
+                String sql = "SELECT COUNT(*) AS Total FROM city;";
+                try (Statement stmt = c.getConnection().createStatement();
+                     ResultSet rset = stmt.executeQuery(sql)) {
+                    if (rset.next()) {
+                        total = rset.getInt("Total");
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Failed to count countries: " + e.getMessage());
+        }
+
+        return total;
+    }
+
 }
