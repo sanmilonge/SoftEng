@@ -1,43 +1,35 @@
 name: Coursework CI
+
 on: push
+
 permissions:
   contents: write
 
 jobs:
-  UnitTests:
-    name: Unit Tests
+  Tests:
+    name: Unit + Integration Tests (with coverage)
     runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-      - name: Run unit tests
-        run: mvn -Dtest=Coursework.AppTest,Coursework.ReportManagerTest test
 
-  IntegrationTests:
-    name: Integration Tests (world-db)
-    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
       - name: Kill old containers
-        run: |
-          docker rm -f $(docker ps -aq) || true
+        run: docker rm -f $(docker ps -aq) || true
 
       - name: Build DB image
         run: docker build -t worlddb ./db
 
-      - name: Run DB container
+      - name: Start DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
-      - name: Run integration tests
-        run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
+      # Run ALL tests with coverage (unit + any integration tests wired through Maven)
+      - name: Run all tests with coverage
+        run: mvn clean verify
 
       - name: Upload Code Coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -57,8 +49,11 @@ jobs:
   BuildCompose:
     name: Build app with docker-compose
     runs-on: ubuntu-22.04
+    needs: Tests
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
@@ -67,9 +62,6 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
-      # ------------------------------------------------------------
-      # Create .env file so docker-compose runs in CI mode
-      # ------------------------------------------------------------
       - name: Set CI mode for Docker Compose
         run: echo "CI=true" >> .env
 
@@ -92,9 +84,11 @@ jobs:
   AutoGenerateReports:
     name: Generate and Upload Reports
     runs-on: ubuntu-22.04
-    needs: [BuildCompose]
+    needs: BuildCompose
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
