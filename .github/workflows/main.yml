@@ -1,5 +1,7 @@
 name: Coursework CI
+
 on: push
+
 permissions:
   contents: write
 
@@ -13,8 +15,17 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Run unit tests
-        run: mvn -Dtest=Coursework.AppTest,Coursework.ReportManagerTest test
+
+      - name: Run unit tests with coverage
+        run: mvn verify -Dtest=Coursework.AppTest,Coursework.ReportManagerTest
+
+      - name: Upload Code Coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          directory: ./target/site/jacoco
+          verbose: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   IntegrationTests:
     name: Integration Tests (world-db)
@@ -27,8 +38,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Kill old containers
-        run: |
-          docker rm -f $(docker ps -aq) || true
+        run: docker rm -f $(docker ps -aq) || true
 
       - name: Build DB image
         run: docker build -t worlddb ./db
@@ -36,8 +46,8 @@ jobs:
       - name: Run DB container
         run: docker run -d --name world-db -p 33060:3306 worlddb
 
-      - name: Run integration tests
-        run: mvn -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest test
+      - name: Run integration tests with coverage
+        run: mvn verify -Dtest=Coursework.AppIntegrationTest,Coursework.ReportGenerationTest
 
       - name: Upload Code Coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -67,9 +77,6 @@ jobs:
       - name: Package app
         run: mvn package -DskipTests
 
-      # ------------------------------------------------------------
-      # Create .env file so docker-compose runs in CI mode
-      # ------------------------------------------------------------
       - name: Set CI mode for Docker Compose
         run: echo "CI=true" >> .env
 
