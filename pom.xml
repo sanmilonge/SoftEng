@@ -5,10 +5,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- Project coordinates -->
     <groupId>com.napier.sem</groupId>
     <artifactId>seMethods</artifactId>
     <version>0.1.0.2</version>
 
+    <!-- Java & versions -->
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -18,15 +20,16 @@
         <jacoco.version>0.8.11</jacoco.version>
     </properties>
 
+    <!-- Dependencies -->
     <dependencies>
-        <!-- MySQL Connector/J -->
+        <!-- MySQL Connector/J (modern) -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>9.0.0</version>
         </dependency>
 
-        <!-- JUnit 5 -->
+        <!-- JUnit 5 (includes engine) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -34,7 +37,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Mockito -->
+        <!-- Mockito JUnit 5 integration -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
@@ -42,6 +45,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Mockito inline (for static mocking, etc.) -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-inline</artifactId>
@@ -51,10 +55,11 @@
     </dependencies>
 
     <build>
+        <!-- Output jar name -->
         <finalName>devops</finalName>
 
         <plugins>
-            <!-- Java Compilation -->
+            <!-- Ensure Java 17 compilation -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -65,7 +70,7 @@
                 </configuration>
             </plugin>
 
-            <!-- JUnit 5 -->
+            <!-- Run JUnit 5 tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -75,18 +80,20 @@
                 </configuration>
             </plugin>
 
-            <!-- JaCoCo for Code Coverage -->
+            <!-- JaCoCo coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.version}</version>
                 <executions>
+                    <!-- Attach agent to collect coverage -->
                     <execution>
                         <id>prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
+                    <!-- Generate HTML/XML report after tests -->
                     <execution>
                         <id>report</id>
                         <phase>verify</phase>
@@ -97,7 +104,7 @@
                 </executions>
             </plugin>
 
-            <!-- Build fat JAR -->
+            <!-- Build fat jar named devops.jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
