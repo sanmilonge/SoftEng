@@ -102,11 +102,6 @@ public class GetAll {
 
     /**
      * Returns total number of countries.
-     *
-     * Behaviour:
-     *  - If region is provided (non-null/non-empty) → count countries in that region
-     *  - Else if continent is provided → count countries in that continent
-     *  - Else → count all countries in the world
      */
     public int totalNumberOfCountries(String continent, String region) {
         int total = 0;
@@ -195,7 +190,7 @@ public class GetAll {
                         "FROM city JOIN country ON city.CountryCode = country.Code " +
                         "WHERE country.Name = ?;";
                 try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
-                    pstmt.setString(1, continent);
+                    pstmt.setString(1, country);
                     try (ResultSet rset = pstmt.executeQuery()) {
                         if (rset.next()) {
                             total = rset.getInt("Total");
@@ -204,10 +199,10 @@ public class GetAll {
                 }
             }
             else if (hasDistrict){
-                // Filter by country
+                // Filter by district
                 String sql = "SELECT COUNT(*) AS Total FROM city WHERE District = ?;";
                 try (PreparedStatement pstmt = c.getConnection().prepareStatement(sql)) {
-                    pstmt.setString(1, continent);
+                    pstmt.setString(1, district);
                     try (ResultSet rset = pstmt.executeQuery()) {
                         if (rset.next()) {
                             total = rset.getInt("Total");

@@ -105,7 +105,7 @@ public class App {
         pause(input);
 
         // ---------- 15 ----------
-        String country = askForValidatedString(input, "Enter district to find the most populated cities: ", helper.getAllCountries(), "United States");
+        String country = askForValidatedString(input, "Enter country to find the most populated cities: ", helper.getAllCountries(), "United States");
         int n15 = askForInt(input, "Enter how many cities to see the most populated in " + country, 1, safeMax(helper.totalNumberOfCities(null, null, country, null)));
         f15r.showTopNCitiesInCountry(n15, country);
         pause(input);

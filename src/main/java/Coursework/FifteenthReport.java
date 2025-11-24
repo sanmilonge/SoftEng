@@ -22,7 +22,7 @@ public class FifteenthReport {
                         "city.Population " +
                         "FROM city " +
                         "JOIN country ON city.CountryCode = country.Code " +
-                        "WHERE Country = ? " +
+                        "WHERE country.Name = ? " +
                         "ORDER BY city.Population DESC " +
                         "LIMIT ?;";
 
