@@ -10,6 +10,9 @@ import java.sql.*;
 public class FourthReport {
     private final Connection c;
 
+    /**
+     * Shows most populated countries in the world based on user input*/
+
     public FourthReport(Connection c) {
         this.c = c;
     }
