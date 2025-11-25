@@ -1,13 +1,18 @@
+/**
+ *As a data analyst, I want the system to produce a report of all countries
+ * in a selected continent ordered by population (largest to smallest) so
+ * that I can analyse population distribution within that continent*/
+
 package Coursework;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
+
 /**
- *Second Report
+ *Second Reports
  * ------------
- * Generates per-continent Markdown reports of countries by population.
+ * Generates per-continent Markdown report of countries by population.
  */
 public class SecondReport {
     private final Connection c;
@@ -16,50 +21,36 @@ public class SecondReport {
         this.c = c;
     }
 
-    private List<String> getAllContinents() {
-        List<String> continents = new ArrayList<>();
-        try {
-            String query = "SELECT DISTINCT Continent FROM country;";
-            Statement stmt = c.getConnection().createStatement();
-            ResultSet rslt = stmt.executeQuery(query);
-
-            while (rslt.next()) {
-                String continent = rslt.getString("Continent");
-                if (continent != null && !continent.trim().isEmpty()) {
-                    continents.add(continent.trim());
-                }
-            }
-            rslt.close();
-            stmt.close();
-        } catch (Exception e) {
-            System.out.println("Failed to retrieve continents: " + e.getMessage());
-        }
-        return continents;
-    }
-
     public void showCountriesContinent() {
-        List<String> continents = getAllContinents();
+        GetAll helper = new GetAll(c);
+        List<String> continents = helper.getAllContinents();
         String subfolder = "2_SecondReport";
 
         for (String continent : continents) {
             StringBuilder md = new StringBuilder();
             md.append("# Countries in ").append(continent).append("\n\n");
-            md.append("| Code | Country | Region | Population |\n");
-            md.append("|------|------|------------|-------------|\n");
+            md.append("| Code | Country | Continent | Region | Population | Capital |\n");
+            md.append("|------|------|------------|------------|-------------|------------|\n");
 
             try {
-                String query = "SELECT Code, Name, Region, Population " +
-                        "FROM country WHERE Continent = ? ORDER BY Population DESC;";
+                String query =     "SELECT country.Code, country.Name AS Country, country.Continent, country.Region, " +
+                        "country.Population, city.Name AS Capital " +
+                        "FROM country " +
+                        "LEFT JOIN city ON country.Capital = city.ID WHERE Continent = ? " +
+                        "ORDER BY country.Population DESC;";
                 PreparedStatement pstmt = c.getConnection().prepareStatement(query);
                 pstmt.setString(1, continent);
                 ResultSet rset = pstmt.executeQuery();
 
                 while (rset.next()) {
-                    md.append(String.format("| %s | %s | %s | %d |\n",
+                    md.append(String.format("| %s | %s | %s | %s | %d | %s |\n",
                             rset.getString("Code"),
-                            rset.getString("Name"),
+                            rset.getString("Country"),
+                            rset.getString("Continent"),
                             rset.getString("Region"),
-                            rset.getInt("Population")));
+                            rset.getInt("Population"),
+                            rset.getString("Capital")
+                    ));
                 }
 
                 String safeContinentName = continent.replaceAll("[^a-zA-Z0-9\\-_ ]", "_");
