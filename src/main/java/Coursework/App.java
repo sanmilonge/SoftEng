@@ -3,26 +3,41 @@ package Coursework;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Main application entry point.
+ * Handles:
+ *  - User input (unless running in CI mode)
+ *  - Executing reports in the correct order
+ *  - Validating input through helper lists (continents, regions, countries, districts)
+ *  - Delegating database queries to individual report classes
+ */
 public class App {
-    private static final boolean CI_MODE = //Restricts github to use default values
+
+    /**
+     * CI_MODE = true when running in GitHub Actions.
+     * This prevents the app from asking for user input.
+     */
+    private static final boolean CI_MODE =
             System.getenv("CI") != null &&
                     System.getenv("CI").equalsIgnoreCase("true");
 
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        ReportManager.prepareReportFolder();
+        ReportManager.prepareReportFolder();   // Clean + recreate report directories
 
         Connection con = new Connection();
 
-        // Connect
+        // Connect to database
         if (args.length < 2) {
+            // Local environment defaults
             con.connect("localhost:33060", 30000);
         } else {
+            // When executed from Docker Compose
             con.connect(args[0], Integer.parseInt(args[1]));
         }
 
-        // Init reports
+        // ---------------- Initialize all report classes ----------------
         FirstReport f1r = new FirstReport(con);
         SecondReport s2r = new SecondReport(con);
         ThirdReport t3r = new ThirdReport(con);
@@ -58,18 +73,20 @@ public class App {
 
         GetAll helper = new GetAll(con);
 
-        // ========== REPORTS THAT REQUIRE USER INPUT ==========
+        // ==================================================================
+        //                    REPORTS THAT REQUIRE USER INPUT
+        // ==================================================================
 
-        // ---------- 4 ----------
+        // ---------------------- Report 4 -----------------------
         int n4 = askForInt(input,
                 "Enter how many countries to see most populated countries in the world:",
                 1, safeMax(helper.totalNumberOfCountries(null, null)));
         f4r.showTopNCountries(n4);
         pause(input);
 
-        // ---------- 5 ----------
-        String continent5 = askForValidatedString(input,
-                "Enter continent to find most populated countries:",
+        // ---------------------- Report 5 -----------------------
+        String continent5 = askForValidatedString(
+                input, "Enter continent to find most populated countries:",
                 helper.getAllContinents(), "Africa");
         int n5 = askForInt(input,
                 "Enter how many countries to see the most populated in " + continent5,
@@ -77,9 +94,9 @@ public class App {
         f5r.showTopNCountriesInContinent(n5, continent5);
         pause(input);
 
-        // ---------- 6 ----------
-        String region6 = askForValidatedString(input,
-                "Enter region to find most populated countries:",
+        // ---------------------- Report 6 -----------------------
+        String region6 = askForValidatedString(
+                input, "Enter region to find most populated countries:",
                 helper.getAllRegions(), "Western Europe");
         int n6 = askForInt(input,
                 "Enter how many countries to see the most populated in " + region6,
@@ -87,45 +104,63 @@ public class App {
         s6r.showTopNCountriesInRegion(n6, region6);
         pause(input);
 
-        // ---------- 12 ----------
-        int n12 = askForInt(input, "Enter how many cities to know the most populated in the world: ", 1, safeMax(helper.totalNumberOfCities(null, null, null, null)));
+        // ---------------------- Report 12 -----------------------
+        int n12 = askForInt(input,
+                "Enter how many cities to know the most populated in the world:",
+                1, safeMax(helper.totalNumberOfCities(null, null, null, null)));
         t12r.showTopNCitiesITheWorld(n12);
         pause(input);
 
-        // ---------- 13 ----------
-        String continent13 = askForValidatedString(input, "Enter continent to find the most populated cities: ", helper.getAllContinents(), "Africa");
-        int n13 = askForInt(input, "Enter how many cities to see the most populated in " + continent13, 1, safeMax(helper.totalNumberOfCities(continent13, null, null, null)));
+        // ---------------------- Report 13 -----------------------
+        String continent13 = askForValidatedString(
+                input, "Enter continent to find the most populated cities:",
+                helper.getAllContinents(), "Africa");
+        int n13 = askForInt(input,
+                "Enter how many cities to see the most populated in " + continent13,
+                1, safeMax(helper.totalNumberOfCities(continent13, null, null, null)));
         t13r.showTopNCitiesInContinent(n13, continent13);
         pause(input);
 
-        // ---------- 14 ----------
-        String region14 = askForValidatedString(input, "Enter region to find the most populated cities: ", helper.getAllRegions(), "Western Europe");
-        int n14 = askForInt(input, "Enter how many cities to see the most populated in " + region14, 1, safeMax(helper.totalNumberOfCities(null, region14, null, null)));
+        // ---------------------- Report 14 -----------------------
+        String region14 = askForValidatedString(
+                input, "Enter region to find the most populated cities:",
+                helper.getAllRegions(), "Western Europe");
+        int n14 = askForInt(input,
+                "Enter how many cities to see the most populated in " + region14,
+                1, safeMax(helper.totalNumberOfCities(null, region14, null, null)));
         f14r.showTopNCitiesInRegion(n14, region14);
         pause(input);
 
-        // ---------- 15 ----------
-        String country = askForValidatedString(input, "Enter country to find the most populated cities: ", helper.getAllCountries(), "United States");
-        int n15 = askForInt(input, "Enter how many cities to see the most populated in " + country, 1, safeMax(helper.totalNumberOfCities(null, null, country, null)));
+        // ---------------------- Report 15 -----------------------
+        String country = askForValidatedString(
+                input, "Enter country to find the most populated cities:",
+                helper.getAllCountries(), "United States");
+        int n15 = askForInt(input,
+                "Enter how many cities to see the most populated in " + country,
+                1, safeMax(helper.totalNumberOfCities(null, null, country, null)));
         f15r.showTopNCitiesInCountry(n15, country);
         pause(input);
 
-        // ---------- 16 ----------
-        String district = askForValidatedString(input, "Enter district to find the most populated cities: ", helper.getAllDistricts(), "California");
-        int n16 = askForInt(input, "Enter how many cities to see the most populated in " + district, 1, safeMax(helper.totalNumberOfCities(null, null, null, district)));
+        // ---------------------- Report 16 -----------------------
+        String district = askForValidatedString(
+                input, "Enter district to find the most populated cities:",
+                helper.getAllDistricts(), "California");
+        int n16 = askForInt(input,
+                "Enter how many cities to see the most populated in " + district,
+                1, safeMax(helper.totalNumberOfCities(null, null, null, district)));
         s16r.showTopNCitiesInDistrict(n16, district);
         pause(input);
 
-        // ---------- 20 ----------
+        // ---------------------- Report 20 -----------------------
         int n20 = askForInt(input,
                 "Enter how many capital cities in order of population in the world:",
                 1, safeMax(helper.totalNumberOfCountries(null, null)));
         t20r.showTopNCapitalCities(n20);
         pause(input);
 
-        // ---------- 21 ----------
-        String continent21 = askForValidatedString(input,
-                "Enter a continent to find the top populated capital cities:",
+        // ---------------------- Report 21 -----------------------
+        String continent21 = askForValidatedString(
+                input, "Enter a continent to find the top populated capital cities:",
                 helper.getAllContinents(), "Africa");
         int n21 = askForInt(input,
                 "Enter the number of top capital cities to return:",
@@ -133,9 +168,9 @@ public class App {
         t21r.showTopNCapitalCitiesInContinent(continent21, n21);
         pause(input);
 
-        // ---------- 22 ----------
-        String region22 = askForValidatedString(input,
-                "Enter a region to find the top populated capital cities:",
+        // ---------------------- Report 22 -----------------------
+        String region22 = askForValidatedString(
+                input, "Enter a region to find the top populated capital cities:",
                 helper.getAllRegions(), "Western Europe");
         int n22 = askForInt(input,
                 "Enter the number of top capital cities to return:",
@@ -143,7 +178,9 @@ public class App {
         t22r.showTopNCapitalCitiesInRegion(region22, n22);
         pause(input);
 
-        // ========== REPORTS WITH NO USER INPUT ==========
+        // ==================================================================
+        //                       REPORTS WITH NO USER INPUT
+        // ==================================================================
 
         f1r.showCountriesByPopulation();
         s2r.showCountriesContinent();
@@ -170,8 +207,14 @@ public class App {
         con.disconnect();
     }
 
-    // ---------- HELPERS ----------
+    // ==================================================================
+    //                              HELPERS
+    // ==================================================================
 
+    /**
+     * Integer input with min/max validation.
+     * In CI mode always returns `min` (no user interaction allowed).
+     */
     private static int askForInt(Scanner input, String prompt, int min, int max) {
         if (CI_MODE) return min;
 
@@ -192,31 +235,42 @@ public class App {
         }
     }
 
-    private static String askForValidatedString(Scanner input, String prompt, List<String> validOptions, String defaultValue) {
+    /**
+     * Accepts a free-text string but validates against a list of allowed values.
+     * If incorrect, suggests the closest 5 matches (Levenshtein similarity).
+     */
+    private static String askForValidatedString(
+            Scanner input, String prompt, List<String> validOptions, String defaultValue) {
+
         if (CI_MODE) return defaultValue;
 
         while (true) {
             System.out.println(prompt);
             String value = input.nextLine().trim();
 
+            // Exact match check
             for (String option : validOptions) {
                 if (option.equalsIgnoreCase(value)) return option;
             }
 
+            // If invalid → offer suggestions
             System.out.println("Invalid input: '" + value + "'");
             System.out.println("Did you mean:");
             validOptions.stream()
-                    .sorted((a, b) -> levenshtein(value.toLowerCase(), a.toLowerCase()) -
-                            levenshtein(value.toLowerCase(), b.toLowerCase()))
+                    .sorted((a, b) ->
+                            levenshtein(value.toLowerCase(), a.toLowerCase()) -
+                                    levenshtein(value.toLowerCase(), b.toLowerCase()))
                     .limit(5)
                     .forEach(opt -> System.out.println("  • " + opt));
         }
     }
 
+    /** Ensures max is at least 1 (avoids invalid RANGE errors). */
     private static int safeMax(int max) {
         return Math.max(1, max);
     }
 
+    /** Pauses the console unless in CI mode. */
     private static void pause(Scanner input) {
         if (!CI_MODE) {
             System.out.println("Press Enter to continue...");
@@ -224,6 +278,7 @@ public class App {
         }
     }
 
+    /** Basic Levenshtein distance used for fuzzy string matching. */
     private static int levenshtein(String a, String b) {
         int[][] dp = new int[a.length() + 1][b.length() + 1];
         for (int i = 0; i <= a.length(); i++) {
