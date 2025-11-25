@@ -6,13 +6,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class ReportManager {
-
-    /**
-     * IMPORTANT:
-     * Report root is now dynamic.
-     * Tests set:  System.setProperty("report.folder", "src/main/resources/reports/TestReports")
-     * App uses:   src/main/resources/reports
-     */
     private static String getReportsRoot() {
         return System.getProperty("report.folder", "src/main/resources/reports");
     }
