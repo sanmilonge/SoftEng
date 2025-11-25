@@ -7,6 +7,7 @@ Software Engineering Methods Coursework – Edinburgh Napier University
 ![Build](https://img.shields.io/github/actions/workflow/status/sanmilonge/SoftEng/main.yml?label=Build\&logo=github)
 ![Coverage](https://img.shields.io/codecov/c/github/sanmilonge/SoftEng?logo=codecov)
 ![Release](https://img.shields.io/github/v/release/sanmilonge/SoftEng?logo=github)
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 ![Contributors](https://img.shields.io/github/contributors/sanmilonge/SoftEng?logo=github)
 
 
@@ -192,6 +193,14 @@ mvn clean verify
 
 # License
 
-This project was created for academic use as part of coursework for Edinburgh Napier University.
+This project is licensed under the **Apache License 2.0**.
+
+You may obtain a copy of the license at:
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an **"AS IS" BASIS**, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the **LICENSE** file in this repository for the full text.
 
 ---
